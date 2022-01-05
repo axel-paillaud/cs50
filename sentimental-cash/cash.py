@@ -12,4 +12,12 @@ if(change >= 0.25):
         coins+= 1
         change -= 0.25
 
+if(change >= 0.10):
+    n = change / 0.10
+    n = round(n)
+    for i in range(n):
+        coins += 1
+        change -= 0.10
+
+
 print(coins)
