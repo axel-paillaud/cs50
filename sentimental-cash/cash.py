@@ -5,9 +5,6 @@ coins = 0
 while(change < 0):
     change = get_float("Change owed: ")
 
-int = change
-int(int)
-
 for i in range(int):
     if(change > 0.25):
         i += 0.25
