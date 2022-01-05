@@ -10,4 +10,5 @@ for i in range(n):
         for k in range(space):
             print(" ", end="")
         print("#", end="")
+    space -= 1
     print()
