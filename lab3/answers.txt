@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: C'est le plus rapide à trier une liste de chiffre déjà trié.
+
+sort2 uses: merge sort
+
+How do you know?: C'est le plus rapide des trois programmes à trier un grand nombre de chiffre aléatoire.
+
+sort3 uses: selection sort
+
+How do you know?: C'est le plus long des 3 algorithmes, dans n'importe quelle situation.

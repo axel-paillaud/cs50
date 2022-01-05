@@ -1,0 +1,20 @@
+Le programme :
+-L'utilisateur doit rentrer le nombre de candidat via les command-line arguments (max de candidat : 9).
+-Puis, il doit rentrer le nombre de votant (exemple : 10).
+-Pour chaque nombre de votant, le programme demande pour qui celui-ci souhaite voter, il faut écrire le nom du candidat (sans faute).
+-Un compteur de vote est actif. A la fin, le programme affiche le vainqueur.
+
+Ce qu'il faut faire :
+
+La fonction bool vote(string name) n'est pas codé, il faut la créer.
+
+La fonction void print_winner(void) n'est pas codé, il faut la créer.
+
+    bool vote(string name) :
+Il faut que la fonction, pour chaque nom de candidat écrit, comptabilise un vote pour celui-ci.
+Si le nom écrit est égal à un nom de candidat, alors ajouter 1 à celui-ci.
+
+
+    void print_winner(void)
+Cette fonction doit imprimer le vainqueur, ou les vainqueurs si égalité, en fonction du nombre de vote.
+Comparer le nombre de voix de tout les candidats, et afficher le ou les vainqueurs

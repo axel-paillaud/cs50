@@ -1,0 +1,17 @@
+TODO
+
+Compléter la fonction compute_score
+    - Retourner le nombre de point du mot
+    - ignorer caractères autres que les lettres
+    - accepter aussi bien les minuscules que les majuscules
+    
+dans main, afficher "Player 1 wins!", "Player 2 wins!", or "Tie!"
+
+[1, 3, 3, 2, 1, 4, 2, 4, 1, 8, 5, 1, 3, 1, 1, 3, 10, 1, 1, 1, 1, 4, 4, 8, 4, 10]
+[97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122]
+
+Réponses à mes difficultées :
+    
+    - il faut associer la lettre "en cours" (word[i]) à une variable de type int pour pouvoir la manipuler plus facilement par la suite (exemple : int c = word[i])
+    - il faut ensuite soustraire à cette variable le chiffre 97 pour arriver à sa position dans l'alphabet, entre 0 et 25 (exemple : c = c - 97)
+    - puis, il faut se servir du résultat pour obtenir le nombre de point correspond dans l'array POINTS[] et l'ajouter à une variable pour compter les points (exemple : score = score + POINTS[c])

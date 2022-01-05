@@ -1,0 +1,8 @@
+    -Obtenir la moyenne de lettre pour 100 mots dans le texte.
+    -Obtenir la moyenne de phrase pour 100 mots dans le texte.
+        formule pour lettre : lettre * 100 / mot
+        formule pour phrase : phrase * 100 / mot
+    
+    -Arrondir le résultat de la formule de Coleman-Liau à l'entier le plus proche.
+    -Si résultat de 16 ou +, output "Grade 16+"
+    -Si résultat est moins de 1, output "Before Grade 1"

@@ -1,0 +1,9 @@
+Pseudocode
+
+    - Demander la clé 'k' à l'utilisateur dans une command-line argument (./caesar 3)
+    -il faut convertir les arguments de la command line en integer. (string argv[] enregistre toujours une array of string) (avec la fonction int atoi(string s) ?
+    - Si la clé n'est pas un positif integer (= negative number, or special character), we should print a messageo f error, with returning a value of 1 in main.
+    - if k = <=1, prompt the user for plaintext, then rotate each letter by k.
+        if k > 25, we should restart at A and not use a special character (how to do that ?)
+        capital letters should stay capital letters
+    - print out ciphertext : 

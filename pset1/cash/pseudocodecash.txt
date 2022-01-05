@@ -1,0 +1,27 @@
+1ct, 5ct, 10ct, 25ct
+quarters, dimes, nickels, pennies.
+
+1 : Demander à l'utilisateur le montant de la monnaie dû
+    Utiliser un do while loop, pour obtenir un nombre décimal positif. Utliser get_float pour obtenir un nombre décimal et non pas un nombre entier.
+    convertir le nombre saisi par l'utilsateur en centime, pour avoir un nombre entier (multiplier dollars par 100). Arrondir au centime le plus proche (utiliser la fonction round, déclaré dans math.h).
+
+    int change = round(dollars * 100);
+    // va convertir 0.20 (ou même 0.2000000000246589741) en 20.
+
+2 : Utiliser les plus grosses pièces possibles, en gardant une trace des pièces utilisés.
+    Garder une trace de la monnaie dû restante.
+    Garder une trace du nombre de pièce utilisé pour rendre la monnaie.
+    Utiliser un for loops : Tant qu'on peut utiliser un quarters, utiliser un quarters, Tant qu'on peut utiliser un dimes, utiliser un dimes, etc.
+    
+    ? utiliser if ici, puis else ? je ne crois pas
+    for (int coins = change; n est supérieur ou égal à 25ct; coins ++)
+        change -25;
+        
+    for (int coins = change; n est supérieur ou égal à 10ct; coins ++)
+    change -10;
+    
+    etc
+
+
+3 : Afficher le nombre de pièce utilisé.
+    printf("%i\n", coins);
