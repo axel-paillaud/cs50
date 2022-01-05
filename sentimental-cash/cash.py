@@ -9,7 +9,7 @@ if(change >= 0.25):
     n = change / 0.25
     n = int(n)
     for i in range(n):
-        coins+= 1
+        coins += 1
         change -= 0.25
 change = round(change, 2)
 
