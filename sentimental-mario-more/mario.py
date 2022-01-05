@@ -13,6 +13,8 @@ for i in range(n):
                 print(" ", end="")
         print("#", end="")
         hash = True
+    for l in range(1):
+        print("..", end="")
     hash = False
     space -= 1
     print()
