@@ -20,7 +20,7 @@ def main():
         for column in row.values():
             if column.isdigit() == True:
                 valueint = int(column)
-                print
+                print(data[1])
 
 
     # TODO: Read DNA sequence file into a variable
