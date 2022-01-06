@@ -23,6 +23,8 @@ def main():
                 data[0]["AGATC"] = valueint
                 print(data[0]["AGATC"])
 
+    print(data)
+
 
 
     # TODO: Read DNA sequence file into a variable
