@@ -22,6 +22,8 @@ def main():
         print(x)
         data.append(row)
 
+    print(data)
+
 
     # TODO: Read DNA sequence file into a variable
     fSTR = open(sys.argv[2], 'r')
