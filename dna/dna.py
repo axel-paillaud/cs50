@@ -21,8 +21,10 @@ def main():
 
     for row in data:
         for valeur in row.values():
+            tmp = 0
             if valeur.isdigit() == True:
-                tmp = valeur
+                tmp = valeur + tmp
+        print(tmp)
 
 
     # TODO: Read DNA sequence file into a variable
