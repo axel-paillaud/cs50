@@ -15,9 +15,9 @@ def main():
     reader = csv.DictReader(fdata)
     for row in reader:
         for valeur in row:
-            if(valeur.isdigit()):
-                valeur = int(valeur)
+            if valeur.isdigit() == True:
                 print(valeur)
+                valeur = int(valeur)
         print(row)
         data.append(row)
 
@@ -63,7 +63,6 @@ def main():
     long_TCTG = longest_match(STR, TCTG)
     dataSTR.append(long_TCTG)
 
-    print(dataSTR)
 
     # TODO: Check database for matching profiles
 
