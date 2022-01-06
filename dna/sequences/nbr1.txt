@@ -1,0 +1,16 @@
+0
+1
+0
+1
+5
+1
+0
+
+    AGATC = "AGATC"
+    TTTTTTCT = "TTTTTTCT"
+    AATG = "AATG"
+    TCTAG = "TCTAG"
+    GATA = "GATA"
+    TATC = "TATC"
+    GAAA = "GAAA"
+    TCTG = "TCTG"

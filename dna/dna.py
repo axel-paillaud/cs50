@@ -33,28 +33,20 @@ def main():
     TCTG = "TCTG"
 
     long_AGATC = longest_match(STR, AGATC)
-    print(long_AGATC)
 
     long_TTTTTTCT = longest_match(STR, TTTTTTCT)
-    print(long_TTTTTTCT)
 
     long_AATG = longest_match(STR, AATG)
-    print(long_AATG)
 
     long_TCTAG = longest_match(STR, TCTAG)
-    print(long_TCTAG)
 
     long_GATA = longest_match(STR, GATA)
-    print(long_GATA)
 
     long_TATC = longest_match(STR, TATC)
-    print(long_TATC)
 
     long_GAAA = longest_match(STR, GAAA)
-    print(long_GAAA)
 
     long_TCTG = longest_match(STR, TCTG)
-    print(long_TCTG)
 
     # TODO: Check database for matching profiles
 
