@@ -10,7 +10,9 @@ def main():
     L = letters * 100 / words
     S = sentences * 100 / words
 
-    
+    indexFloat = 0.0588 * L - 0.296 * S - 15.8
+    index = round(indexFloat)
+    print(index)
 
 def count_letters(sentences):
     count_letters = 0
