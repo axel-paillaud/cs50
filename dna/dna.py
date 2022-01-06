@@ -32,7 +32,10 @@ def main():
     GAAA = "GAAA"
     TCTG = "TCTG"
 
+    dataSTR = []
+
     long_AGATC = longest_match(STR, AGATC)
+    
 
     long_TTTTTTCT = longest_match(STR, TTTTTTCT)
 
