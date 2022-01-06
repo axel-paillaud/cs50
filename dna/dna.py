@@ -19,7 +19,7 @@ def main():
 
     # TODO: Read DNA sequence file into a variable
     fSTR = open(sys.argv[2], 'r')
-    STR = fread(fSTR)
+    STR = f.read()
     print(STR)
 
     # TODO: Find longest match of each STR in DNA sequence
