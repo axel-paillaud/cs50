@@ -14,8 +14,7 @@ def main():
     fdata = open(sys.argv[1], 'r')
     reader = csv.DictReader(fdata)
     for row in reader:
-        value = row.values()
-        for valeur in value:
+        for valeur in row.value:
             if valeur.isdigit() == True:
                 print(valeur)
                 valeur = int(valeur)
