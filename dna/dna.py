@@ -16,8 +16,8 @@ def main():
     for row in reader:
         data.append(row)
 
-    print(data)
-
+    for row in data:
+        for 
 
 
     # TODO: Read DNA sequence file into a variable
@@ -61,7 +61,6 @@ def main():
     long_TCTG = longest_match(STR, TCTG)
     dataSTR["TCTG"] = long_TCTG
 
-    print(dataSTR)
 
 
     # TODO: Check database for matching profiles
