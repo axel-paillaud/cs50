@@ -15,7 +15,7 @@ def main():
     reader = csv.DictReader(fdata)
     for row in reader:
         x = row.values()
-        print(x)
+        print(x["name"])
         data.append(row)
 
 
