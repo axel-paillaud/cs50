@@ -9,7 +9,9 @@ def count_letters(sentences):
     count_letters = 0
     for i in range(len(sentences)):
         c = sentences[i]
-        
+        if(sentences.isalpha(c)):
+            count_letters += 1
+        print(count_letters)
 
 if __name__ == "__main__":
     main()
