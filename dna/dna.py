@@ -22,7 +22,7 @@ def main():
                 valueint = int(column)
                 key = row.keys()
                 column = valueint
-                print(data[0]["name"])
+                data.update(row)
     print(data)
 
 
