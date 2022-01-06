@@ -36,7 +36,7 @@ def main():
     dataSTR = []
 
     long_AGATC = longest_match(STR, AGATC)
-    dataSTR.append(long_AGATC)
+    dataSTR["AGATC"] = long_AGATC
 
     long_TTTTTTCT = longest_match(STR, TTTTTTCT)
     dataSTR.append(long_TTTTTTCT)
