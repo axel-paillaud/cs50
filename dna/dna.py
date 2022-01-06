@@ -14,12 +14,11 @@ def main():
     fdata = open(sys.argv[1], 'r')
     reader = csv.DictReader(fdata)
     for row in reader:
-        for valeur in row.value:
+        for valeur in row.values():
             if valeur.isdigit() == True:
                 print(valeur)
                 valeur = int(valeur)
         print(row)
-
         data.append(row)
 
 
