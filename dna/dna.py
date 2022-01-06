@@ -21,7 +21,8 @@ def main():
             if column.isdigit() == True:
                 valueint = int(column)
                 key = row.keys()
-                print(key)
+                key1 = key[0]
+                print(key1)
                 data[0]["AGATC"] = valueint
 
     print(data)
