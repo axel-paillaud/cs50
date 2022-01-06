@@ -19,7 +19,6 @@ def main():
             if valeur.isdigit() == True:
                 print(valeur)
                 valeur = int(valeur)
-        row = value
         print(row)
 
         data.append(row)
