@@ -15,8 +15,9 @@ def main():
     reader = csv.DictReader(fdata)
     for row in reader:
         for valeur in row:
-            if(len(valeur) <= 2):
+            if(valeur.isdigit() == True):
                 valeur = int(valeur)
+                print(valeur)
         print(row)
         data.append(row)
 
