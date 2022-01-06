@@ -16,7 +16,7 @@ def main():
     for row in reader:
         for valeur in row.values():
             if valeur.isdigit() == True:
-                .update(1)
+                print(valeur)
         print(row)
         data.append(row)
 
