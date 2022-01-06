@@ -23,7 +23,8 @@ def main():
 
 
     # TODO: Find longest match of each STR in DNA sequence
-    longuest_match
+    AGATC = longest_match(STR, AGATC)
+    
 
     # TODO: Check database for matching profiles
 
