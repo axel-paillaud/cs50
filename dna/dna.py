@@ -59,6 +59,8 @@ def main():
     long_TCTG = longest_match(STR, TCTG)
     dataSTR.append(long_TCTG)
 
+    print(dataSTR)
+
 
     # TODO: Check database for matching profiles
 
