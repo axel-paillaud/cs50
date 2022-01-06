@@ -10,11 +10,13 @@ def main():
 
 
     # TODO: Read database file into a variable
-    data = []
+    data = {}
     fdata = open(sys.argv[1], 'r')
     reader = csv.DictReader(fdata)
     for row in reader:
         data.append(row)
+
+    print(data)
 
 
 
