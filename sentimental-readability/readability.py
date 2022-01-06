@@ -7,7 +7,10 @@ def main():
     words = count_words(s)
     sentences = count_sentences(s)
 
+    L = letters * 100 / words
+    S = sentences * 100 / words
 
+    
 
 def count_letters(sentences):
     count_letters = 0
