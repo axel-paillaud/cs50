@@ -17,10 +17,10 @@ def main():
         data.append(row)
 
     for row in data:
-        for value in row.values():
-            if value.isdigit() == True:
-                valueint = int(value)
-                data[value] = valueint
+        for column in row.values():
+            if column.isdigit() == True:
+                valueint = int(column)
+                data[row][column] = valueint
 
 
     # TODO: Read DNA sequence file into a variable
