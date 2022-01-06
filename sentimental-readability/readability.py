@@ -1,5 +1,6 @@
 from cs50 import get_string
 
+
 def main():
 
     s = get_string("Text: ")
@@ -20,6 +21,7 @@ def main():
     else:
         print(f"Grade {index}")
 
+
 def count_letters(sentences):
     count_letters = 0
     for i in range(len(sentences)):
@@ -28,10 +30,12 @@ def count_letters(sentences):
             count_letters += 1
     return count_letters
 
+
 def count_words(sentences):
     word_list = sentences.split()
     count_words = len(word_list)
     return count_words
+
 
 def count_sentences(sentences):
     excl = sentences.count('!')
@@ -39,6 +43,7 @@ def count_sentences(sentences):
     point = sentences.count('.')
     count_sentences = excl + interr + point
     return count_sentences
+
 
 if __name__ == "__main__":
     main()
