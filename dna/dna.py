@@ -39,6 +39,8 @@ def main():
     print(dataSTR)
 
     long_TTTTTTCT = longest_match(STR, TTTTTTCT)
+    dataSTR.append(long_TTTTTTCT)
+    print(dataSTR)
 
     long_AATG = longest_match(STR, AATG)
 
