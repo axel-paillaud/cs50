@@ -20,7 +20,7 @@ def main():
         for column in row.values():
             if column.isdigit() == True:
                 valueint = int(column)
-                key = column.keys()
+                key = row.keys()
                 column = valueint
                 print(data[0]["name"])
     print(data)
