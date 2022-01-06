@@ -12,7 +12,13 @@ def main():
 
     indexFloat = 0.0588 * L - 0.296 * S - 15.8
     index = round(indexFloat)
-    print(index)
+
+    if(index < 1):
+        print("Before Grade 1")
+    elif(index >= 16):
+        print("Grade 16+")
+    else:
+        print(f"Grade {index}")
 
 def count_letters(sentences):
     count_letters = 0
