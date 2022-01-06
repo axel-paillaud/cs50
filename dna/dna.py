@@ -33,7 +33,7 @@ def main():
     GAAA = "GAAA"
     TCTG = "TCTG"
 
-    dataSTR = []
+    dataSTR = {}
 
     long_AGATC = longest_match(STR, AGATC)
     dataSTR["AGATC"] = long_AGATC
