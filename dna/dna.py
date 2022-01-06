@@ -15,7 +15,8 @@ def main():
     reader = csv.DictReader(fdata)
     for row in reader:
         for valeur in row:
-            if valeur.isdigit() == True:
+            x = valeur
+            if x.isdigit() == True:
                 print(valeur)
                 valeur = int(valeur)
         print(row)
