@@ -11,7 +11,10 @@ def count_letters(sentences):
         c = sentences[i]
         if(c.isalpha()):
             count_letters += 1
-        print(count_letters)
+    return count_letters
+
+def count_worlds(sentences):
+    
 
 if __name__ == "__main__":
     main()
