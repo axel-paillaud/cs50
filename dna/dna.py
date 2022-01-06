@@ -21,7 +21,7 @@ def main():
 
     for row in data:
         for valeur in row.values():
-            tmp = 0
+            tmp = "hello"
             if valeur.isdigit() == True:
                 tmp = valeur + tmp
         print(tmp)
