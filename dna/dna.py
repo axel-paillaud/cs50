@@ -16,7 +16,7 @@ def main():
     for row in reader:
         data.append(row)
 
-    x = data.values()
+    x = data.items()
 
 
     # TODO: Read DNA sequence file into a variable
