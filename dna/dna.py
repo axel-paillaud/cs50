@@ -16,16 +16,17 @@ def main():
     for row in reader:
         for valeur in row.values():
             if valeur.isdigit() == True:
-                valeur = int(valeur)
+                valeur = 1
+                print(valeur)
+        print(row)
         data.append(row)
 
     for row in data:
         for valeur in row.values():
-            tmp = 0
+            tmp = "hello"
             if valeur.isdigit() == True:
-                print(valeur)
                 tmp = valeur + tmp
-                print(tmp)
+
 
 
 
