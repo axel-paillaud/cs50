@@ -20,9 +20,8 @@ def main():
                 valeur = int(valeur)
                 print(valeur)
         print(x)
+        print(row)
         data.append(row)
-
-    print(data)
 
 
     # TODO: Read DNA sequence file into a variable
