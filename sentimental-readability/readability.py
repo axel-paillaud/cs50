@@ -3,11 +3,11 @@ from cs50 import get_string
 def main():
 
     s = get_string("Text: ")
-    count_letters(s)
-    count_words(s)
-    count_sentences(s)
+    letters = count_letters(s)
+    words = count_words(s)
+    sentences = count_sentences(s)
 
-    
+
 
 def count_letters(sentences):
     count_letters = 0
