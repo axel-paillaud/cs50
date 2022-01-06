@@ -16,7 +16,9 @@ def main():
     for row in reader:
         for valeur in row.values():
             if valeur.isdigit() == True:
-                print(valeur)
+                valeur = int(valeur)
+                tmp = valeur + tmp
+                print(tmp)
         print(row)
         data.append(row)
 
