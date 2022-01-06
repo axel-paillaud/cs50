@@ -10,7 +10,7 @@ def main():
 
 
     # TODO: Read database file into a variable
-    data = {}
+    data = []
     fdata = open(sys.argv[1], 'r')
     reader = csv.DictReader(fdata)
     for row in reader:
@@ -41,7 +41,7 @@ def main():
     dataSTR["AGATC"] = long_AGATC
 
     long_TTTTTTCT = longest_match(STR, TTTTTTCT)
-
+    
 
     long_AATG = longest_match(STR, AATG)
 
