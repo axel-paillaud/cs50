@@ -17,7 +17,6 @@ def main():
         for valeur in row.values():
             if valeur.isdigit() == True:
                 row["valeur"] = 1
-                print(valeur)
         print(row)
         data.append(row)
 
