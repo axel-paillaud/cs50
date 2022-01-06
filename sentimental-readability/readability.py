@@ -9,7 +9,7 @@ def count_letters(sentences):
     count_letters = 0
     for i in range(len(sentences)):
         c = sentences[i]
-        if(sentences.isalpha(c)):
+        if(c.isalpha()):
             count_letters += 1
         print(count_letters)
 
