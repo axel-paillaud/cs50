@@ -39,25 +39,25 @@ def main():
     dataSTR["AGATC"] = long_AGATC
 
     long_TTTTTTCT = longest_match(STR, TTTTTTCT)
-    dataSTR.append(long_TTTTTTCT)
+
 
     long_AATG = longest_match(STR, AATG)
-    dataSTR.append(long_AATG)
+
 
     long_TCTAG = longest_match(STR, TCTAG)
-    dataSTR.append(long_TCTAG)
+
 
     long_GATA = longest_match(STR, GATA)
-    dataSTR.append(long_GATA)
+
 
     long_TATC = longest_match(STR, TATC)
-    dataSTR.append(long_TATC)
+
 
     long_GAAA = longest_match(STR, GAAA)
-    dataSTR.append(long_GAAA)
+
 
     long_TCTG = longest_match(STR, TCTG)
-    dataSTR.append(long_TCTG)
+
 
     print(dataSTR)
 
