@@ -17,7 +17,9 @@ def main():
         data.append(row)
 
     for row in data:
-        if 
+        for value in row.values():
+            if value.isdigit() == True:
+                value = int(value)
 
 
     # TODO: Read DNA sequence file into a variable
