@@ -22,6 +22,7 @@ def main():
                 valueint = int(column)
                 data[0]["AGATC"] = valueint
 
+    print(data[0]["AGATC"])
 
     # TODO: Read DNA sequence file into a variable
     fSTR = open(sys.argv[2], 'r')
