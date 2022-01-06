@@ -16,9 +16,11 @@ def count_letters(sentences):
 
 def count_words(sentences):
     word_list = sentences.split()
-    print(word_list)
     count_words = len(word_list)
-    print(count_words)
+    return count_words
+
+def count_sentences(sentences):
+    
 
 if __name__ == "__main__":
     main()
