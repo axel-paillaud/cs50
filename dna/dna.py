@@ -20,7 +20,6 @@ def main():
                 print(valeur)
                 valeur = int(valeur)
 
-        print(row)
         data.append(row)
 
 
