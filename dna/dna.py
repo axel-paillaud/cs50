@@ -41,25 +41,25 @@ def main():
     dataSTR["AGATC"] = long_AGATC
 
     long_TTTTTTCT = longest_match(STR, TTTTTTCT)
-    
+    dataSTR["TTTTTTCT"] = long_TTTTTTCT
 
     long_AATG = longest_match(STR, AATG)
-
+    dataSTR["AATG"] = long_AATG
 
     long_TCTAG = longest_match(STR, TCTAG)
-
+    dataSTR["TCTAG"] = long_TCTAG
 
     long_GATA = longest_match(STR, GATA)
-
+    dataSTR["GATA"] = long_GATA
 
     long_TATC = longest_match(STR, TATC)
-
+    dataSTR["TATC"] = long_TATC
 
     long_GAAA = longest_match(STR, GAAA)
-
+    dataSTR["GAAA"] = long_GAAA
 
     long_TCTG = longest_match(STR, TCTG)
-
+    dataSTR["TCTG"] = long_TCTG
 
     print(dataSTR)
 
