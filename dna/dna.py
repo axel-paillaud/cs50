@@ -20,8 +20,9 @@ def main():
         for column in row.values():
             if column.isdigit() == True:
                 valueint = int(column)
+                key = column.keys()
+                print(key)
                 data[0]["AGATC"] = valueint
-                print(data[0]["AGATC"])
 
     print(data)
 
