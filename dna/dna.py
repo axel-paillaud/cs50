@@ -16,14 +16,7 @@ def main():
     for row in reader:
         data.append(row)
 
-    for row in data:
-        for column in row.values():
-            if column.isdigit() == True:
-                valueint = int(column)
-                key = row.keys()
-                column = valueint
-                data.update(row)
-    print(data)
+
 
 
 
