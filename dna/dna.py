@@ -16,9 +16,11 @@ def main():
     for row in reader:
         data.append(row)
 
-    for row in data:
-        row["AGATC"] = int(row["AGATC"])
-        row["TTTTTTCT"] = int(row["TTTTTTCT"])
+    if sys.argv[1] == "databases/small.csv":
+        for row in data:
+            row["AGATC"] = int(row["AGATC"])
+            row["AATG"] = int(row["AATG"])
+            row["TATC"] = int(row["TATC"])
 
 
 
