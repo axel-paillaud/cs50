@@ -17,8 +17,8 @@ def main():
         data.append(row)
 
     for row in data:
-        if row["AGAT"] in row:
-            print(row["AGAT"])
+        if row["AGATC"] in row:
+            print(row)
 
 
 
