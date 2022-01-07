@@ -84,6 +84,10 @@ def main():
     for row in data:
         if row["AGATC"] == dataSTR["AGATC"]:
             print(row["name"])
+        if row["TTTTTTCT"] == dataSTR["TTTTTTCT"]:
+            print(row["name"])
+        if row["AATG"] == dataSTR["AATG"]:
+            print(row["name"])
 
 
 
