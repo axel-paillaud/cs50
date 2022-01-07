@@ -17,8 +17,7 @@ def main():
         data.append(row)
 
     for row in data:
-        if row["AGATC"] in row:
-            print(row)
+        row["AGATC"] = int(row["AGATC"])
 
 
 
