@@ -79,11 +79,9 @@ def main():
     long_TCTG = longest_match(STR, TCTG)
     dataSTR["TCTG"] = long_TCTG
 
-    print(dataSTR)
-
-
 
     # TODO: Check database for matching profiles
+    
 
     return
 
