@@ -82,22 +82,9 @@ def main():
 
     # TODO: Check database for matching profiles
     for row in data:
-        if row["AGATC"] == dataSTR["AGATC"]:
+        if row["AGATC"] == dataSTR["AGATC"] and row["TTTTTTCT"] == dataSTR["TTTTTTCT"] and row["AATG"] == dataSTR["AATG"] and row["TCTAG"] == dataSTR["TCTAG"] and row["GATA"] == dataSTR["GATA"] and row["TATC"] == dataSTR["TATC"] and row["GAAA"] == dataSTR["GAAA"] and row["TCTG"] == dataSTR["TCTG"]:
             print(row["name"])
-        if row["TTTTTTCT"] == dataSTR["TTTTTTCT"]:
-            print(row["name"])
-        if row["AATG"] == dataSTR["AATG"]:
-            print(row["name"])
-        if row["TCTAG"] == dataSTR["TCTAG"]:
-            print(row["name"])
-        if row["GATA"] == dataSTR["GATA"]:
-            print(row["name"])
-        if row["TATC"] == dataSTR["TATC"]:
-            print(row["name"])
-        if row["GAAA"] == dataSTR["GAAA"]:
-            print(row["name"])
-        if row["TCTG"] == dataSTR["TCTG"]:
-            print(row["name"])
+
 
 
     return
