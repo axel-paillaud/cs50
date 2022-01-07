@@ -18,7 +18,6 @@ def main():
         data.append(row)
 
     if sys.argv[1] == "databases/small.csv":
-        print("small")
         for row in data:
             row["AGATC"] = int(row["AGATC"])
             row["AATG"] = int(row["AATG"])
@@ -27,7 +26,6 @@ def main():
 
     if sys.argv[1] == "databases/large.csv":
         large = True
-        print("large")
         for row in data:
             row["AGATC"] = int(row["AGATC"])
             row["TTTTTTCT"] = int(row["TTTTTTCT"])
@@ -86,6 +84,12 @@ def main():
     if large == True:
         for row in data:
             if row["AGATC"] == dataSTR["AGATC"] and row["TTTTTTCT"] == dataSTR["TTTTTTCT"] and row["AATG"] == dataSTR["AATG"] and row["TCTAG"] == dataSTR["TCTAG"] and row["GATA"] == dataSTR["GATA"] and row["TATC"] == dataSTR["TATC"] and row["GAAA"] == dataSTR["GAAA"] and row["TCTG"] == dataSTR["TCTG"]:
+                print(row["name"])
+                return
+
+    elif large == False:
+        for row in data:
+            if row["AGATC"] == dataSTR["AGATC"] and row["AATG"] == dataSTR["AATG"] and row["TATC"] == dataSTR["TATC"]:
                 print(row["name"])
                 return
 
