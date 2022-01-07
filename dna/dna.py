@@ -81,7 +81,9 @@ def main():
 
 
     # TODO: Check database for matching profiles
-    
+    for row in data:
+        for row in dataSTR:
+            print("test")
 
     return
 
