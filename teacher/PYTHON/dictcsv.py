@@ -9,5 +9,5 @@ with open("favorites.csv", "r") as file:
         if not title in titles:
             titles.append(title)
 
-for title in titles:
+for title in sorted(titles):
     print(title)
