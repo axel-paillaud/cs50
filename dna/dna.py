@@ -16,7 +16,9 @@ def main():
     for row in reader:
         data.append(row)
 
-    
+    for row in data:
+        if row["AGAT"] in row:
+            print(row["AGAT"])
 
 
 
