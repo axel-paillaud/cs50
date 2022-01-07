@@ -24,7 +24,7 @@ def main():
             row["TATC"] = int(row["TATC"])
 
 
-    if sys.argv[1] == "dna/databases/large.csv":
+    if sys.argv[1] == "databases/large.csv":
         print("large")
         for row in data:
             row["AGATC"] = int(row["AGATC"])
