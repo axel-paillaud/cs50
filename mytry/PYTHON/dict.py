@@ -16,3 +16,4 @@ print(list)
 
 print(sum)
 
+dict["Axel"] = int(dict["Axel"])
