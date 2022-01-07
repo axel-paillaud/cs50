@@ -1,3 +1,7 @@
 colors = ["red", "green", "blue", "yellow", "white", "black"]
 
-print(colors[-1])
+print(colors)
+
+colors[0] = "pink"
+
+print(colors)
