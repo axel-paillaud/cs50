@@ -17,6 +17,7 @@ def main():
         data.append(row)
 
     if sys.argv[1] == "databases/small.csv":
+        print("small")
         for row in data:
             row["AGATC"] = int(row["AGATC"])
             row["AATG"] = int(row["AATG"])
