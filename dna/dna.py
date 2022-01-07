@@ -18,6 +18,7 @@ def main():
 
     for row in data:
         row["AGATC"] = int(row["AGATC"])
+        row["TTTTTTCT"] = int(row["TTTTTTCT"])
 
 
 
