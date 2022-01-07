@@ -88,7 +88,16 @@ def main():
             print(row["name"])
         if row["AATG"] == dataSTR["AATG"]:
             print(row["name"])
-
+        if row["TCTAG"] == dataSTR["TCTAG"]:
+            print(row["name"])
+        if row["GATA"] == dataSTR["GATA"]:
+            print(row["name"])
+        if row["TATC"] == dataSTR["TATC"]:
+            print(row["name"])
+        if row["GAAA"] == dataSTR["GAAA"]:
+            print(row["name"])
+        if row["TCTG"] == dataSTR["TCTG"]:
+            print(row["name"])
 
 
     return
