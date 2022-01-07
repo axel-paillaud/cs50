@@ -35,7 +35,6 @@ le bloc de code suivant ne marche pas :
         for column in row.values():
             if column.isdigit() == True:
                 valueint = int(column)
-                key = row.keys()
                 column = valueint
                 data.update(row)
     print(data)
