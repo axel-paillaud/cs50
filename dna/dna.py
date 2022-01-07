@@ -81,7 +81,9 @@ def main():
 
 
     # TODO: Check database for matching profiles
-    
+    for row in data:
+        if row["AGATC"] == dataSTR["AGATC"]:
+            print("match")
 
 
 
