@@ -24,6 +24,19 @@ def main():
             row["TATC"] = int(row["TATC"])
 
 
+    if sys.argv[1] == "dna/databases/large.csv":
+        print("large")
+        for row in data:
+            row["AGATC"] = int(row["AGATC"])
+            row["TTTTTTCT"] = int(row["TTTTTTCT"])
+            row["AATG"] = int(row["AATG"])
+            row["TCTAG"] = int(row["TCTAG"])
+            row["GATA"] = int(row["GATA"])
+            row["TATC"] = int(row["TATC"])
+            row["GAAA"] = int(row["GAAA"])
+            row["TCTG"] = int(row["TCTG"])
+
+
 
     # TODO: Read DNA sequence file into a variable
     fSTR = open(sys.argv[2], 'r')
