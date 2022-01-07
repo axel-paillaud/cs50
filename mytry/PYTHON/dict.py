@@ -7,3 +7,7 @@ list = list(dict)
 print(list)
 
 print(list[0])
+
+key = dict.keys()
+
+print(key)
