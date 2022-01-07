@@ -10,6 +10,7 @@ def main():
 
 
     # TODO: Read database file into a variable
+    large = False
     data = []
     fdata = open(sys.argv[1], 'r')
     reader = csv.DictReader(fdata)
@@ -25,6 +26,7 @@ def main():
 
 
     if sys.argv[1] == "databases/large.csv":
+        large = True
         print("large")
         for row in data:
             row["AGATC"] = int(row["AGATC"])
@@ -81,9 +83,12 @@ def main():
 
 
     # TODO: Check database for matching profiles
-    for row in data:
-        if row["AGATC"] == dataSTR["AGATC"] and row["TTTTTTCT"] == dataSTR["TTTTTTCT"] and row["AATG"] == dataSTR["AATG"] and row["TCTAG"] == dataSTR["TCTAG"] and row["GATA"] == dataSTR["GATA"] and row["TATC"] == dataSTR["TATC"] and row["GAAA"] == dataSTR["GAAA"] and row["TCTG"] == dataSTR["TCTG"]:
-            print(row["name"])
+    if large == True:
+        for row in data:
+            if row["AGATC"] == dataSTR["AGATC"] and row["TTTTTTCT"] == dataSTR["TTTTTTCT"] and row["AATG"] == dataSTR["AATG"] and row["TCTAG"] == dataSTR["TCTAG"] and row["GATA"] == dataSTR["GATA"] and row["TATC"] == dataSTR["TATC"] and row["GAAA"] == dataSTR["GAAA"] and row["TCTG"] == dataSTR["TCTG"]:
+                print(row["name"])
+            else:
+                print("No match")
 
 
 
