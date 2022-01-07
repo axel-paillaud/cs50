@@ -8,7 +8,6 @@ def main():
     if len(sys.argv) != 3:
         sys.exit("Usage: python dna.py [datafile][sequence]")
 
-
     # TODO: Read database file into a variable
     large = False
     data = []
@@ -23,7 +22,6 @@ def main():
             row["AATG"] = int(row["AATG"])
             row["TATC"] = int(row["TATC"])
 
-
     if sys.argv[1] == "databases/large.csv":
         large = True
         for row in data:
@@ -36,12 +34,9 @@ def main():
             row["GAAA"] = int(row["GAAA"])
             row["TCTG"] = int(row["TCTG"])
 
-
-
     # TODO: Read DNA sequence file into a variable
     fSTR = open(sys.argv[2], 'r')
     STR = fSTR.read()
-
 
     # TODO: Find longest match of each STR in DNA sequence
     AGATC = "AGATC"
@@ -79,7 +74,6 @@ def main():
     long_TCTG = longest_match(STR, TCTG)
     dataSTR["TCTG"] = long_TCTG
 
-
     # TODO: Check database for matching profiles
     if large == True:
         for row in data:
@@ -95,7 +89,6 @@ def main():
 
     print("No match")
     return
-
 
 
 def longest_match(sequence, subsequence):
