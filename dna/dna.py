@@ -87,12 +87,11 @@ def main():
         for row in data:
             if row["AGATC"] == dataSTR["AGATC"] and row["TTTTTTCT"] == dataSTR["TTTTTTCT"] and row["AATG"] == dataSTR["AATG"] and row["TCTAG"] == dataSTR["TCTAG"] and row["GATA"] == dataSTR["GATA"] and row["TATC"] == dataSTR["TATC"] and row["GAAA"] == dataSTR["GAAA"] and row["TCTG"] == dataSTR["TCTG"]:
                 print(row["name"])
-            else:
-                print("No match")
+                return
 
-
-
+    print("No match")
     return
+
 
 
 def longest_match(sequence, subsequence):
