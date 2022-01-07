@@ -16,7 +16,7 @@ def main():
     for row in reader:
         data.append(row)
 
-    if sys.argv[1] == "dna/databases/small.csv":
+    if sys.argv[1] == "databases/small.csv":
         print("small")
         for row in data:
             row["AGATC"] = int(row["AGATC"])
