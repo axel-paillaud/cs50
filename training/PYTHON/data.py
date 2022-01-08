@@ -10,14 +10,18 @@ if len(sys.argv) != 2:
 
 input = sys.argv[1]
 
-cur_dir = os.getcwd()
-print(cur_dir)
+while True:
+    cur_dir = os.getcwd() # Dossier actuel
 
-file_list = os.listdir(cur_dir)
-print(file_list)
+    file_list = os.listdir(cur_dir) # Liste des fichiers du dossier actuel
 
-parent_dir = os.path.dirname(cur_dir)
-print(parent_dir)
+    parent_dir = os.path.dirname(cur_dir) # Dossier parent par rapport au dossier actuel
+
+    if input in file_list:
+        print("Fichier trouvé")
+        break
+    else:
+        if 
 
 with open(input) as file:
     reader = csv.DictReader(file)
