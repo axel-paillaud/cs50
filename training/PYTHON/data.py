@@ -14,6 +14,7 @@ cur_dir = os.getcwd() # Dossier actuel
 while True:
 
     file_list = os.listdir(cur_dir) # Liste des fichiers du dossier actuel
+    print(file_list)
 
     parent_dir = os.path.dirname(cur_dir) # Dossier parent par rapport au dossier actuel
 
