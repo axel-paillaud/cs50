@@ -16,6 +16,7 @@ while True:
     file_list = os.listdir(cur_dir) # Liste des fichiers du dossier actuel
     print(file_list)
     dir_count = 0
+    tmp = 0
 
     for file in file_list:
         if os.path.isdir(cur_dir + "/" + file) == True:
