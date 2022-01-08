@@ -6,6 +6,8 @@ if len(sys.argv) != 2:
     print("Usage: data.py [name of the csv file]")
     sys.exit
 
+input = sys.argv[1]
 
-fdata = open(sys.argv[1], 'r')
-reader = csv.DictReader(fdata)
+with open(input) as file:
+    reader = DictReader(file)
+
