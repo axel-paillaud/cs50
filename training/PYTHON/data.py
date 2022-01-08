@@ -32,6 +32,8 @@ while find == False:
         break
     else:
         while tmp != dir_count:
+            if find == True:
+                break
             for file in file_list:
                 file_path = cur_dir + "/" + file
                 if os.path.isdir(file_path) == True:
