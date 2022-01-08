@@ -7,6 +7,7 @@ if len(sys.argv) != 2:
     sys.exit
 
 input = sys.argv[1]
+print(input)
 
 with open(input) as file:
     reader = DictReader(file)
