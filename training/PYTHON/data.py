@@ -30,6 +30,8 @@ while True:
         print("Fichier trouvé")
         break
     else:
+        if tmp != dir_count:
+            cur_dir = 
         if cur_dir == parent_dir: # Si le dossier actuel est le dossier root
             sys.exit("Fichier non trouvé")
         else:
