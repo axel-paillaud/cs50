@@ -33,10 +33,10 @@ while find == False:
     else:
         while tmp != dir_count:
             for file in file_list:
-                if os.path.isdir(cur_dir + "/" + file) == True:
+                file_path = cur_dir + "/" + file
+                if os.path.isdir(file_path) == True:
                     tmp += 1
-                    dir_search = cur_dir + "/" + file
-                    list_search = os.listdir(dir_search)
+                    list_search = os.listdir(file_path)
                     if input in list_search:
                         print("Fichier trouvé")
                         find = True
