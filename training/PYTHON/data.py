@@ -1,5 +1,7 @@
 import csv
 import sys
+import os
+import os.path
 
 
 if len(sys.argv) != 2:
