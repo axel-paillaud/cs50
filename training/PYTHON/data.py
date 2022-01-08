@@ -11,6 +11,10 @@ if len(sys.argv) != 2:
 input = sys.argv[1]
 print(input)
 
+cur_dir = os.getcwd()
+file_list = os.listdir(cur_dir)
+
+
 with open(input) as file:
     reader = csv.DictReader(file)
 
