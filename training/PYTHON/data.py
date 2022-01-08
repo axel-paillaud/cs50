@@ -9,9 +9,9 @@ if len(sys.argv) != 2:
     sys.exit
 
 input = sys.argv[1]
+cur_dir = os.getcwd() # Dossier actuel
 
 while True:
-    cur_dir = os.getcwd() # Dossier actuel
 
     file_list = os.listdir(cur_dir) # Liste des fichiers du dossier actuel
 
