@@ -17,8 +17,9 @@ while True:
     print(file_list)
     dir_count = 0
 
-    if os.path.isdir(cur_dir) == True:
-        dir_count += 1
+    for file in file_list:
+        if os.path.isdir(file) == True:
+            dir_count += 1
 
     print(dir_count)
 
