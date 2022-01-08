@@ -31,7 +31,10 @@ while True:
         break
     else:
         if tmp != dir_count:
-            cur_dir = 
+            for file in file_list:
+                if os.path.isdir(cur_dir + "/" + file) == True:
+                    cur_dir = cur_dir + "/" + file
+                    tmp += 1
         if cur_dir == parent_dir: # Si le dossier actuel est le dossier root
             sys.exit("Fichier non trouvé")
         else:
