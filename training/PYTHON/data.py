@@ -47,7 +47,7 @@ while find == False:
     else:
         cur_dir = parent_dir
 
-input = cur_dir + "/" + input
+input = dir_search + "/" + input
 
 with open(input) as file:
     reader = csv.DictReader(file)
