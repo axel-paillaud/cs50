@@ -15,6 +15,13 @@ while True:
 
     file_list = os.listdir(cur_dir) # Liste des fichiers du dossier actuel
     print(file_list)
+    dir_count = 0
+
+    for file in file_list:
+        if os.path.isfile(file) == True:
+            dir_count += 1
+
+    print(dir_count)
 
     parent_dir = os.path.dirname(cur_dir) # Dossier parent par rapport au dossier actuel
 
