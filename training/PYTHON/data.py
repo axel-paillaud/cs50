@@ -9,11 +9,15 @@ if len(sys.argv) != 2:
     sys.exit
 
 input = sys.argv[1]
-print(input)
 
 cur_dir = os.getcwd()
-file_list = os.listdir(cur_dir)
+print(cur_dir)
 
+file_list = os.listdir(cur_dir)
+print(file_list)
+
+parent_dir = os.path.dirname(cur_dir)
+print(parent_dir)
 
 with open(input) as file:
     reader = csv.DictReader(file)
