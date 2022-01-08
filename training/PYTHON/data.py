@@ -11,7 +11,8 @@ if len(sys.argv) != 2:
 input = sys.argv[1]
 cur_dir = os.getcwd() # Dossier actuel
 
-while True:
+find = False
+while find == False:
 
     file_list = os.listdir(cur_dir) # Liste des fichiers du dossier actuel
     print(file_list)
@@ -38,6 +39,7 @@ while True:
                     list_search = os.listdir(dir_search)
                     if input in list_search:
                         print("Fichier trouvé")
+                        find = True
                         break
 
     if cur_dir == parent_dir: # Si le dossier actuel est le dossier root
