@@ -26,7 +26,7 @@ while True:
         else:
             cur_dir = parent_dir
 
-input = f"{cur_dir}"
+input = cur_dir + "/" + input
 
 with open(input) as file:
     reader = csv.DictReader(file)
