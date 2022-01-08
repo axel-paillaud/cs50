@@ -41,13 +41,15 @@ while find == False:
                         print("Fichier trouvé")
                         find = True
                         break
+            if find == True:
+                break
 
     if cur_dir == parent_dir: # Si le dossier actuel est le dossier root
         sys.exit("Fichier non trouvé")
     else:
         cur_dir = parent_dir
 
-input = dir_search + "/" + input
+input = file_path + "/" + input
 
 with open(input) as file:
     reader = csv.DictReader(file)
