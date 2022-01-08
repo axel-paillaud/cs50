@@ -10,5 +10,5 @@ input = sys.argv[1]
 print(input)
 
 with open(input) as file:
-    reader = DictReader(file)
+    reader = csv.DictReader(file)
 
