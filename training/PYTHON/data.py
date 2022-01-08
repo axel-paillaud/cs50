@@ -30,13 +30,14 @@ while True:
         print("Fichier trouvé")
         break
     elif tmp != dir_count:
-        for file in file_list:
-            if os.path.isdir(cur_dir + "/" + file) == True:
-                tmp += 1
-                if input in cur_dir + "/" + file:
-                    print("Fichier trouvé")
-                    break
-                
+        while tmp != dir_count:
+            for file in file_list:
+                if os.path.isdir(cur_dir + "/" + file) == True:
+                    tmp += 1
+                    if input in cur_dir + "/" + file:
+                        print("Fichier trouvé")
+                        break
+
     elif cur_dir == parent_dir: # Si le dossier actuel est le dossier root
         sys.exit("Fichier non trouvé")
     else:
