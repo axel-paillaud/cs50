@@ -16,10 +16,9 @@ while True:
     file_list = os.listdir(cur_dir) # Liste des fichiers du dossier actuel
     print(file_list)
     dir_count = 0
-    is_dir = os.path.isdir(cur_dir)
 
     for file in file_list:
-        if os.path.isdir(is_dir) == True:
+        if os.path.isdir(file) == True:
             dir_count += 1
 
     print(dir_count)
