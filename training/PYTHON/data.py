@@ -68,5 +68,4 @@ with open(input) as file:
     for row in reader:
         data.append(row)
 
-for row in data:
-    print(row["firstname"], row["email"])
+print(data)
