@@ -60,6 +60,7 @@ if find == True:                    # Si on a trouvé le fichier dans les sous-d
 else:                               # Sinon, le fichier trouvé était dans le dossier actuel, et il faut prendre le path suivant :
     input = cur_dir + "/" + input
 
+data = []
+
 with open(input) as file:
     reader = csv.DictReader(file)
-
