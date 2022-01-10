@@ -68,4 +68,4 @@ with open(input) as file:
         data.append(row)
 
 for row in data:
-    
+    print(row["firstname"], row["email"])
