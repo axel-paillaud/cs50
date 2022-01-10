@@ -72,7 +72,6 @@ with open(input) as file:
         else:
             data[firstname] += 1
 
-for firstname in data:
-    print(firstname, data[firstname])
+print(data)
 
 
