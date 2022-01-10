@@ -1,0 +1,1 @@
+['lib32', 'boot', 'libx32', 'mnt', 'bin', 'lib', 'opt', 'sbin', 'tmp', 'run', 'dev', 'root', 'srv', 'etc', ...]
