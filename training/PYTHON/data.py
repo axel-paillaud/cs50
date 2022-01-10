@@ -67,8 +67,7 @@ with open(input) as file:
     next(reader)
     for row in reader:
         firstname = row["firstname"].strip()
-        if not firstname in data:
-            data.append(firstname)
+        data.add(firstname)
 
 for firstname in data:
     print(firstname)
