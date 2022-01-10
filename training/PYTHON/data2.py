@@ -70,7 +70,7 @@ with open(input) as file:
         if firstname in data:
             data[firstname] =+ 1
         else:
-            data[firstname] = 0
+            data[firstname] = 1
 
 for firstname in data:
     print(firstname, data[firstname])
