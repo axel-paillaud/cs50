@@ -12,10 +12,9 @@ input = sys.argv[1]
 cur_dir = os.getcwd() # Dossier actuel
 
 find = False
-while find == False:
+while True:
 
     file_list = os.listdir(cur_dir) # Liste des fichiers du dossier actuel
-    print(file_list)
     dir_count = 0
     tmp = 0
 
@@ -23,7 +22,6 @@ while find == False:
         if os.path.isdir(cur_dir + "/" + file) == True:
             dir_count += 1
 
-    print(dir_count)
 
     parent_dir = os.path.dirname(cur_dir) # Dossier parent par rapport au dossier actuel
 
@@ -44,8 +42,9 @@ while find == False:
                         find = True
                         break
 
-
-    if cur_dir == parent_dir: # Si le dossier actuel est le dossier root
+    if find == True:
+        break
+    elif cur_dir == parent_dir: # Si le dossier actuel est le dossier root
         sys.exit("Fichier non trouvé")
     else:
         cur_dir = parent_dir
