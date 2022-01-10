@@ -63,10 +63,11 @@ else:                               # Sinon, le fichier trouvé était dans le d
 data = []
 
 with open(input) as file:
-    reader = csv.DictReader(file)
+    reader = csv.reader(file)
     next(reader)
     for row in reader:
+        print(row[1])
         data.append(row)
 
-for row in data:
-    print(row[1])
+print(data)
+
