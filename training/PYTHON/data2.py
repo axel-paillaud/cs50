@@ -69,7 +69,7 @@ with open(input) as file:
         firstname = row["firstname"].strip()
         data.add(firstname)
 
-for firstname in data:
+for firstname in sorted(data):
     print(firstname)
 
 
