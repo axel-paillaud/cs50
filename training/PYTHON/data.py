@@ -68,4 +68,5 @@ with open(input) as file:
     for row in reader:
         data.append(row)
 
-print(data)
+for row in data:
+    print(row[1])
