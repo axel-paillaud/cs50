@@ -73,6 +73,6 @@ with open(input) as file:
             data[firstname] = 0
 
 for firstname in data:
-    print(firstname, )
+    print(firstname, data[firstname])
 
 
