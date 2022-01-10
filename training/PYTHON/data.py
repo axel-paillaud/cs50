@@ -38,9 +38,11 @@ while True:
                 break
             for file in file_list:
                 file_path = cur_dir + "/" + file
+
                 if os.path.isdir(file_path) == True:
                     tmp += 1
                     list_search = os.listdir(file_path)
+                    
                     if input in list_search:
                         print("Fichier trouvé")
                         find = True
