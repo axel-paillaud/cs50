@@ -19,7 +19,11 @@ while True:
     tmp = 0
 
     for file in file_list:
-        if os.path.isdir(cur_dir + "/" + file) == True:
+        file_path = cur_dir + "/" + file
+
+        if file == "lib32" or "root" or "boot" or "libx32" or "run" or "dev":
+            sys.exit("Fichier non trouvé")
+        if os.path.isdir(file_path) == True:
             dir_count += 1
 
 
