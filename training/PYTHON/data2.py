@@ -66,11 +66,11 @@ with open(input) as file:
     reader = csv.DictReader(file)
     next(reader)
     for row in reader:
-        firstname = row["firstname"].strip()
-        if firstname in data:
-            data[firstname] =+ 1
-        else:
+        firstname = row["firstname"]
+        if not firstname in data:
             data[firstname] = 1
+        else:
+            data[firstname] += 1
 
 for firstname in data:
     print(firstname, data[firstname])
