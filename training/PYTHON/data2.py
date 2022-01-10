@@ -72,6 +72,6 @@ with open(input) as file:
         else:
             data[firstname] += 1
 
-print(data)
+
 
 
