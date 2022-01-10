@@ -66,7 +66,10 @@ with open(input) as file:
     reader = csv.DictReader(file)
     next(reader)
     for row in reader:
-        print(row["firstname"])
-        data.append(row)
+        if not row["firstname"] in data:
+            data.append(row["firstname"])
+
+for firstname in data:
+    print(firstname)
 
 
