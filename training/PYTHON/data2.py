@@ -67,9 +67,12 @@ with open(input) as file:
     next(reader)
     for row in reader:
         firstname = row["firstname"].strip()
-        data[firstname] += 1
+        if firstname in data:
+            data[firstname] += 1
+        else:
+            data[firstname] = 0
 
-for firstname in sorted(data):
-    print(firstname)
+for firstname in data:
+    print(firstname, )
 
 
