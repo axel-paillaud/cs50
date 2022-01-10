@@ -69,5 +69,4 @@ with open(input) as file:
         print(row[1])
         data.append(row)
 
-print(data)
 
