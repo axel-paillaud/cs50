@@ -64,6 +64,7 @@ data = []
 
 with open(input) as file:
     reader = csv.DictReader(file)
+    next(reader)
     for row in reader:
         data.append(row)
 
