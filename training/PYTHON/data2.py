@@ -67,10 +67,10 @@ with open(input) as file:
     next(reader)
     for row in reader:
         firstname = row["firstname"].strip()
-        if firstname in row:
+        if firstname in data:
             data[firstname] =+ 1
         else:
-            data[firstname] = 1
+            data[firstname] = 0
 
 for firstname in data:
     print(firstname, data[firstname])
