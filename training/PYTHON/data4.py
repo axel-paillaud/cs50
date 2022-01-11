@@ -69,9 +69,12 @@ with open(input) as file:
     next(reader)
     for row in reader:
         firstname = row["firstname"]
-        if firstname == "Rori":
-            counter += 1
+        for letter in firstname:
+            if letter == 'R':
+                counter += 1
+            else:
+                return
 
 
-print(f"Nombre de prénom 'Rori': {counter}")
+print(f"Nombre de prénom commencant par 'R': {counter}")
 
