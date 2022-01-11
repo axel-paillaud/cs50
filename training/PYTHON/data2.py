@@ -71,7 +71,7 @@ with open(input) as file:
             data[firstname] = 0
         data[firstname] += 1
 
-for firstname in data:
+for firstname in sorted(data):
     print(firstname, data[firstname])
 
 
