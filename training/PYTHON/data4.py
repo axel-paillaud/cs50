@@ -69,11 +69,10 @@ with open(input) as file:
     reader = csv.DictReader(file)
     next(reader)
     for row in reader:
-        firstname = row["firstname"]
-        for letter in firstname:
-            if letter == 'R':
-                counter += 1
+        firstname = row["firstname"].upper()
+        if re.search("Ro", firstname):
+            counter += 1
 
 
-print(f"Nombre de prénom commencant par 'R': {counter}")
+print(f"Nombre de prénom contenant 'Ro': {counter}")
 
