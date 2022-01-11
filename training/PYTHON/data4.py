@@ -72,8 +72,6 @@ with open(input) as file:
         for letter in firstname:
             if letter == 'R':
                 counter += 1
-            else:
-                return
 
 
 print(f"Nombre de prénom commencant par 'R': {counter}")
