@@ -2,6 +2,7 @@ import csv
 import sys
 import os
 import os.path
+import re
 
 
 if len(sys.argv) != 2:
