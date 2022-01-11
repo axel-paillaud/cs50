@@ -70,7 +70,7 @@ with open(input) as file:
     next(reader)
     for row in reader:
         firstname = row["firstname"].upper()
-        if re.search("Ro", firstname):
+        if re.search("RO", firstname):
             counter += 1
 
 
