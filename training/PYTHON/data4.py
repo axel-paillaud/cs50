@@ -62,17 +62,16 @@ else:                               # Sinon, le fichier trouvé était dans le d
 
 data = {}
 
+counter = 0
+
 with open(input) as file:
     reader = csv.DictReader(file)
     next(reader)
     for row in reader:
         firstname = row["firstname"]
-        if not firstname in data:
-            data[firstname] = 0
-        data[firstname] += 1
+        if firstname == "Rori":
+            counter += 1
 
 
-for firstname in sorted(data, key=lambda firstname: data[firstname], reverse=True):
-    print(firstname, data[firstname])
-
+print(f"Nombre de prénom 'Rori': {counter}")
 
