@@ -71,7 +71,8 @@ with open(input) as file:
             data[firstname] = 0
         data[firstname] += 1
 
-get_value = data[firstname]
+def get_value(firstname):
+    return data[firstname]
 
 for firstname in sorted(data, key=get_value, reverse=True):
     print(firstname, data[firstname])
