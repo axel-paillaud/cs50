@@ -71,6 +71,9 @@ with open(input) as file:
             data[firstname] = 0
         data[firstname] += 1
 
+def get_value(firstname):
+    return data[firstname]
+
 for firstname in data:
     print(firstname, data[firstname])
 
