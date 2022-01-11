@@ -64,7 +64,7 @@ else:                               # Sinon, le fichier trouvé était dans le d
 
 
 
-input_search = input("Prénom: ").upper()
+input_search = input("Hello: ")
 
 counter = 0
 
