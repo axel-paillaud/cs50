@@ -61,7 +61,10 @@ if find == True:                    # Si on a trouvé le fichier dans les sous-d
 else:                               # Sinon, le fichier trouvé était dans le dossier actuel, et il faut prendre le path suivant :
     input = cur_dir + "/" + input
 
-data = {}
+
+
+
+input_search = input("Prénom: ").upper()
 
 counter = 0
 
@@ -70,9 +73,9 @@ with open(input) as file:
     next(reader)
     for row in reader:
         firstname = row["firstname"].upper()
-        if re.search("RO", firstname):
+        if firstname == input_search:
             counter += 1
 
 
-print(f"Nombre de prénom contenant 'Ro': {counter}")
+print(f"Nombre de prénom '{input_search}': {counter}")
 
