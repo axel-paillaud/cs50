@@ -9,7 +9,7 @@ if len(sys.argv) != 2:
     print("Usage: data.py [name of the csv file]")
     sys.exit
 
-input = sys.argv[1]
+input_user = sys.argv[1]
 cur_dir = os.getcwd() # Dossier actuel
 
 find = False
@@ -44,7 +44,7 @@ while True:
                     tmp += 1
                     list_search = os.listdir(file_path)     #Liste des fichiers/dossiers dans le dossier dans lequel on cherche
 
-                    if input in list_search:
+                    if input_user in list_search:
                         print("Fichier trouvé")
                         find = True
                         break
@@ -57,18 +57,18 @@ while True:
         cur_dir = parent_dir
 
 if find == True:                    # Si on a trouvé le fichier dans les sous-dossiers, alors find == True, et il faut suivre le path suivant :
-    input = file_path + "/" + input
+    input_user = file_path + "/" + input_user
 else:                               # Sinon, le fichier trouvé était dans le dossier actuel, et il faut prendre le path suivant :
-    input = cur_dir + "/" + input
+    input_user = cur_dir + "/" + input_user
 
 
 
 
-input_search = input("Hello: ")
+input_search = input("Prénom: ").upper()
 
 counter = 0
 
-with open(input) as file:
+with open(input_user) as file:
     reader = csv.DictReader(file)
     next(reader)
     for row in reader:
@@ -77,5 +77,5 @@ with open(input) as file:
             counter += 1
 
 
-print(f"Nombre de prénom '{input_search}': {counter}")
+print(f"Nombre de prénom '{input_search.lower()}': {counter}")
 
