@@ -1,9 +1,10 @@
 import csv
 
-from CS50 import SQL
+from cs50 import SQL
 
 db = SQL("sqlite:///data.db")
 
 name = input("Name: ")
 
-db.execute(")
+rows = db.execute("SELECT firstname FROM data WHERE firstname = '?'", name)
+print(rows)
