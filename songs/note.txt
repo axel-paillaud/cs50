@@ -1,0 +1,92 @@
+CREATE TABLE songs (
+    id INTEGER,
+    name TEXT,
+    artist_id INTEGER,
+    danceability REAL,
+    energy REAL,
+    key INTEGER,
+    loudness REAL,
+    speechiness REAL,
+    valence REAL,
+    tempo REAL,
+    duration_ms INTEGER
+);
+CREATE TABLE artists (
+    id INTEGER,
+    name TEXT
+);
+
+
+
+1 | 5 Seconds of Summer
+2 | 6ix9ine
+3 | Anitta
+4 | Anne-Marie
+5 | Ariana Grande
+6 | Bazzi
+7 | Bebe Rexha
+8 | Becky G
+9 | benny blanco
+10 | Billie Eilish
+11 | BlocBoy JB
+12 | Bruno Mars
+13 | Calvin Harris
+14 | Camila Cabello
+15 | Cardi B
+16 | Clean Bandit
+17 | Daddy Yankee
+18 | David Guetta
+19 | Dean Lewis
+20 | Dennis Lloyd
+21 | DJ Khaled
+22 | DJ Snake
+23 | Drake
+24 | Dua Lipa
+25 | Dynoro
+26 | Ed Sheeran
+27 | Eminem
+28 | G-Eazy
+29 | Hailee Steinfeld
+30 | Imagine Dragons
+31 | Jonas Blue
+32 | Juice WRLD
+33 | Keala Settle
+34 | Kendrick Lamar
+35 | Khalid
+36 | Lauv
+37 | Lil Baby
+38 | Lil Dicky
+39 | Lil Uzi Vert
+40 | Loud Luxury
+41 | Luis Fonsi
+42 | Maluma
+43 | Maroon 5
+44 | Marshmello
+45 | Migos
+46 | Natti Natasha
+47 | NF
+48 | Nicky Jam
+49 | Nio Garcia
+50 | Offset
+51 | Ozuna
+52 | Piso 21
+53 | Portugal. The Man
+54 | Post Malone
+55 | Reik
+56 | Rich The Kid
+57 | Rudimental
+58 | Sam Smith
+59 | Selena Gomez
+60 | Shawn Mendes
+61 | Sofia Reyes
+62 | The Weeknd
+63 | Tiesto
+64 | Travis Scott
+65 | Tyga
+66 | Wolfine
+67 | XXXTENTACION
+68 | Zac Efron
+69 | ZAYN
+70 | Zedd
+
+
