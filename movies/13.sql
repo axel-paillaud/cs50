@@ -16,3 +16,6 @@ SELECT people.name FROM people JOIN stars, movies ON stars.person_id = people.id
 movies.id = (SELECT movies.id FROM movies JOIN stars, people ON stars.person_id = people.id AND stars.movie_id = movies.id WHERE people.name = "Kevin Bacon");
 
 SELECT people.name FROM people  WHERE movies.id = (SELECT movies.id FROM movies JOIN stars, people ON stars.person_id = people.id AND stars.movie_id = movies.id WHERE people.name = "Kevin Bacon");
+
+SELECT people.name FROM people JOIN stars, movies ON stars.person_id = people.id AND stars.movie_ID = movies.id WHERE
+movies.id = (SELECT * FROM movies JOIN stars, people ON stars.person_id = people.id AND stars.movie_id = movies.id WHERE people.name = "Kevin Bacon");
