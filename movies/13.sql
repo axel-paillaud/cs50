@@ -8,4 +8,4 @@ SELECT people.name FROM people JOIN stars, movies ON stars.person_id = people.id
 
 SELECT name FROM people WHERE id IN (SELECT person_id FROM stars WHERE movie_ID )
 
-SELECT movies.title FROM movies JOIN stars, people ON stars.person_id = people.id AND stars.movie_id = movies.id WHERE people.name = "Kevin Bacon"
+SELECT * FROM movies JOIN stars, people ON stars.person_id = people.id AND stars.movie_id = movies.id WHERE people.name = "Kevin Bacon";
