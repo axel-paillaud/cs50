@@ -1,1 +1,1 @@
-SELECT movies.title, ratings.rating FROM movies, ratings JOIN stars, ratings, people ON stars.person_id = people.id AND stars.movie_id = movies.id AND ratings.movie_id = movies.id WHERE people.name = "Chadwick Boseman" ORDER BY ratings.rating DESC;
+SELECT movies.title FROM movies JOIN stars, ratings, people ON stars.person_id = people.id AND stars.movie_id = movies.id AND ratings.movie_id = movies.id WHERE people.name = "Chadwick Boseman" ORDER BY ratings.rating DESC;
