@@ -34,3 +34,16 @@ CREATE TABLE people (
 
 
 SELECT AVG(energy) FROM songs WHERE artist_id = (SELECT id FROM artists WHERE name = "Drake");
+
+
+SELECT title FROM movies WHERE id IN
+(
+    SELECT movie_id FROM stars WHERE person_id =
+        (SELECT id FROM people WHERE name = "Helena Bonham Carter")
+    and
+        movie_id IN
+            (
+                 SELECT movie_id FROM stars WHERE person_id =
+                     (SELECT id FROM people WHERE name = "Johnny Depp")
+            )
+)
