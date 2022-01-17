@@ -4,6 +4,6 @@ SELECT people.name from people JOIN stars, movies ON stars.person_id = people.id
 
 SELECT people.name from people JOIN stars, movies ON stars.person_id = people.id AND stars.movie_id = movies.id WHERE people.name = "Kevin Bacon";
 
-SELECT people.name FROM people JOIN stars, movies ON stars.person_id = people.id AND stars.movie_id = movies.id IN (SELECT movies.title FROM movies JOIN stars, people ON stars.person_id = people.id AND stars.movie_id = movies.id WHERE people.name = "Kevin Bacon");
+SELECT people.name FROM people JOIN stars, movies ON stars.person_id = people.id AND stars.movie_id = movies.id WHERE people.name IN (SELECT movies.title FROM movies JOIN stars, people ON stars.person_id = people.id AND stars.movie_id = movies.id WHERE people.name = "Kevin Bacon");
 
 SELECT name FROM people WHERE id IN (SELECT person_id FROM stars WHERE movie_ID )
