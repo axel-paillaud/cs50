@@ -27,3 +27,11 @@ Theft of the CS50 duck took place at 10:15am at the Humphrey Street bakery.
 | exit     | 94KL13X       | 10   | 18     |
 | exit     | 6P58WS2       | 10   | 18     |
     note : pas d'entrée pour le 94KL13X ?
+
+
+Détail du 5P2BI95:
++---------+----------------+-----------------+
+|  name   |  phone_number  | passport_number |
++---------+----------------+-----------------+
+| Vanessa | (725) 555-4692 | 2963008352      |
++---------+----------------+-----------------+
