@@ -67,4 +67,6 @@ SELECT caller, receiver, day, month, year, duration FROM phone_calls WHERE calle
 SELECT caller, receiver, day, month, year, duration FROM phone_calls WHERE caller  = "(344) 555-9601";
 
 
-SELECT amount, transaction_type, atm_location, day, month, year WHERE account_number IN (SELECT account_number FROM bank_accounts WHERE person_id IN (SELECT id FROM people WHERE name = "Bruce"));
+SELECT amount, transaction_type, atm_location, day, month, year WHERE account_number IN
+(SELECT account_number FROM bank_accounts WHERE person_id IN
+(SELECT id FROM people WHERE name = "Bruce"));
