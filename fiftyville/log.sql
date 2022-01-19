@@ -28,5 +28,5 @@ SELECT caller, receiver, duration FROM phone_calls WHERE year = 2021 AND day = 2
 SELECT name, transcript FROM interviews WHERE name = "Vanessa" OR name = "Amanda";
 
 
--- Interviews de Bruce, plutôt intéressant :)
+-- Interviews de Bruce, plutôt intéressant :) Barry ne donne rien.
 SELECT name, transcript FROM interviews WHERE name = "Bruce";
