@@ -30,3 +30,10 @@ SELECT name, transcript FROM interviews WHERE name = "Vanessa" OR name = "Amanda
 
 -- Interviews de Bruce, plutôt intéressant :) Barry ne donne rien.
 SELECT name, transcript FROM interviews WHERE name = "Bruce";
+
+
+
+-- Compte en banque de mon principal (et unique ...) suspect, Bruce.
+SELECT account_number, creation_year FROM bank_accounts
+JOIN people ON person_id = people.id
+WHERE people.name = "Bruce";
