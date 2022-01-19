@@ -67,4 +67,7 @@ SELECT caller, receiver, day, month, year, duration FROM phone_calls WHERE calle
 SELECT caller, receiver, day, month, year, duration FROM phone_calls WHERE caller  = "(344) 555-9601";
 
 
-SELECT amount, transaction_type, atm_location, day, month, year FROM atm_transactions WHERE account_number IN (SELECT account_number FROM bank_accounts WHERE person_id IN (SELECT id FROM people WHERE name = "Bruce"));
+-- Pour avoir tout les retraits de la personne concerné, avec la date et le lieu.
+SELECT amount, transaction_type, atm_location, day, month, year FROM atm_transactions WHERE account_number IN
+    (SELECT account_number FROM bank_accounts WHERE person_id IN
+        (SELECT id FROM people WHERE name = "Bruce"));
