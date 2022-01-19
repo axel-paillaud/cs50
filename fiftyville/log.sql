@@ -22,3 +22,7 @@ SELECT caller, receiver, duration FROM phone_calls WHERE year = 2021 AND day = 2
 
 -- Un appel de ma première suspect le jour J, Vanessa.
 SELECT caller, receiver, duration FROM phone_calls WHERE year = 2021 AND day = 28 AND month = 7 AND caller = "(725) 555-4692";
+
+
+-- Aucune Interview de Vanessa ne sort, et l'interview de Amanda ne donne rien, elle parle d'un docteur ...
+SELECT name, transcript FROM interviews WHERE name = "Vanessa" OR name = "Amanda";
