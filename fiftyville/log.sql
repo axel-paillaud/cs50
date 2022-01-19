@@ -53,3 +53,11 @@ SELECT name, day, month, year, transcript FROM interviews WHERE name = "Carl" OR
 
 -- Numéro de Carl et Gregory
 SELECT name, phone_number FROM people WHERE name = "Carl" OR name = "Gregory";
+
+
+-- Appel de Gregory. Tous autous du jour J.
+SELECT caller, receiver, day, month, year, duration FROM phone_calls WHERE caller = "(022) 555-4052";
+
+
+-- Appel de Carl, tous autours du jour J.
+SELECT caller, receiver, day, month, year, duration FROM phone_calls WHERE caller = "(704) 555-5790";
