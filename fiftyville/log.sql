@@ -71,3 +71,7 @@ SELECT caller, receiver, day, month, year, duration FROM phone_calls WHERE calle
 SELECT amount, transaction_type, atm_location, day, month, year FROM atm_transactions WHERE account_number IN
     (SELECT account_number FROM bank_accounts WHERE person_id IN
         (SELECT id FROM people WHERE name = "Bruce"));
+
+
+-- Pour avoir le passport_number de tout mes suspect, et ainsi regarder les vols.
+SELECT name, passport_number FROM people WHERE name = "Bruce" OR name = "Gregory" OR name = "Carl" OR name = "Deborah";

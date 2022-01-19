@@ -84,3 +84,14 @@ Tout les retraits de Bruce:
 | 10     | withdraw         | Leggett Street | 26  | 7     | 2021 |
 | 50     | withdraw         | Leggett Street | 28  | 7     | 2021 |
 +--------+------------------+----------------+-----+-------+------+
+
+
+Le passport_number de tout mes suspects :
++---------+-----------------+
+|  name   | passport_number |
++---------+-----------------+
+| Gregory | 3355598951      |
+| Carl    | 7771405611      |
+| Bruce   | 5773159633      |
+| Deborah | 8714200946      |
++---------+-----------------+
