@@ -49,3 +49,7 @@ SELECT caller, receiver, duration, day, month, year FROM phone_calls WHERE calle
 
 -- Interviews des appels de Bruce le jour J. Carl et Gregory ont bien un résulat, et celui-ci parle des mêmes personnages, Jones (un gros) et M Merryweather, directeur de banque mince.
 SELECT name, day, month, year, transcript FROM interviews WHERE name = "Carl" OR name = "Gregory" Or name = "Deborah";
+
+
+-- Numéro de Carl et Gregory
+SELECT name, phone_number FROM people WHERE name = "Carl" OR name = "Gregory";
