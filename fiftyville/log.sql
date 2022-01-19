@@ -61,3 +61,7 @@ SELECT caller, receiver, day, month, year, duration FROM phone_calls WHERE calle
 
 -- Appel de Carl, tous autours du jour J.
 SELECT caller, receiver, day, month, year, duration FROM phone_calls WHERE caller = "(704) 555-5790";
+
+
+-- Appel de Deborah. Gravite aussi autours du jour J.
+SELECT caller, receiver, day, month, year, duration FROM phone_calls WHERE caller  = "(344) 555-9601";
