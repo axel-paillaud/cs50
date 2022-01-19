@@ -14,3 +14,7 @@ SELECT name FROM people WHERE license_plate = "5P2BI95" OR "94KL13X" OR "6P58WS2
 
 -- Ici, focus sur la première personne à être sorti de la boulangerie après le vol, à 10h 16
 SELECT name, phone_number, passport_number FROM people WHERE license_plate = "5P2BI95";
+
+
+-- TOut les appels ayant eu lieu le jour J. Trop de résultat ...
+SELECT caller, receiver, duration FROM phone_calls WHERE year = 2021 AND day = 28 AND month = 7;
