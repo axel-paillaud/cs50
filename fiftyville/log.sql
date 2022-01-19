@@ -9,4 +9,4 @@ SELECT activity, license_plate, hour, minute FROM bakery_security_logs WHERE yea
 
 
 -- Beaucoup de résultat den om avec celle-ci.
-sqlite> SELECT name FROM people WHERE license_plate = "5P2BI95" OR "94KL13X" OR "6P58WS2";
+SELECT name FROM people WHERE license_plate = "5P2BI95" OR "94KL13X" OR "6P58WS2";
