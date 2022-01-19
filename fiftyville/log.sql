@@ -37,3 +37,7 @@ SELECT name, transcript FROM interviews WHERE name = "Bruce";
 SELECT account_number, creation_year FROM bank_accounts
 JOIN people ON person_id = people.id
 WHERE people.name = "Bruce";
+
+
+-- Toute les infos de Bruce
+SELECT name, phone_number, passport_number, license_plate FROM people WHERE name = "Bruce";
