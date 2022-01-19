@@ -45,3 +45,7 @@ SELECT name, phone_number, passport_number, license_plate FROM people WHERE name
 
 -- Tout les appels de Bruce. Tous gravite autours de la date du vol (28 Juillet 2021). Ca, c'est vraiment suspect :p
 SELECT caller, receiver, duration, day, month, year FROM phone_calls WHERE caller = "(367) 555-5533";
+
+
+-- Interviews des appels de Bruce le jour J. Carl et Gregory ont bien un résulat, et celui-ci parle des mêmes personnages, Jones (un gros) et M Merryweather, directeur de banque mince.
+SELECT name, day, month, year, transcript FROM interviews WHERE name = "Carl" OR name = "Gregory" Or name = "Deborah";
