@@ -26,3 +26,7 @@ SELECT caller, receiver, duration FROM phone_calls WHERE year = 2021 AND day = 2
 
 -- Aucune Interview de Vanessa ne sort, et l'interview de Amanda ne donne rien, elle parle d'un docteur ...
 SELECT name, transcript FROM interviews WHERE name = "Vanessa" OR name = "Amanda";
+
+
+-- Interviews de Bruce, plutôt intéressant :)
+SELECT name, transcript FROM interviews WHERE name = "Bruce";
