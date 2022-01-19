@@ -18,3 +18,7 @@ SELECT name, phone_number, passport_number FROM people WHERE license_plate = "5P
 
 -- TOut les appels ayant eu lieu le jour J. Trop de résultat ...
 SELECT caller, receiver, duration FROM phone_calls WHERE year = 2021 AND day = 28 AND month = 7;
+
+
+-- Un appel de ma première suspect le jour J, Vanessa.
+SELECT caller, receiver, duration FROM phone_calls WHERE year = 2021 AND day = 28 AND month = 7 AND caller = "(725) 555-4692";
