@@ -10,3 +10,7 @@ SELECT activity, license_plate, hour, minute FROM bakery_security_logs WHERE yea
 
 -- Beaucoup de résultat den om avec celle-ci.
 SELECT name FROM people WHERE license_plate = "5P2BI95" OR "94KL13X" OR "6P58WS2";
+
+
+-- Ici, focus sur la première personne à être sorti de la boulangerie après le vol, à 10h 16
+SELECT name, phone_number, passport_number FROM people WHERE license_plate = "5P2BI95";
