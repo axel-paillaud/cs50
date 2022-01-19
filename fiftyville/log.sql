@@ -41,3 +41,7 @@ WHERE people.name = "Bruce";
 
 -- Toute les infos de Bruce
 SELECT name, phone_number, passport_number, license_plate FROM people WHERE name = "Bruce";
+
+
+-- Tout les appels de Bruce. Tous gravite autours de la date du vol (28 Juillet 2021). Ca, c'est vraiment suspect :p
+SELECT caller, receiver, duration, day, month, year FROM phone_calls WHERE caller = "(367) 555-5533";
