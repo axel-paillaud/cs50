@@ -92,7 +92,7 @@ SELECT origin_airport_id, destination_airport_id, day, month, year, hour, minute
      (SELECT flight_id FROM passengers
          WHERE passport_number = 5773159633);
 
-
+-- Selection sauvage des autres suspects. Ici, tout correspont pour que Carl soit celui qui a aidé Bruce.
 SELECT origin_airport_id, destination_airport_id, day, month, year, hour, minute FROM flights WHERE id IN
      (SELECT flight_id FROM passengers
          WHERE passport_number = 7771405611);
