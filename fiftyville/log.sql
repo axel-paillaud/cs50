@@ -91,3 +91,8 @@ SELECT origin_airport_id, destination_airport_id, day, month, year, hour, minute
 SELECT origin_airport_id, destination_airport_id, day, month, year, hour, minute FROM flights WHERE id IN
    ...>     (SELECT flight_id FROM passengers
    ...>         WHERE passport_number = 5773159633);
+
+
+SELECT origin_airport_id, destination_airport_id, day, month, year, hour, minute FROM flights WHERE id IN
+   ...>     (SELECT flight_id FROM passengers
+   ...>         WHERE passport_number = 8714200946);
