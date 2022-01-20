@@ -81,6 +81,9 @@ SELECT name, passport_number FROM people WHERE name = "Bruce" OR name = "Gregory
 SELECT name, passport_number FROM people WHERE name = "Bruce" OR name = "Robin";
 
 
+SELECT account_number FROM bank_accounts WHERE person_id IN (SELECT id FROM people WHERE name = "Robin");
+
+
 -- Avoir le flight_id de mes principals suspects.
 SELECT flight_id, passport_number, seat FROM passengers WHERE passport_number = 3355598951 OR passport_number = 7771405611 OR passport_number = 5773159633 OR passport_number = 8714200946;
 
