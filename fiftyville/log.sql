@@ -77,6 +77,10 @@ SELECT amount, transaction_type, atm_location, day, month, year FROM atm_transac
 SELECT name, passport_number FROM people WHERE name = "Bruce" OR name = "Gregory" OR name = "Carl" OR name = "Deborah";
 
 
+-- Les deux voleurs
+SELECT name, passport_number FROM people WHERE name = "Bruce" OR name = "Robin";
+
+
 -- Avoir le flight_id de mes principals suspects.
 SELECT flight_id, passport_number, seat FROM passengers WHERE passport_number = 3355598951 OR passport_number = 7771405611 OR passport_number = 5773159633 OR passport_number = 8714200946;
 
