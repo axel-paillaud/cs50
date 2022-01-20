@@ -81,6 +81,7 @@ SELECT name, passport_number FROM people WHERE name = "Bruce" OR name = "Gregory
 SELECT flight_id, passport_number, seat FROM passengers WHERE passport_number = 3355598951 OR passport_number = 7771405611 OR passport_number = 5773159633 OR passport_number = 8714200946;
 
 
+-- Les dates des vols de mes 4 suspects, avec l'id de destination/départ. Beaucoup de résultat ...
 SELECT origin_airport_id, destination_airport_id, day, month, year, hour, minute FROM flights WHERE id IN
     (SELECT flight_id FROM passengers
         WHERE passport_number = 3355598951 OR passport_number = 7771405611 OR passport_number = 5773159633 OR passport_number = 8714200946);
