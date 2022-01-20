@@ -125,3 +125,22 @@ Toutes les dates de mes suspects:
 | 3                 | 8                      | 28  | 7     | 2021 | 14   | 14     |
 | 4                 | 8                      | 30  | 7     | 2021 | 9    | 46     |
 +-------------------+------------------------+-----+-------+------+------+--------+
+
+
+Les départs/destinations:
++----+---------------+
+| id |     city      |
++----+---------------+
+| 1  | Chicago       |
+| 2  | Beijing       |
+| 3  | Los Angeles   |
+| 4  | New York City |
+| 5  | Dallas        |
+| 6  | Boston        |
+| 7  | Dubai         |
+| 8  | Fiftyville    |
+| 9  | Tokyo         |
+| 10 | Paris         |
+| 11 | San Francisco |
+| 12 | Delhi         |
++----+---------------+
