@@ -5,7 +5,7 @@ table
 
 tr
 {
-    height: 50px;
+    height: 40px;
 }
 
 td
@@ -15,5 +15,5 @@ td
     font-size: 12;
     font-family: georgia;
     text-align: center;
-    width: 50px;
+    width: 75px;
 }
