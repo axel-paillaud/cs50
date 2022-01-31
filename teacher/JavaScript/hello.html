@@ -1,5 +1,21 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<head></head>
+    <head>
+        <script>
+
+            function greet()
+            {
+                alert('hello, there');
+            }
+
+        </script>
+        <title>hello</title>
+    </head>
+    <body>
+        <form onsubmit="greet(); return false;">
+            <input autocomplete="off" autofocus id="name" placeholder="Name" type="text">
+            <input type="submit">
+        </form>
+    </body>
 </html>
