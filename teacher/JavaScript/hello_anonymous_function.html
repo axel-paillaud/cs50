@@ -11,13 +11,11 @@
         </form>
         <script>
 
-            function greet()
-            {
+            document.querySelector('form').addEventListener('submit', function(e) {
                 let name = document.querySelector('#name').value;
                 alert('hello, ' + name);
-            }
-
-            document.querySelector('form').addEventListener('submit', greet);
+                e.preventDefault();
+            });
 
         </script>
     </body>
