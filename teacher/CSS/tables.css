@@ -1,0 +1,15 @@
+table
+{
+    border: 3px blue;
+}
+
+tr
+{
+    height: 50px;
+}
+
+td
+{
+    background-color: grey;
+    background-color: opacity 0.7;
+}
