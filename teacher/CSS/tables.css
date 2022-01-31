@@ -11,5 +11,9 @@ tr
 td
 {
     background-color: grey;
-    background-color: opacity 0.7;
+    color: white;
+    font-size: 12;
+    font-family: georgia;
+    text-align: center;
+    width: 50px;
 }
