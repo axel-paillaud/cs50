@@ -10,15 +10,16 @@
 
             document.addEventListener('DOMContentLoaded', function() {
 
-                let correct = document.querySelector('#r2');
+                let correct = document.querySelector(".correct");
                 correct.addEventListener('click', function() {
                     correct.style.backgroundColor = 'green';
                     document.querySelector('#popup1').innerHTML = 'Correct!';
                 });
 
-                let incorrect = document.querySelector('#r1');
+                let incorrect = document.querySelectorAll(".incorrect");
                 incorrect.addEventListener('click', function() {
-                    incorrect.backgroundColor =  '
+                    incorrect.style.backgroundColor =  'red';
+                    document.querySelector('#popup1').innerHTML = 'Incorrect!';
                 });
             });
 
@@ -35,11 +36,11 @@
                 <hr>
                 <!-- TODO: Add multiple choice question here -->
                 <h3>Quel est le plus long fleuve de France ?</h3>
-                <button id="r1">La Loire</button>
-                <button id="r2">Le Rhin</button>
-                <button id="r1">La Meuse</button>
-                <button id="r1">Le Rhône</button>
-                <button id="r1">La seine</button>
+                <button class="incorrect">La Loire</button>
+                <button class="correct">Le Rhin</button>
+                <button class="incorrect">La Meuse</button>
+                <button class="incorrect">Le Rhône</button>
+                <button class="incorrect">La seine</button>
 
                 <p id="popup1"></p>
 
