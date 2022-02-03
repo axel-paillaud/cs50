@@ -16,10 +16,10 @@
                     document.querySelector('#popup1').innerHTML = 'Correct!';
                 });
 
-                let incorrect = document.querySelectorAll(".incorrect");
-                for(let i = 0; i < incorrect.lenght; i++) {
-                    incorrect[i].addEventListener('click', function() {
-                        incorrect[i].style.backgroundColor = 'red';
+                let incorrects = document.querySelectorAll(".incorrect");
+                for(let i = 0; i < incorrects.lenght; i++) {
+                    incorrects[i].addEventListener('click', function() {
+                        incorrects[i].style.backgroundColor = 'red';
                         document.querySelector('#popup1').innerHTML = 'Incorrect!';
                     });
                 }
