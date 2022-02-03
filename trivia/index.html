@@ -16,7 +16,11 @@
                     document.querySelector('#popup1').innerHTML = 'Correct!';
                 });
 
-                let incorrect = 
+                let incorrect = document.querySelectorAll('#1, #3, #4, #5');
+                incorrect.addEventListener('click' function() {
+                    incorrect.style.backgroundColor = 'red';
+                    document.querySelector('#popup1').innerHTML = 'Incorrect!';
+                });
 
             });
 
