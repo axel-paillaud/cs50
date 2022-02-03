@@ -8,10 +8,12 @@
         <script>
             // TODO: Add code to check answers to questions
 
-            let button = document.querySelector(".section");
-            document.querySelector("#r1").addEventListener('click', function()
-            {
-                button.style.backgroundColor = 'red';
+            document.addEventListener('DOMContentLoaded', function() {
+                let correct = document.querySelector('#r2');
+                correct.addEventListener('click', function() {
+                    correct.style.backgroundColor = 'green';
+                    document.querySelector('#popup1').innerHTML = 'Correct!';
+                });
             });
 
         </script>
@@ -32,6 +34,9 @@
                 <button id="r3">La Meuse</button>
                 <button id="r4">Le Rhône</button>
                 <button id="r5">La seine</button>
+
+                <p id="popup1"></p>
+
             </div>
 
 
