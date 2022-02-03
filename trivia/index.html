@@ -9,7 +9,10 @@
             // TODO: Add code to check answers to questions
 
             let button = document.querySelector(".section");
-            document.querySelectorAll("#r1, #r2, #r3, #r4, #r5").addEventListener('click', ChangeColor(button));
+            document.querySelector("#r1").addEventListener('click', function()
+            {
+                button.style.backgroundColor = 'red';
+            });
 
         </script>
     </head>
