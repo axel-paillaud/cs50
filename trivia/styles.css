@@ -50,8 +50,8 @@ button, input[type="submit"] {
     vertical-align: middle;
 }
 
-button, input[type="submit"]:hover {
-    background-color: #d9edff;
+button:hover, input[type="submit"]:hover {
+    background-color: #3399ff;
     border: 1px solid transparent;
     border-radius: 0.25rem;
     font-size: 0.95rem;
