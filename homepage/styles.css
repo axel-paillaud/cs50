@@ -10,5 +10,6 @@
 }
 
 h1 {
-    text-align: centered;
+    text-align: center;
+    margin: 10px;
 }
