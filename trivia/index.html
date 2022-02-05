@@ -15,16 +15,35 @@
                     correct.style.backgroundColor = 'green';
                     document.querySelector('#popup1').innerHTML = 'Correct!';
                 });
+            });
 
-                let incorrects = document.querySelectorAll(".incorrect");
-                for (let i = 0; i < incorrects.lenght; i++) {
-                    incorrects[i].addEventListener('click', function() {
-                        incorrects[i].style.backgroundColor = 'red';
-                        document.querySelector('#popup1').innerHTML = 'Incorrect!';
-                    });
+            function error()
+                {
+                    var trigger = event.srcElement;
+                    trigger.style.backgroundColor = "red";
+                    document.querySelector("#popup1").innerHTML = "Incorrect!";
                 }
 
-            });
+            function submitanswer(event)
+            {
+                let correctanswer = "Le Salvador";
+                let submitbutton = document.getElementById("send");
+                let useranswer = document.querySelector("#textuser").value;
+
+                console.log(useranswer);
+                console.log(correctanswer);
+
+                if (useranswer == correctanswer)
+                {
+                    submitbutton.style.backgroundColor = "green";
+                    document.querySelector("#popup2").innerHTML = "Correct!";
+                }
+                else
+                {
+                    submitbutton.style.backgroundColor = "red";
+                    document.querySelector("#popup2").innerHTML = "Incorrect!";
+                }
+            }
 
         </script>
     </head>
@@ -39,11 +58,11 @@
                 <hr>
                 <!-- TODO: Add multiple choice question here -->
                 <h3>Quel est le plus long fleuve de France ?</h3>
-                <button class="incorrect">La Loire</button>
+                <button onclick="error()">La Loire</button>
                 <button class="correct">Le Rhin</button>
-                <button class="incorrect">La Meuse</button>
-                <button class="incorrect">Le Rhône</button>
-                <button class="incorrect">La seine</button>
+                <button onclick="error()">La Meuse</button>
+                <button onclick="error()">Le Rhône</button>
+                <button onclick="error()">La seine</button>
 
                 <p id="popup1"></p>
 
@@ -55,10 +74,14 @@
                 <hr>
                 <!-- TODO: Add free response question here -->
                 <h3>Quel est le pays ou l'on peut payer avec des bitcoins au niveau national ?</h3>
-                <form>
-                    <input name="rform" type="text"/>
-                    <input name="submit" type="submit" value="Envoyer la réponse">
+
+                <form onsubmit="submitanswer(event); return false;">
+                    <input id="textuser" type="text" autocomplete="off"/>
+                    <input id="send" type="submit" value="Envoyer la réponse"/>
                 </form>
+
+                <p id="popup2"></p>
+
             </div>
         </div>
     </body>
