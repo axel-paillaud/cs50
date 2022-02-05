@@ -1,0 +1,14 @@
+#menu {
+
+    position: fixed;
+    right: 10px;
+    top: 10px;
+}
+
+#home {
+    margin: 10px;
+}
+
+h1 {
+    text-align: centered;
+}
