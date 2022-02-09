@@ -67,11 +67,13 @@ h2 {
 }
 
 .imgclassic {
+    text-align: center;
     width: 30%;
     height: 30%;
 }
 
 .quoteimg {
+    text-align: center;
     font-size: 80%;
 }
 
