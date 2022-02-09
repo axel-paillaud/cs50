@@ -1,5 +1,5 @@
 body {
-    font-family: arial;
+    font-family: Arial;
     background-color: Ivory;
 }
 
@@ -67,6 +67,7 @@ h2 {
 
 pre {
     text-align: center;
+    font-family: Arial;
 }
 
 #creator {
