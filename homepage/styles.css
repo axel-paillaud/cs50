@@ -41,6 +41,7 @@ h2 {
 }
 
 #home {
+    position: fixed;
     margin: 10px;
 }
 
@@ -66,8 +67,8 @@ h2 {
 }
 
 .imgclassic {
-    width: 50%;
-    height: 50%;
+    width: 30%;
+    height: 30%;
 }
 
 pre {
