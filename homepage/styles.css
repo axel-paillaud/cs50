@@ -54,10 +54,10 @@ h2 {
     background-color: #cc8800;
     color: white;
     border: 2px solid;
-    border-radius: 5px;
+    border-radius: 20px;
     padding: 7px;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
     transition: background-color 0.15s;
 }
 
