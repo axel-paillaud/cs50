@@ -65,6 +65,10 @@ h2 {
     background-color: #b37700
 }
 
+pre {
+    text-align: center;
+}
+
 #creator {
     position: fixed;
     right: 50%;
