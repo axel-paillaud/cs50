@@ -86,6 +86,7 @@ hr {
 }
 
 .imgdescr {
+    float: left;
     margin: 50px;
     width: 30%;
     height: 30%;
