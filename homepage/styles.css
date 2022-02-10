@@ -66,6 +66,13 @@ hr {
     display: inline-block;
 }
 
+/*Le contenu du menu déroulant (caché par défaut) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #b37700;
+}
+
 #home {
     position: fixed;
     top: 1px;
