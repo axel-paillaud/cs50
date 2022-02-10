@@ -25,7 +25,7 @@ hr {
 }
 
 .btn-classic {
-    background-color: #cc8800;
+    background-color: #b37700;
     color: white;
     border: 2px solid;
     border-radius: 5px;
@@ -36,7 +36,7 @@ hr {
 }
 
 .btn-classic:hover {
-    background-color: #b37700
+    background-color: #996600;
 }
 
 #menu {
@@ -59,7 +59,7 @@ hr {
 .buttonBanner {
     margin-right: 15px;
     margin-left: 15px;
-    background-color: #cc8800;
+    background-color: #b37700;
     color: white;
     border: 2px solid;
     border-radius: 25px;
@@ -70,7 +70,7 @@ hr {
 }
 
 .buttonBanner:hover {
-    background-color: #b37700
+    background-color: #996600;
 }
 
 .imgclassic {
