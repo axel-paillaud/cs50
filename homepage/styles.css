@@ -88,6 +88,7 @@ hr {
 .imgdescr {
     float: left;
     margin: 50px;
+    margin-right: 100px;
     width: 30%;
     height: 30%;
 }
@@ -99,9 +100,17 @@ video {
     height: 30%;
 }
 
-pre {
+.textblog {
     text-align: center;
     font-family: Arial;
+}
+
+.textdescr {
+    font-family: Arial;
+}
+
+.uldescr {
+    margin-top: 100px;
 }
 
 #creator {
