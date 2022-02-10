@@ -109,6 +109,12 @@ video {
     font-family: Arial;
 }
 
+#textunderdescr {
+    font-family: Arial;
+    text-align: center;
+    margin-top: 150px;
+}
+
 .uldescr {
     margin-top: 100px;
 }
