@@ -85,6 +85,11 @@ hr {
     font-size: 80%;
 }
 
+video {
+    width: 30%;
+    height: 30%;
+}
+
 pre {
     text-align: center;
     font-family: Arial;
