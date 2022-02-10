@@ -71,6 +71,8 @@ hr {
     display: none;
     position: absolute;
     background-color: #b37700;
+    width: 100%;
+    
 }
 
 #home {
