@@ -103,6 +103,7 @@ video {
 iframe {
     display: block;
     margin: auto;
+    margin-bottom: 50px;
 }
 
 .textblog {
