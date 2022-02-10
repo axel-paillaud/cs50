@@ -85,6 +85,12 @@ hr {
     font-size: 80%;
 }
 
+.imgdescr {
+    margin: 50px;
+    width: 30%;
+    height: 30%;
+}
+
 video {
     display: block;
     margin: auto;
