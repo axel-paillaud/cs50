@@ -100,6 +100,11 @@ video {
     height: 30%;
 }
 
+iframe {
+    display: block;
+    margin: auto;
+}
+
 .textblog {
     text-align: center;
     font-family: Arial;
