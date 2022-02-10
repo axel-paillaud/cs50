@@ -60,6 +60,12 @@ hr {
     background-color: #996600;
 }
 
+/*Positionner le menu déroulant au bon endroit */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
 #home {
     position: fixed;
     top: 1px;
