@@ -41,7 +41,7 @@ hr {
 
 
 
-#menu {
+.dropbtn {
 
     position: fixed;
     right: 10px;
@@ -56,7 +56,7 @@ hr {
     transition: background-color 0.15s;
 }
 
-#menu:hover {
+.dropbtn:hover {
     background-color: #996600;
 }
 
