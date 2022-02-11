@@ -77,6 +77,8 @@ hr {
 }
 /* Pour continuer: https://www.w3schools.com/howto/howto_css_dropdown.asp */
 
+.dropdown-content a
+
 #home {
     position: fixed;
     top: 1px;
