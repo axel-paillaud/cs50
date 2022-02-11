@@ -91,7 +91,7 @@ hr {
 }
 
 /* changer la couleur du menu déroulant quand on passe dessus */
-.dropdown-content a:hover {background-color: #cc9900; border-radius: 5px;}
+.dropdown-content a:hover {background-color: #fff2cc; border-radius: 5px;}
 
 /* faire apparaitre le menu */
 .dropdown:hover .dropdown-content {display: block;}
