@@ -87,8 +87,9 @@ hr {
 .dropdown-content a:hover {background-color: #996600;}
 
 /* faire apparaitre le menu */
-.dropdown:hover .drodown-content {display: block;}
+.dropdown:hover .dropdown-content {display: block;}
 
+/* changer la couleur du bouton de meu déroulant quand celui-ci est affiché */
 .dropdown:hover .dropbtn {background-color: #996600;}
 
 #home {
