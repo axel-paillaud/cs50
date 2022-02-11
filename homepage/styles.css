@@ -43,7 +43,7 @@ hr {
 
 .dropbtn {
 
-    position: fixed;
+    position: relative;
     right: 10px;
     top: 10px;
     background-color: #b37700;
@@ -60,7 +60,7 @@ hr {
 
 /*Positionner le menu déroulant au bon endroit */
 .dropdown {
-    position: relative;
+    position: fixed;
     display: inline-block;
 }
 
