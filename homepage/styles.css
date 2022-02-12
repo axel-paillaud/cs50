@@ -127,11 +127,18 @@ hr {
     background-color: #996600;
 }
 
+/* Ici, la partie graphique */
+
 .imgblog {
     display: block;
     margin: auto;
     width: 30%;
     height: 30%;
+}
+
+.svgCenter {
+    display: block;
+    margin: auto;
 }
 
 .quoteimg {
