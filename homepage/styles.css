@@ -136,11 +136,6 @@ hr {
     height: 30%;
 }
 
-.svgCenter {
-    display: block;
-    margin: auto;
-}
-
 .quoteimg {
     text-align: center;
     font-size: 80%;
@@ -168,6 +163,11 @@ iframe {
 }
 
 /* Ici l'animation avec le véhicule*/
+.svgCenter {
+    display: block;
+    margin: auto;
+}
+
 #groundLine {
     position: relative;
     display: block;
@@ -177,7 +177,7 @@ iframe {
 #camion {
     position: absolute;
     top: 0%;
-    right: 0%;
+    left: 0%;
     width: 30%;
     height: 30%;
 }
