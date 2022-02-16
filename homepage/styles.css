@@ -170,15 +170,15 @@ iframe {
 
 #container {
     position: relative;
-    display: flex;
+    display: block;
     margin: auto;
 }
 
 #camionPos {
     position: absolute;
+    object-fit: cover;
     top: 26.5%;
     left: 20%;
-    flex-shrink: 0;
 }
 
 #camion {
