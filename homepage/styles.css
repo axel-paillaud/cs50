@@ -168,9 +168,9 @@ iframe {
     margin: auto;
 }
 
-#groundLinePos {
+#container {
     position: relative;
-    display: block;
+    display: flex;
     margin: auto;
 }
 
