@@ -167,6 +167,18 @@ iframe {
     margin-bottom: 50px;
 }
 
+/* Ici l'animation avec le véhicule*/
+#groundLine {
+    position: relative;
+    display: block;
+    margin: auto;
+}
+
+#camion {
+    display: block;
+    position: absolute;
+}
+
 .textblog {
     text-align: center;
     font-family: Arial;
