@@ -176,6 +176,8 @@ iframe {
 
 #camion {
     position: absolute;
+    top: 0%;
+    right: 0%;
 }
 
 .textblog {
