@@ -175,7 +175,6 @@ iframe {
 }
 
 #camionPos {
-    display: flex;
     position: absolute;
     top: 26.5%;
     left: 20%;
@@ -184,7 +183,6 @@ iframe {
 #camion {
     width: 17%;
     height: 17%;
-    flex-shrink: 0;
 }
 
 .textblog {
