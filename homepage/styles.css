@@ -178,6 +178,7 @@ iframe {
     position: absolute;
     top: 26.5%;
     left: 20%;
+    flex-shrink: 0;
 }
 
 #camion {
