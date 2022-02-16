@@ -175,17 +175,16 @@ iframe {
 }
 
 #camionPos {
+    display: flex;
     position: absolute;
-    display: block;
     top: 26.5%;
     left: 20%;
 }
 
 #camion {
-    max-width: 17%;
-    max-height: 17%;
-    min-width: 17%;
-    min-height: 17%;
+    width: 17%;
+    height: 17%;
+    flex-shrink: 0;
 }
 
 .textblog {
