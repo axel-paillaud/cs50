@@ -168,16 +168,20 @@ iframe {
     margin: auto;
 }
 
-#groundLine {
+#groundLinePos {
     position: relative;
     display: block;
     margin: auto;
 }
 
-#camion {
+#camionPos {
     position: absolute;
+    display: block;
     top: 0%;
-    left: 0%;
+    left: 30%;
+}
+
+#camion {
     width: 30%;
     height: 30%;
 }
