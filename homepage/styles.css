@@ -177,13 +177,13 @@ iframe {
 #camionPos {
     position: absolute;
     display: block;
-    top: 0%;
-    left: 30%;
+    top: 10%;
+    left: 20%;
 }
 
 #camion {
-    width: 30%;
-    height: 30%;
+    width: 15%;
+    height: 15%;
 }
 
 .textblog {
