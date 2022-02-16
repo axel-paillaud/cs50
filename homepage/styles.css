@@ -184,6 +184,7 @@ iframe {
 #camion {
     width: 17%;
     height: 17%;
+    object-fit: contain;
 }
 
 .textblog {
