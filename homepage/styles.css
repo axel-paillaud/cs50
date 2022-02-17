@@ -166,7 +166,7 @@ iframe {
 
 .animContainer {
     display: flex;
-    margin: auto;
+    justify-content: center;
 }
 
 #groundLineContainer {
