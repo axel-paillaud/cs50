@@ -163,13 +163,14 @@ iframe {
 }
 
 /* Ici l'animation avec le véhicule*/
-.svgCenter {
+
+#animContainer {
+    position: relative;
     display: block;
     margin: auto;
 }
 
-#container {
-    position: relative;
+.svgCenter {
     display: block;
     margin: auto;
 }
