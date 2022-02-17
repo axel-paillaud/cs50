@@ -170,22 +170,22 @@ iframe {
     margin: auto;
 }
 
-#groundLine {
+#groundLineContainer {
     display: block;
     margin: auto;
 }
 
-#camionPos {
-    position: absolute;
-    object-fit: cover;
-    top: 26.5%;
-    left: 20%;
+#groundLine {
+
+}
+
+#camionContainer {
+
 }
 
 #camion {
     width: 17%;
     height: 17%;
-    object-fit: contain;
 }
 
 .textblog {
