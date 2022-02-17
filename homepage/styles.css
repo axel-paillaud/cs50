@@ -166,7 +166,6 @@ iframe {
 
 .animContainer {
     display: block;
-    margin: auto;
 }
 
 #groundLineContainer {
@@ -174,7 +173,7 @@ iframe {
 }
 
 #groundLine {
-
+    margin: auto;
 }
 
 #camionContainer {
@@ -182,6 +181,7 @@ iframe {
 }
 
 #camion {
+    margin: auto;
     width: 15%;
     height: 15%;
 }
