@@ -165,13 +165,11 @@ iframe {
 /* Ici l'animation avec le véhicule*/
 
 #animContainer {
-    position: relative;
-    display: block;
+    display: flex;
     margin: auto;
 }
 
 #groundLineContainer {
-    display: block;
     margin: auto;
 }
 
