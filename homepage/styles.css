@@ -164,13 +164,13 @@ iframe {
 
 /* Ici l'animation avec le véhicule*/
 
-#animContainer {
+.animContainer {
     display: flex;
     margin: auto;
 }
 
 #groundLineContainer {
-    margin: auto;
+
 }
 
 #groundLine {
@@ -182,8 +182,8 @@ iframe {
 }
 
 #camion {
-    width: 17%;
-    height: 17%;
+    width: 15%;
+    height: 15%;
 }
 
 .textblog {
