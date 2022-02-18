@@ -164,7 +164,10 @@ iframe {
 
 /* Ici l'animation avec le véhicule*/
 
-
+#containerCamionAnim {
+    display: block;
+    margin: auto;
+}
 
 .textblog {
     text-align: center;
