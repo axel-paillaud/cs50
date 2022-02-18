@@ -164,7 +164,7 @@ iframe {
 
 /* Ici l'animation avec le véhicule*/
 
-#containerCamionAnim {
+#svgCamionAnim {
     display: block;
     margin: auto;
 }
