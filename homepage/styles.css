@@ -169,11 +169,11 @@ iframe {
     margin: auto;
 }
 
-#camionAnim {
+#camionInkAnim1 {
     transition: transform 2s;
 }
 
-#camionAnim:hover {
+#camionInkAnim1:hover {
     transform: translate (100px, 0px);
 }
 
