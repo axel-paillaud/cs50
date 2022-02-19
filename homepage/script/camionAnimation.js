@@ -8,8 +8,10 @@ function moteur() {
 
     while(true) {
         if (camion1.style.display == "block") {
+            setTimeout(function() {
             camion1.style.display = "none";
             camion2.style.display = "block";
+            }, );
         }
         else {
             camion1.style.display = "block";
