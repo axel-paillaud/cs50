@@ -169,6 +169,14 @@ iframe {
     margin: auto;
 }
 
+#camionAnim {
+    transition: transform 2s;
+}
+
+#camionAnim:hover {
+    transform: translate (100,0);
+}
+
 .textblog {
     text-align: center;
     font-family: Arial;
