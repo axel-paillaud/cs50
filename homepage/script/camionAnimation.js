@@ -6,7 +6,10 @@ function moteur() {
     var show2 = camion2.style.display;
 
     show1 == "block";
-    shiow2 == "none";
+    show2 == "none";
+    console.log(show1);
+    console.log(show2);
 }
 
 console.log(camion1);
+moteur();
