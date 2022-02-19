@@ -19,5 +19,8 @@ function moteur() {
 
 console.log(camion1);
 
-moteur();
+for (let i = 0; i < 50; i++)
+{
+    moteur();
+}
 
