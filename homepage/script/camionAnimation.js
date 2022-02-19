@@ -5,7 +5,7 @@ function moteur() {
     camion1.style.display = "block";
     camion2.style.display = "none";
 
-    while(true) {
+    while (true) {
         camion1.style.display = "none";
         camion2.style.display = "block";
     }
