@@ -11,11 +11,13 @@ function moteur() {
             setTimeout(function() {
             camion1.style.display = "none";
             camion2.style.display = "block";
-            }, );
+            }, delay);
         }
         else {
+            setTimeout(function() {
             camion1.style.display = "block";
             camion2.style.display = "none";
+            }, delay);
         }
     }
 }
