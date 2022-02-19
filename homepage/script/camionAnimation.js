@@ -6,16 +6,16 @@ function moteur() {
     camion2.style.display = "none";
 
     if (camion1.style.display == "block") {
-            camion1.style.display = "none";
-            camion2.style.display = "block";
+        camion1.style.display = "none";
+        camion2.style.display = "block";
         }
 
     else {
-            camion1.style.display = "block";
-            camion2.style.display = "none";
+        camion1.style.display = "block";
+        camion2.style.display = "none";
         }
     }
-}
+
 
 console.log(camion1);
 
