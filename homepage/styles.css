@@ -178,6 +178,10 @@ iframe {
     transform: translate(500px, 0px);
 }
 
+#camionInkAnim2:hover  {
+    transform: translate(500px, 0px);
+}
+
 .textblog {
     text-align: center;
     font-family: Arial;

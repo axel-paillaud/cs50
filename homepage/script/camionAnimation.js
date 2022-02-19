@@ -5,15 +5,16 @@ function moteur() {
     camion1.style.display = "block";
     camion2.style.display = "none";
 
-    if (camion1.style.display == "block") {
-        camion1.style.display = "none";
-        camion2.style.display = "block";
+    while(true) {
+        if (camion1.style.display == "block") {
+            camion1.style.display = "none";
+            camion2.style.display = "block";
+        }
+        else {
+            camion1.style.display = "block";
+            camion2.style.display = "none";
+        }
     }
-    else {
-        camion1.style.display = "block";
-        camion2.style.display = "none";
-    }
-
 }
 
 console.log(camion1);
