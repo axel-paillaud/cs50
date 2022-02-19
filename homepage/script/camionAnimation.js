@@ -19,4 +19,4 @@ function moteur() {
 
 console.log(camion1);
 
-moteur();
+setInterval(moteur(), 500);
