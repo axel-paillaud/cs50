@@ -6,7 +6,9 @@ camion2.style.display = "none";
 let nIntervId;
 
 function animCamion() {
-    
+    if (!nIntervId) {
+        nIntervId = setInterval(switchAnim, 500);
+    }
 }
 
 function switchAnim() {
