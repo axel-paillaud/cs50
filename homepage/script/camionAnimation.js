@@ -18,9 +18,16 @@ function switchAnim() {
         }
     }
 
-function startAnim() {
+function animCamion() {
     camion1.style.transform = "translate(500px, 0px)";
     camion2.style.transform = "translate(500px, 0px)";
+}
+
+function startAnim() {
+    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150)
+    {
+        animcamion();
+    }
 }
 
 setInterval(switchAnim, 200);
