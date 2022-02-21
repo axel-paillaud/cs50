@@ -31,7 +31,8 @@ function startAnim() {
 }
 
 function getScrollValue() {
-    
+    let scrollValue = document.body.scrollTop;
+    console.log(scrollValue);
 }
 
 window.onscroll = function() {startAnim()};
