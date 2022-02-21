@@ -19,8 +19,8 @@ function switchAnim() {
     }
 
 function startAnim() {
-    camion1.style.transform = "translate(400px, 0px)";
-    camion2.style.transform = "translate(400px, 0px)";
+    camion1.style.transform = "translate(500px, 0px)";
+    camion2.style.transform = "translate(500px, 0px)";
 }
 
 setInterval(switchAnim, 200);
