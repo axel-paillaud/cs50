@@ -1,22 +1,20 @@
 const camion1 = document.getElementById("camionInkAnim1");
 const camion2 = document.getElementById("camionInkAnim2");
+camion1.style.display = "block";
+camion2.style.display = "none";
 
-function moteur() {
-    camion1.style.display = "block";
-    camion2.style.display = "none";
+function moteur(anim1, anim2) {
 
-    if (camion1.style.display == "block") {
-        camion1.style.display = "none";
-        camion2.style.display = "block";
+    if (anim1.style.display == "block") {
+        anim1.style.display = "none";
+        anim2.style.display = "block";
         }
 
     else {
-        camion1.style.display = "block";
-        camion2.style.display = "none";
+        anim1.style.display = "block";
+        anim2.style.display = "none";
         }
     }
 
-
-console.log(camion1);
 
 window.setInterval(moteur, 500);
