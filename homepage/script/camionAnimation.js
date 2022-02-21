@@ -7,14 +7,14 @@ camion2.style.visibility = "hidden";
 
 function switchAnim() {
 
-    if (camion1.style.display == "block") {
-        camion1.style.display = "none";
-        camion2.style.display = "block";
+    if (camion1.style.visibility == "visible") {
+        camion1.style.visibility = "hidden";
+        camion2.style.visibility = "visible";
         }
 
     else {
-        camion1.style.display = "block";
-        camion2.style.display = "none";
+        camion1.style.visibility = "visible";
+        camion2.style.visibility = "hidden";
         }
     }
 
