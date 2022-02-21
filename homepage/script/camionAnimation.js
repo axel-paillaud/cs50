@@ -17,7 +17,8 @@ function switchAnim() {
     }
 
 function startAnim() {
-    
+    document.getElementById(camionInkAnim1).style.transform = "translate(500px, 0px)";
+    document.getElementById(camionInkAnim2).style.transform = "translate(500px, 0px)";
 }
 
 setInterval(switchAnim, 200);
