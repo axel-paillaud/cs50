@@ -24,7 +24,7 @@ function animCamion() {
 }
 
 function startAnim() {
-    if (document.body.scrollTop > 1758 || document.documentElement.scrollTop > 1758)
+    if (document.body.scrollTop > 1700 || document.documentElement.scrollTop > 1700)
     {
         animCamion();
     }
