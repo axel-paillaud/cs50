@@ -39,6 +39,11 @@ function getWindowWidth() {
     console.log(windowWidth);
 }
 
+function getWindowHeight() {
+    let windowHeight = window.innerHeight
+    console.log(windowHeight)
+}
+
 window.onscroll = function() {startAnim()};
 
 setInterval(switchAnim, 200);
