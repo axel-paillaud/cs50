@@ -16,4 +16,4 @@ function moteur(anim1, anim2) {
         }
     }
 
-window.setInterval(moteur(camion1, camion2), 500);
+window.setInterval(moteur, 500);
