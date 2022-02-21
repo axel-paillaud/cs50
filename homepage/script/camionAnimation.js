@@ -16,4 +16,8 @@ function switchAnim() {
         }
     }
 
+function startAnim() {
+    
+}
+
 setInterval(switchAnim, 200);
