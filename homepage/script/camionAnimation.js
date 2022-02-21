@@ -3,7 +3,6 @@ const camion2 = document.getElementById("camionInkAnim2");
 camion1.style.visibility = "visible";
 camion2.style.visibility = "hidden";
 
-const valeurScroll = window.documentElement.scrollTop;
 
 function switchAnim() {
 
@@ -24,7 +23,7 @@ function animCamion() {
 }
 
 function startAnim() {
-    if (document.body.scrollTop > 1700 || document.documentElement.scrollTop > 1700)
+    if (document.body.scrollTop > (window.innerWidth * 0.886) || document.documentElement.scrollTop > (window.innerWidth * 0.886))
     {
         animCamion();
     }
