@@ -35,6 +35,11 @@ function getScrollValue() {
     console.log(scrollValue);
 }
 
+function getWindowWidth() {
+    let windowWidth = window.innerWidth;
+    console.log(windowWidth);
+}
+
 window.onscroll = function() {startAnim()};
 
 setInterval(switchAnim, 200);
