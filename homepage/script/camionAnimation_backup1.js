@@ -1,7 +1,7 @@
 const camion1 = document.getElementById("camionInkAnim1");
 const camion2 = document.getElementById("camionInkAnim2");
-camion1.style.visibility = "visible";
-camion2.style.visibility = "hidden";
+camion1.style.display = "block";
+camion2.style.display = "none";
 
 
 
