@@ -30,4 +30,6 @@ function startAnim() {
     }
 }
 
+window.onscroll = function() {startAnim()};
+
 setInterval(switchAnim, 200);
