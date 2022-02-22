@@ -21,4 +21,8 @@ showCamionAnim2 = "hidden";
 
 function animFamilyRight() {
     if (showFamilyStand == "visible")
+    {
+        showFamilyStand = "hidden";
+        
+    }
 }
