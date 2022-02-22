@@ -5,66 +5,55 @@ const familyAnim3 = document.getElementById("207FamilyAnim3");
 const camionAnim1 = document.getElementById("camionCote1");
 const camionAnim2 = document.getElementById("camionCote2");
 
-var showFamilyStand = familyStand.style.visibility;
-var showFamilyAnim1 = familyAnim1.style.visibility;
-var showFamilyAnim2 = familyAnim2.style.visibility;
-var showFamilyAnim3 = familyAnim3.style.visibility;
-var showCamionAnim1 = camionAnim1.style.visibility;
-var showCamionAnim2 = camionAnim2.style.visibility;
-
+familyStand.style.visibility = "visible";
 familyAnim1.style.visibility = "hidden";
 familyAnim2.style.visibility = "hidden";
 familyAnim3.style.visibility = "hidden";
-
-showFamilyStand = "visible";
-showFamilyAnim1 = "hidden";
-showFamilyAnim2 = "hidden";
-showFamilyAnim3 = "hidden";
-showCamionAnim1 = "hidden";
-showCamionAnim2 = "hidden";
+camionAnim1.style.visibility = "hidden";
+camionAnim2.style.visibility = "hidden";
 
 function animFamilyRight() {
-    if (showFamilyStand == "visible")
+    if (familyStand.style.visibility == "visible")
     {
-        showFamilyStand = "hidden";
-        showFamilyAnim1 = "visible";
-        showFamilyAnim2 = "hidden";
-        showFamilyAnim3 = "hidden";
-        showCamionAnim1 = "visible";
+        familyStand.style.visibility = "hidden";
+        familyAnim1.style.visibility = "visible";
+        familyAnim2.style.visibility = "hidden";
+        familyAnim3.style.visibility = "hidden";
+        camionAnim1.style.visibility = "visible";
     }
 
-    if (showFamilyAnim1 = "visible")
+    if (familyAnim1.style.visibility = "visible")
     {
-        showFamilyAnim1 = "hidden";
-        showFamilyAnim2 = "visible";
-        showFamilyAnim3 = "hidden";
+        familyAnim1.style.visibility = "hidden";
+        familyAnim2.style.visibility = "visible";
+        familyAnim3.style.visibility = "hidden";
     }
 
-    else if (showFamilyAnim2 = "visible")
+    else if (familyAnim2.style.visibility = "visible")
     {
-        showFamilyAnim1 = "hidden";
-        showFamilyAnim2 = "hidden";
-        showFamilyAnim3 = "visible";
+        familyAnim1.style.visibility = "hidden";
+        familyAnim2.style.visibility = "hidden";
+        familyAnim3.style.visibility = "visible";
     }
 
-    else if (showFamilyAnim3 = "visible")
+    else if (familyAnim3.style.visibility = "visible")
     {
-        showFamilyAnim1 = "visible";
-        showFamilyAnim2 = "hidden";
-        showFamilyAnim3 = "hidden";
+        familyAnim1.style.visibility = "visible";
+        familyAnim2.style.visibility = "hidden";
+        familyAnim3.style.visibility = "hidden";
     }
 }
 
 function animCamionRight() {
-    if (showCamionAnim1 = "visible")
+    if (camionAnim1.style.visibility = "visible")
     {
-        showCamionAnim1 = "hidden";
-        showCamionAnim2 = "visible";
+        camionAnim1.style.visibility = "hidden";
+        camionAnim2.style.visibility = "visible";
     }
 
     else
     {
-        showCamionAnim1 = "visible";
-        showCamionAnim2 = "hidden";
+        camionAnim1.style.visibility = "visible";
+        camionAnim2.style.visibility = "hidden";
     }
 }
