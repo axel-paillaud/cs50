@@ -29,20 +29,6 @@ function startAnim() {
     }
 }
 
-function getScrollValue() {
-    let scrollValue = document.documentElement.scrollTop;
-    console.log(scrollValue);
-}
-
-function getWindowWidth() {
-    let windowWidth = window.innerWidth;
-    console.log(windowWidth);
-}
-
-function getWindowHeight() {
-    let windowHeight = window.innerHeight
-    console.log(windowHeight)
-}
 
 window.onscroll = function() {startAnim()};
 
