@@ -17,8 +17,6 @@ body {
 
 #animContainer {
     position: absolute;
-    display: block;
-    margin: auto;
     top: 22.8%;
 }
 
@@ -198,7 +196,8 @@ iframe {
 /* Animation 207Family */
 
 #svg207Family {
-
+    display: block;
+    margin: auto;
 }
 
 .textblog {
