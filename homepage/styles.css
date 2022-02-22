@@ -4,7 +4,7 @@ body {
 }
 
 #mainContainer {
-
+ position: relative;
 }
 
 #titleContainer {
