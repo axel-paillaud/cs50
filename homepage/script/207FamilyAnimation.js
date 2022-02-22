@@ -44,10 +44,12 @@ function animFamilyRight() {
 
     else if (showFamilyAnim3 = "visible")
     {
-        showFamilyAnim1 = "hidden";
+        showFamilyAnim1 = "visible";
         showFamilyAnim2 = "hidden";
         showFamilyAnim3 = "hidden";
     }
+}
 
-    else if (show)
+function animCamionRight {
+    if ()
 }
