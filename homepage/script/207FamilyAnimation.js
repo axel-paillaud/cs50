@@ -11,3 +11,7 @@ familyAnim2.style.visibility = "hidden";
 familyAnim3.style.visibility = "hidden";
 camionAnim1.style.visibility = "hidden";
 camionAnim2.style.visibility = "hidden";
+
+function animFamilyRight() {
+    
+}
