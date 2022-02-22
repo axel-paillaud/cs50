@@ -26,6 +26,7 @@ function animFamilyRight() {
         showFamilyAnim1 = "visible";
         showFamilyAnim2 = "hidden";
         showFamilyAnim3 = "hidden";
+        showCamionAnim1 = "visible";
     }
 
     if (showFamilyAnim1 = "visible")
@@ -50,6 +51,16 @@ function animFamilyRight() {
     }
 }
 
-function animCamionRight {
-    if ()
+function animCamionRight() {
+    if (showCamionAnim1 = "visible")
+    {
+        showCamionAnim1 = "hidden";
+        showCamionAnim2 = "visible";
+    }
+
+    else
+    {
+        showCamionAnim1 = "visible";
+        showCamionAnim2 = "hidden";
+    }
 }
