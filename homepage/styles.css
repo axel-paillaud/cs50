@@ -16,7 +16,8 @@ body {
 }
 
 #animContainer {
-    top: 22.8%;
+    position: relative;
+    top: 30px;
 }
 
 
