@@ -23,6 +23,31 @@ function animFamilyRight() {
     if (showFamilyStand == "visible")
     {
         showFamilyStand = "hidden";
-        
+        showFamilyAnim1 = "visible";
+        showFamilyAnim2 = "hidden";
+        showFamilyAnim3 = "hidden";
     }
+
+    if (showFamilyAnim1 = "visible")
+    {
+        showFamilyAnim1 = "hidden";
+        showFamilyAnim2 = "visible";
+        showFamilyAnim3 = "hidden";
+    }
+
+    else if (showFamilyAnim2 = "visible")
+    {
+        showFamilyAnim1 = "hidden";
+        showFamilyAnim2 = "hidden";
+        showFamilyAnim3 = "visible";
+    }
+
+    else if (showFamilyAnim3 = "visible")
+    {
+        showFamilyAnim1 = "hidden";
+        showFamilyAnim2 = "hidden";
+        showFamilyAnim3 = "hidden";
+    }
+
+    else if (show)
 }
