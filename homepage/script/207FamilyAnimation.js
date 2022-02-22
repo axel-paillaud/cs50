@@ -5,12 +5,12 @@ const familyAnim3 = document.getElementById("207FamilyAnim3");
 const camionAnim1 = document.getElementById("camionCote1");
 const camionAnim2 = document.getElementById("camionCote2");
 
-const showFamilyStand = familyStand.style.visibility;
-const showFamilyAnim1 = familyAnim1.style.visibility;
-const showFamilyAnim2 = familyAnim2.style.visibility;
-const showFamilyAnim3 = familyAnim3.style.visibility;
-const showCamionAnim1 = camionAnim1.style.visibility;
-const showCamionAnim2 = camionAnim2.style.visibility;
+var showFamilyStand = familyStand.style.visibility;
+var showFamilyAnim1 = familyAnim1.style.visibility;
+var showFamilyAnim2 = familyAnim2.style.visibility;
+var showFamilyAnim3 = familyAnim3.style.visibility;
+var showCamionAnim1 = camionAnim1.style.visibility;
+var showCamionAnim2 = camionAnim2.style.visibility;
 
 showFamilyStand = "visible";
 showFamilyAnim1 = "hidden";
