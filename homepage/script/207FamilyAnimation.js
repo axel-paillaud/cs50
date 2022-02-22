@@ -12,6 +12,10 @@ var showFamilyAnim3 = familyAnim3.style.visibility;
 var showCamionAnim1 = camionAnim1.style.visibility;
 var showCamionAnim2 = camionAnim2.style.visibility;
 
+familyAnim1.style.visibility = "hidden";
+familyAnim2.style.visibility = "hidden";
+familyAnim3.style.visibility = "hidden";
+
 showFamilyStand = "visible";
 showFamilyAnim1 = "hidden";
 showFamilyAnim2 = "hidden";
