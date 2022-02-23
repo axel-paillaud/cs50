@@ -62,11 +62,15 @@ function animCamionRight() {
 
 function checkMove() {
     if (move == true) {
-        ;
+        setInterval(animCamionRight, 200);
+        setInterval(animFamilyRight, 500);
     }
 }
 
 function moveRight() {
+    move = true;
+    checkMove();
     family.style.transform = "translate(30px, 0px)";
 }
 
+setInterval(moveRight, 3000);
