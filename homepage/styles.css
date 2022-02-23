@@ -11,6 +11,7 @@ body {
     position: relative;
     top: 30px;
     right: 20%;
+    transition: transform 10s linear;
 }
 
 
@@ -197,9 +198,6 @@ iframe {
     margin: auto;
 }
 
-#family {
-    transition: transform 10s linear;
-}
 
 .textblog {
     text-align: center;

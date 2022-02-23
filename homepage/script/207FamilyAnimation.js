@@ -1,4 +1,4 @@
-const family = document.getElementById("family");
+const family = document.getElementById("animContainer");
 const familyStand = document.getElementById("207FamilyStand");
 const familyAnim1 = document.getElementById("207FamilyAnim1");
 const familyAnim2 = document.getElementById("207FamilyAnim2");
