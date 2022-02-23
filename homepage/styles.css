@@ -11,7 +11,7 @@ body {
     position: relative;
     top: 30px;
     right: 20%;
-    transition: transform 10s linear;
+    transition: transform 3s linear;
 }
 
 

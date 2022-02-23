@@ -72,16 +72,17 @@ function checkMove() {
         familyAnim3.style.visibility = "hidden";
         camionAnim1.style.visibility = "hidden";
         camionAnim2.style.visibility = "hidden";
-
     }
 }
 
 function moveRight() {
     move = true;
+    animCamionRight();
+    animFamilyRight();
     checkMove();
     family.style.transform = "translate(30px, 0px)";
     move = false;
     checkMove();
 }
 
-setInterval(moveRight, 1000);
+setInterval(moveRight, 4000);
