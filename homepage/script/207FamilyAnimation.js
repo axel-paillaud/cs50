@@ -60,5 +60,11 @@ function animCamionRight() {
 }
 
 function checkMove() {
+    if (move == true) {
+        ;
+    }
+}
+
+function moveRight() {
     
 }
