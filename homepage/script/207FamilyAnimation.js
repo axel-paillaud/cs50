@@ -65,12 +65,23 @@ function checkMove() {
         setInterval(animCamionRight, 200);
         setInterval(animFamilyRight, 500);
     }
+    else {
+        familyStand.style.visibility = "visible";
+        familyAnim1.style.visibility = "hidden";
+        familyAnim2.style.visibility = "hidden";
+        familyAnim3.style.visibility = "hidden";
+        camionAnim1.style.visibility = "hidden";
+        camionAnim2.style.visibility = "hidden";
+
+    }
 }
 
 function moveRight() {
     move = true;
     checkMove();
     family.style.transform = "translate(30px, 0px)";
+    move = false;
+    checkMove();
 }
 
-setInterval(moveRight, 3000);
+setInterval(moveRight, 1000);
