@@ -74,6 +74,10 @@ function checkMove() {
     let posFamily = family.getBoundingClientRect();
     console.log(posFamily.x);
     if (move == true) {
+        if (posFamily == -109)
+        {
+            
+        }
         /* Si l'anim a atteint le translate, faire move = false*/
         camionIntervId = setInterval(animCamionRight, 200);
         familyIntervId = setInterval(animFamilyRight, 500);
