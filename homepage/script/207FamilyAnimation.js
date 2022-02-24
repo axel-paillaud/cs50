@@ -27,6 +27,7 @@ function animFamilyRight() {
         familyAnim1.style.visibility = "hidden";
         familyAnim2.style.visibility = "visible";
         familyAnim3.style.visibility = "hidden";
+        checkMove();
     }
 
     else if (familyAnim2.style.visibility == "visible")
@@ -34,6 +35,7 @@ function animFamilyRight() {
         familyAnim1.style.visibility = "hidden";
         familyAnim2.style.visibility = "hidden";
         familyAnim3.style.visibility = "visible";
+        checkMove();
     }
 
     else if (familyAnim3.style.visibility == "visible")
@@ -41,6 +43,7 @@ function animFamilyRight() {
         familyAnim1.style.visibility = "visible";
         familyAnim2.style.visibility = "hidden";
         familyAnim3.style.visibility = "hidden";
+        checkMove();
     }
 }
 
@@ -50,17 +53,20 @@ function animCamionRight() {
         familyStand.style.visibility = "hidden";
         camionAnim1.style.visibility = "visible";
         familyAnim1.style.visibility = "visible";
+        checkMove();
     }
 
     else if (camionAnim1.style.visibility == "visible")
     {
         camionAnim1.style.visibility = "hidden";
         camionAnim2.style.visibility = "visible";
+        checkMove();
     }
 
     else {
         camionAnim1.style.visibility = "visible";
         camionAnim2.style.visibility = "hidden";
+        checkMove();
     }
 }
 
@@ -85,7 +91,6 @@ function moveRight() {
     /*Ici, il faudrait que cela déplace de +30px à chaque fois */
     family.style.transform = "translate(30px, 0px)";
     move = false;
-    checkMove();
 }
 
 function stopMove() {
