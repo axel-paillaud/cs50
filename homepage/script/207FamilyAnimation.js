@@ -73,6 +73,7 @@ function checkMove() {
     }
     else {
         familyStandBy();
+        stopMove();
     }
 }
 
