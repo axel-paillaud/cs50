@@ -71,6 +71,7 @@ function animCamionRight() {
 }
 
 function checkMove() {
+    console.log(family.offsetLeft)
     if (move == true) {
         if (/* L'anim a atteint le translate, faire move = false*/)
         camionIntervId = setInterval(animCamionRight, 200);
