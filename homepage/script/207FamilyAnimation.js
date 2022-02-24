@@ -47,14 +47,19 @@ function animFamilyRight() {
 }
 
 function animCamionRight() {
-    if (camionAnim1.style.visibility == "visible")
+    if (familyStand.style.visibility == "visible")
+    {
+        familyStand.style.visibility = "hidden";
+        camionAnim1.style.visibility = "visible";
+    }
+
+    else if (camionAnim1.style.visibility == "visible")
     {
         camionAnim1.style.visibility = "hidden";
         camionAnim2.style.visibility = "visible";
     }
 
-    else
-    {
+    else {
         camionAnim1.style.visibility = "visible";
         camionAnim2.style.visibility = "hidden";
     }
