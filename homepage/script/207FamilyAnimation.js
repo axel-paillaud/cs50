@@ -77,6 +77,7 @@ function moveRight() {
     animCamionRight();
     animFamilyRight();
     checkMove();
+    /*Ici, il faudrait que cela déplace de +30px à chaque fois */
     family.style.transform = "translate(30px, 0px)";
     move = false;
     checkMove();
