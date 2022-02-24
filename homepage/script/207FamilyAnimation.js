@@ -72,19 +72,10 @@ function animCamionRight() {
 
 function checkMove() {
     let posFamily = family.getBoundingClientRect();
-    if (move == true) {
-        if (posFamily.x == -109)
-        {
-            familyStandBy();
-            stopMove();
-            move = false;
-        }
-    }
-    else {
-        familyStandBy();
+    if (posFamily.x == -109) {
         stopMove();
+        familyStandBy();
     }
-}
 
 function moveRight() {
     move = true;
