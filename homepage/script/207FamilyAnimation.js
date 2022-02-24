@@ -76,7 +76,8 @@ function checkMove() {
     if (move == true) {
         if (posFamily == -109)
         {
-            
+            familyStandBy();
+            stopMove();
         }
         /* Si l'anim a atteint le translate, faire move = false*/
         camionIntervId = setInterval(animCamionRight, 200);
