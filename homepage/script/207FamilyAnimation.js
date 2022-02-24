@@ -15,12 +15,6 @@ camionAnim1.style.visibility = "hidden";
 camionAnim2.style.visibility = "hidden";
 
 function animFamilyRight() {
-    if (familyStand.style.visibility == "hidden")
-    {
-        familyAnim1.style.visibility = "visible";
-        familyAnim2.style.visibility = "hidden";
-        familyAnim3.style.visibility = "hidden";
-    }
 
     if (familyAnim1.style.visibility == "visible")
     {
@@ -49,6 +43,7 @@ function animCamionRight() {
     {
         familyStand.style.visibility = "hidden";
         camionAnim1.style.visibility = "visible";
+        familyAnim1.style.visibility = "visible";
     }
 
     else if (camionAnim1.style.visibility == "visible")
