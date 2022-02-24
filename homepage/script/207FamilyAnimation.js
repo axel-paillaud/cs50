@@ -84,7 +84,7 @@ function moveRight() {
 }
 
 function stopMove() {
-    
+    clearInterval();
 }
 
 setInterval(moveRight, 10000);
