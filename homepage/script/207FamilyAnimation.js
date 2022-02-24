@@ -83,4 +83,4 @@ function moveRight() {
     checkMove();
 }
 
-setInterval(moveRight, 4000);
+setInterval(moveRight, 10000);
