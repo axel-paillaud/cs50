@@ -24,21 +24,21 @@ function animFamilyRight() {
         camionAnim1.style.visibility = "visible";
     }
 
-    if (familyAnim1.style.visibility = "visible")
+    if (familyAnim1.style.visibility == "visible")
     {
         familyAnim1.style.visibility = "hidden";
         familyAnim2.style.visibility = "visible";
         familyAnim3.style.visibility = "hidden";
     }
 
-    else if (familyAnim2.style.visibility = "visible")
+    else if (familyAnim2.style.visibility == "visible")
     {
         familyAnim1.style.visibility = "hidden";
         familyAnim2.style.visibility = "hidden";
         familyAnim3.style.visibility = "visible";
     }
 
-    else if (familyAnim3.style.visibility = "visible")
+    else if (familyAnim3.style.visibility == "visible")
     {
         familyAnim1.style.visibility = "visible";
         familyAnim2.style.visibility = "hidden";
@@ -47,7 +47,7 @@ function animFamilyRight() {
 }
 
 function animCamionRight() {
-    if (camionAnim1.style.visibility = "visible")
+    if (camionAnim1.style.visibility == "visible")
     {
         camionAnim1.style.visibility = "hidden";
         camionAnim2.style.visibility = "visible";
