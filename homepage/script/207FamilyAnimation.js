@@ -6,6 +6,7 @@ const familyAnim3 = document.getElementById("207FamilyAnim3");
 const camionAnim1 = document.getElementById("camionCote1");
 const camionAnim2 = document.getElementById("camionCote2");
 var move = false;
+let nIntervId;
 
 function familyStandBy() {
     familyStand.style.visibility = "visible";
