@@ -6,7 +6,8 @@ const familyAnim3 = document.getElementById("207FamilyAnim3");
 const camionAnim1 = document.getElementById("camionCote1");
 const camionAnim2 = document.getElementById("camionCote2");
 var move = false;
-let nIntervId;
+let camionIntervId;
+let familyIntervId;
 
 function familyStandBy() {
     familyStand.style.visibility = "visible";
@@ -65,6 +66,8 @@ function animCamionRight() {
 
 function checkMove() {
     if (move == true) {
+        camionIntervId = setInterval(animCamionRight, 200);
+        familyIntervId = setInterval(animFamilyRight, 500);
         setInterval(animCamionRight, 200);
         setInterval(animFamilyRight, 500);
     }
@@ -85,7 +88,8 @@ function moveRight() {
 }
 
 function stopMove() {
-    clearInterval();
+    clearInterval(camionIntervId);
+    clearInterval(familyIntervId);
 }
 
-setInterval(moveRight, 10000);
+setInterval(moveRight, 5000);
