@@ -72,9 +72,8 @@ function animCamionRight() {
 
 function checkMove() {
     let posFamily = family.getBoundingClientRect();
-    console.log(posFamily.x);
     if (move == true) {
-        if (posFamily == -109)
+        if (posFamily == "-109")
         {
             familyStandBy();
             stopMove();
