@@ -72,7 +72,7 @@ function animCamionRight() {
 
 function checkMove() {
     let rect = family.getBoundingClientRect();
-    console.log(rect.)
+    console.log(rect.x);
     if (move == true) {
         /* Si l'anim a atteint le translate, faire move = false*/
         camionIntervId = setInterval(animCamionRight, 200);
