@@ -78,12 +78,14 @@ function checkMove() {
         {
             familyStandBy();
             stopMove();
+            move = false;
         }
-        /* Si l'anim a atteint le translate, faire move = false*/
-        camionIntervId = setInterval(animCamionRight, 200);
-        familyIntervId = setInterval(animFamilyRight, 500);
-        setInterval(animCamionRight, 200);
-        setInterval(animFamilyRight, 500);
+        else {
+            camionIntervId = setInterval(animCamionRight, 200);
+            familyIntervId = setInterval(animFamilyRight, 500);
+            setInterval(animCamionRight, 200);
+            setInterval(animFamilyRight, 500);
+        }
     }
     else {
         familyStandBy();
