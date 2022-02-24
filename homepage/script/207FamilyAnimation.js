@@ -6,8 +6,9 @@ const familyAnim3 = document.getElementById("207FamilyAnim3");
 const camionAnim1 = document.getElementById("camionCote1");
 const camionAnim2 = document.getElementById("camionCote2");
 var move = false;
-let camionIntervId;
-let familyIntervId;
+var camionIntervId;
+var familyIntervId;
+var posFamily = family.getBoundingClientRect();
 
 function familyStandBy() {
     familyStand.style.visibility = "visible";
@@ -71,7 +72,7 @@ function animCamionRight() {
 }
 
 function checkMove() {
-    let posFamily = family.getBoundingClientRect();
+    console.log(posFamily)
     if (move == true) {
         if (posFamily == "-109")
         {
