@@ -5,8 +5,8 @@ const familyAnim2 = document.getElementById("207FamilyAnim2");
 const familyAnim3 = document.getElementById("207FamilyAnim3");
 const camionAnim1 = document.getElementById("camionCote1");
 const camionAnim2 = document.getElementById("camionCote2");
-var camionIntervId;
-var camionIntervId;
+let camionIntervId;
+let familyIntervId;
 
 
 function familyStandBy() {
@@ -85,7 +85,9 @@ function moveRight() {
 
 function stopMove() {
     clearInterval(camionIntervId);
+    camionIntervId = null;
     clearInterval(familyIntervId);
+    familyIntervId = null;
     familyStandBy();
 }
 
