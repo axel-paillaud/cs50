@@ -5,8 +5,8 @@ const familyAnim2 = document.getElementById("207FamilyAnim2");
 const familyAnim3 = document.getElementById("207FamilyAnim3");
 const camionAnim1 = document.getElementById("camionCote1");
 const camionAnim2 = document.getElementById("camionCote2");
-const camionIntervId;
-const familyIntervId;
+const camionIntervId = setInterval(animCamionRight, 200);
+const familyIntervId = setInterval(animFamilyRight, 500);
 
 function familyStandBy() {
     familyStand.style.visibility = "visible";
@@ -76,8 +76,6 @@ function checkMove() {
 }
 
 function moveRight() {
-    camionIntervId = setInterval(animCamionRight, 200);
-    familyIntervId = setInterval(animFamilyRight, 500);
     setInterval(animCamionRight, 200);
     setInterval(animFamilyRight, 500);
     /*Ici, il faudrait que cela déplace de +30px à chaque fois */
