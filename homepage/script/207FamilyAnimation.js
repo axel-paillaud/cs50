@@ -52,14 +52,12 @@ function animCamionRight() {
         familyStand.style.visibility = "hidden";
         camionAnim1.style.visibility = "visible";
         familyAnim1.style.visibility = "visible";
-        checkMove();
     }
 
     else if (camionAnim1.style.visibility == "visible")
     {
         camionAnim1.style.visibility = "hidden";
         camionAnim2.style.visibility = "visible";
-        checkMove();
     }
 
     else {
@@ -71,6 +69,7 @@ function animCamionRight() {
 
 function checkMove() {
     let posFamily = family.getBoundingClientRect();
+    console.log(posFamily.x)
     if (posFamily.x == -109) {
         stopMove();
     }
