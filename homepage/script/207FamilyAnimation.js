@@ -77,17 +77,20 @@ function checkMove() {
 }
 
 function moveRight() {
-    camionIntervId = setInterval(animCamionRight, 200);
-    familyIntervId = setInterval(animFamilyRight, 500);
+    if (!camionIntervId && !familyIntervId)
+    {
+        camionIntervId = setInterval(animCamionRight, 200);
+        familyIntervId = setInterval(animFamilyRight, 500);
+    }
     /*Ici, il faudrait que cela déplace de +30px à chaque fois */
     family.style.transform = "translate(30px, 0px)";
 }
 
 function stopMove() {
     clearInterval(camionIntervId);
-    camionIntervId = null;
     clearInterval(familyIntervId);
     familyIntervId = null;
+    camionIntervId = null;
     familyStandBy();
 }
 
