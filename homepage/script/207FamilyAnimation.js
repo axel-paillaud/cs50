@@ -27,7 +27,6 @@ function animFamilyRight() {
         familyAnim1.style.visibility = "hidden";
         familyAnim2.style.visibility = "visible";
         familyAnim3.style.visibility = "hidden";
-        checkMove();
     }
 
     else if (familyAnim2.style.visibility == "visible")
@@ -35,7 +34,6 @@ function animFamilyRight() {
         familyAnim1.style.visibility = "hidden";
         familyAnim2.style.visibility = "hidden";
         familyAnim3.style.visibility = "visible";
-        checkMove();
     }
 
     else if (familyAnim3.style.visibility == "visible")
