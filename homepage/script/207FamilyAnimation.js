@@ -26,14 +26,6 @@ function stopMove() {
     familyStandBy();
 }
 
-function checkMove() {
-    let posFamily = family.getBoundingClientRect();
-    console.log(posFamily.x)
-    if (posFamily.x == "-109") {
-        stopMove();
-    }
-}
-
 familyStandBy();
 
 function animFamilyRight() {
@@ -57,7 +49,6 @@ function animFamilyRight() {
         familyAnim1.style.visibility = "visible";
         familyAnim2.style.visibility = "hidden";
         familyAnim3.style.visibility = "hidden";
-        checkMove();
     }
 }
 
@@ -78,12 +69,11 @@ function animCamionRight() {
     else {
         camionAnim1.style.visibility = "visible";
         camionAnim2.style.visibility = "hidden";
-        checkMove();
     }
 }
 
 function moveRight() {
-    setTimeout(stopMove, 4000);
+    setTimeout(stopMove, 3000);
     if (!camionIntervId && !familyIntervId)
     {
         camionIntervId = setInterval(animCamionRight, 200);
