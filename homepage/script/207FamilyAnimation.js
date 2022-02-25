@@ -92,4 +92,4 @@ function stopMove() {
     familyStandBy();
 }
 
-setInterval(moveRight, 5000);
+setInterval(moveRight, 10000);
