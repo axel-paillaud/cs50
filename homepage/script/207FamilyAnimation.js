@@ -32,6 +32,7 @@ function checkMove() {
     if (posFamily.x == -109) {
         stopMove();
     }
+    stopMove();
 }
 
 familyStandBy();
@@ -58,7 +59,6 @@ function animFamilyRight() {
         familyAnim2.style.visibility = "hidden";
         familyAnim3.style.visibility = "hidden";
         checkMove();
-        stopMove();
     }
 }
 
