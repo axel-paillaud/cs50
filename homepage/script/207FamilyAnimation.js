@@ -5,6 +5,8 @@ const familyAnim2 = document.getElementById("207FamilyAnim2");
 const familyAnim3 = document.getElementById("207FamilyAnim3");
 const camionAnim1 = document.getElementById("camionCote1");
 const camionAnim2 = document.getElementById("camionCote2");
+var camionIntervId;
+var camionIntervId;
 
 
 function familyStandBy() {
@@ -75,8 +77,8 @@ function checkMove() {
 }
 
 function moveRight() {
-    const camionIntervId = setInterval(animCamionRight, 200);
-    const familyIntervId = setInterval(animFamilyRight, 500);
+    camionIntervId = setInterval(animCamionRight, 200);
+    familyIntervId = setInterval(animFamilyRight, 500);
     /*Ici, il faudrait que cela déplace de +30px à chaque fois */
     family.style.transform = "translate(30px, 0px)";
 }
