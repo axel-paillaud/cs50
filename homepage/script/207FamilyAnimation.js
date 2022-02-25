@@ -5,8 +5,8 @@ const familyAnim2 = document.getElementById("207FamilyAnim2");
 const familyAnim3 = document.getElementById("207FamilyAnim3");
 const camionAnim1 = document.getElementById("camionCote1");
 const camionAnim2 = document.getElementById("camionCote2");
-var camionIntervId;
-var familyIntervId;
+const camionIntervId;
+const familyIntervId;
 
 function familyStandBy() {
     familyStand.style.visibility = "visible";
