@@ -18,6 +18,22 @@ function familyStandBy() {
     camionAnim2.style.visibility = "hidden";
 }
 
+function stopMove() {
+    clearInterval(camionIntervId);
+    clearInterval(familyIntervId);
+    familyIntervId = null;
+    camionIntervId = null;
+    familyStandBy();
+}
+
+function checkMove() {
+    let posFamily = family.getBoundingClientRect();
+    console.log(posFamily.x)
+    if (posFamily.x == -109) {
+        stopMove();
+    }
+}
+
 familyStandBy();
 
 function animFamilyRight() {
@@ -42,6 +58,7 @@ function animFamilyRight() {
         familyAnim2.style.visibility = "hidden";
         familyAnim3.style.visibility = "hidden";
         checkMove();
+        stopMove();
     }
 }
 
@@ -66,14 +83,6 @@ function animCamionRight() {
     }
 }
 
-function checkMove() {
-    let posFamily = family.getBoundingClientRect();
-    console.log(posFamily.x)
-    if (posFamily.x == -109) {
-        stopMove();
-    }
-}
-
 function moveRight() {
     if (!camionIntervId && !familyIntervId)
     {
@@ -84,12 +93,4 @@ function moveRight() {
     family.style.transform = "translate(30px, 0px)";
 }
 
-function stopMove() {
-    clearInterval(camionIntervId);
-    clearInterval(familyIntervId);
-    familyIntervId = null;
-    camionIntervId = null;
-    familyStandBy();
-}
-
-setInterval(moveRight, 10000);
+setInterval(moveRight, 5000);
