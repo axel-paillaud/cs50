@@ -45,20 +45,19 @@ function animFamilyRight() {
         familyAnim3.style.visibility = "visible";
     }
 
-    else if (familyAnim3.style.visibility == "visible" && x == false;)
+    else if (x == true;) {
+        familyAnim1.style.visibility = "hidden";
+        familyAnim2.style.visibility = "visible";
+        familyAnim3.style.visibility = "hidden";
+        x = false;
+    }
+
+    else if (familyAnim3.style.visibility == "visible")
     {
         familyAnim1.style.visibility = "visible";
         familyAnim2.style.visibility = "hidden";
         familyAnim3.style.visibility = "hidden";
         x = true;
-    }
-
-    else if (familyAnim3.style.visibility == "visible" && x == true)
-    {
-        familyAnim1.style.visibility = "hidden";
-        familyAnim2.style.visibility = "visible";
-        familyAnim3.style.visibility = "hidden";
-        x = false;
     }
 }
 
