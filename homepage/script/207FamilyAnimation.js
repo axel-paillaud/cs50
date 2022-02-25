@@ -29,10 +29,9 @@ function stopMove() {
 function checkMove() {
     let posFamily = family.getBoundingClientRect();
     console.log(posFamily.x)
-    if (posFamily.x == -109) {
+    if (posFamily.x == "-109") {
         stopMove();
     }
-    stopMove();
 }
 
 familyStandBy();
