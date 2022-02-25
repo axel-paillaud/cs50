@@ -74,8 +74,8 @@ function checkMove() {
     let posFamily = family.getBoundingClientRect();
     if (posFamily.x == -109) {
         stopMove();
-        familyStandBy();
     }
+}
 
 function moveRight() {
     move = true;
@@ -93,6 +93,7 @@ function moveRight() {
 function stopMove() {
     clearInterval(camionIntervId);
     clearInterval(familyIntervId);
+    familyStandBy();
 }
 
 setInterval(moveRight, 5000);
