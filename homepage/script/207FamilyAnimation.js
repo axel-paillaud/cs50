@@ -83,6 +83,7 @@ function animCamionRight() {
 }
 
 function moveRight() {
+    setTimeout(stopMove, 4000);
     if (!camionIntervId && !familyIntervId)
     {
         camionIntervId = setInterval(animCamionRight, 200);
