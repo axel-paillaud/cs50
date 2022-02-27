@@ -11,6 +11,9 @@ body {
     position: relative;
     top: 30px;
     right: 20%;
+}
+
+#svg207Family {
     transition: transform 3s linear;
 }
 

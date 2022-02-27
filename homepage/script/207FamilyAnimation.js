@@ -1,4 +1,4 @@
-const family = document.getElementById("animContainer");
+const family = document.getElementById("svg207Family");
 const familyStand = document.getElementById("207FamilyStand");
 const familyAnim1 = document.getElementById("207FamilyAnim1");
 const familyAnim2 = document.getElementById("207FamilyAnim2");
@@ -7,7 +7,17 @@ const camionAnim1 = document.getElementById("camionCote1");
 const camionAnim2 = document.getElementById("camionCote2");
 let camionIntervId;
 let familyIntervId;
+var delayMoveRight = [7000, 10000, 13000];
+var multiplePosRight = [20, 30, 40, 50, 60];
+var pos = 0;
 
+function randomMultiplePosRight(items) {
+    return items[Math.floor(Math.random()*items.length)];
+}
+
+function randomDelayMoveRight(items) {
+    return items[Math.floor(Math.random()*items.length)];
+}
 
 function familyStandBy() {
     familyStand.style.visibility = "visible";
@@ -72,6 +82,11 @@ function animCamionRight() {
     }
 }
 
+function randomStart() {
+    var vRandomDelay = randomDelayMoveRight(delayMoveRight);
+    setTimeout(moveRight, vRandomDelay)
+}
+
 function moveRight() {
     setTimeout(stopMove, 3000);
     if (!camionIntervId && !familyIntervId)
@@ -79,8 +94,16 @@ function moveRight() {
         camionIntervId = setInterval(animCamionRight, 200);
         familyIntervId = setInterval(animFamilyRight, 500);
     }
-    /*Ici, il faudrait que cela déplace de +30px à chaque fois */
-    family.style.transform = "translate(30px, 0px)";
+    var maxWidth = window.innerWidth;
+    pos += randomMultiplePosRight(multiplePosRight);
+    if (pos >= (maxWidth / 2)) {
+        stopMove();
+        return;
+    }
+    else {
+        family.style.transform = "translate(" + pos +"px, 0px)";
+        randomStart();
+    }
 }
 
-setInterval(moveRight, 5000);
+randomStart();
