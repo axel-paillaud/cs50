@@ -7,7 +7,7 @@ const camionAnim1 = document.getElementById("camionCote1");
 const camionAnim2 = document.getElementById("camionCote2");
 let camionIntervId;
 let familyIntervId;
-var delayMoveRight = [7000, 10000, 13000];
+var delayMoveRight = [7000, 5000, 10000];
 var multiplePosRight = [20, 30, 40, 50, 60];
 var pos = 0;
 
