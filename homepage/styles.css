@@ -19,7 +19,7 @@ body {
 
 .slide_container {
     position: absolute;
-    right: 0px;
+    right: 0%;
     z-index: -2;
 }
 
