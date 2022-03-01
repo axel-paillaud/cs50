@@ -32,6 +32,10 @@ body {
     visibility: hidden;
 }
 
+#map_of_europe:hover {
+    visibility: visible;
+}
+
 
 h1 {
     border: 1px solid #4d3300;
@@ -162,9 +166,6 @@ hr {
     background-color: #996600;
 }
 
-#button_voyage:hover #map_of_europe {
-    visibility: visible;
-}
 
 /* Ici, la partie graphique */
 
