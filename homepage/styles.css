@@ -26,8 +26,9 @@ body {
 }
 
 #map_of_europe {
-    height: 30%;
-    width: 30%;
+    /* height + width 35% pas mal*/
+    height: 809px;
+    width: 701px;
 }
 
 
