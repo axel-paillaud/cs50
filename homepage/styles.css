@@ -29,13 +29,7 @@ body {
     /* height + width 35% pas mal*/
     height: 20%;
     width: 20%;
-    visibility: hidden;
 }
-
-#map_of_europe:hover {
-    visibility: visible;
-}
-
 
 h1 {
     border: 1px solid #4d3300;
