@@ -18,14 +18,13 @@ body {
 }
 
 .slide_container {
-    position: relative;
-    top: 150px;
+    position: absolute;
     z-index: -2;
 }
 
 #map_of_europe {
-    height: 15%;
-    width: 15%;
+    height: 60%;
+    width: 60%;
 }
 
 
