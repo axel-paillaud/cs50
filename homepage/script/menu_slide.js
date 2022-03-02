@@ -4,11 +4,10 @@ var slideContainer = document.getElementById("slide_container");
 mapEuropeSvg.style.visibility = "hidden";
 
 function showOnOver() {
-    slideContainer.classList.add("slide_transition");
+    slideContainer.classList.add("slide_transition_in");
     mapEuropeSvg.style.visibility = "visible";
 }
 
 function hideOnOut() {
-    mapEuropeSvg.style.visibility = "hidden";
-    slideContainer.classList.remove("slide_transition");
+    slideContainer.classList.remove("slide_transition_in");
 }

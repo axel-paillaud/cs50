@@ -17,9 +17,14 @@ body {
     transition: transform 3s linear;
 }
 
-@keyframes slide_animation {
-    from {bottom: 90px; opacity: 0.0;}
+@keyframes slide_animation_in {
+    from {bottom: 95px; opacity: 0.0;}
     to {bottom: 145px; opacity: 1.0;}
+}
+
+@keyframes slide_animation_out {
+    from {bottom: 145px; opacity: 1.0;}
+    to {bottom: 95px; opacity: 0.0;}
 }
 
 #slide_container {
@@ -29,8 +34,8 @@ body {
     z-index: -2;
 }
 
-.slide_transition {
-    animation: slide_animation 1s ease-out;
+.slide_transition_in {
+    animation: slide_animation_in 1s ease-out;
 }
 
 #map_of_europe {
