@@ -17,6 +17,19 @@ body {
     transition: transform 3s linear;
 }
 
+.slide_container {
+    position: absolute;
+    left: 62%;
+    z-index: -2;
+}
+
+#map_of_europe {
+    /* height + width 35% pas mal*/
+    height: 35%;
+    width: 35%;
+}
+
+
 h1 {
     border: 1px solid #4d3300;
     border-radius: 7px;
@@ -27,20 +40,6 @@ h1 {
     margin: auto;
     margin-top: 7%;
     margin-bottom: 7%;
-}
-
-.slide_container {
-    position: absolute;
-    left: 62%;
-    bottom: 10%;
-    top: 20%;
-    z-index: -2;
-}
-
-#map_of_europe {
-    /* height + width 35% pas mal*/
-    height: 35%;
-    width: 35%;
 }
 
 #title207 {
