@@ -18,7 +18,7 @@ body {
 }
 
 @keyframes slide_transition {
-    from {bottom: 90px;}
+    from {bottom: 90px; }
     to {bottom: 145px;}
 }
 
