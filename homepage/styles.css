@@ -27,7 +27,7 @@ body {
     to {bottom: 95px; opacity: 0.0;}
 }
 
-#slide_container {
+#slide_container_map {
     position: absolute;
     left: 64%;
     bottom: 145px;
