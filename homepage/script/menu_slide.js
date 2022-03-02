@@ -1,9 +1,10 @@
 const mapEuropeSvg = document.getElementById("map_of_europe");
+var slideContainer = document.getElementByClassName("slide_container");
 
 mapEuropeSvg.style.visibility = "hidden";
 
 function showOnOver() {
-    
+    slideContainer.style.animation = "slide_transition";
     mapEuropeSvg.style.visibility = "visible";
 }
 
