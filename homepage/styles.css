@@ -17,6 +17,10 @@ body {
     transition: transform 3s linear;
 }
 
+@keyframe slide_transition {
+    
+}
+
 .slide_container {
     position: absolute;
     left: 64%;
