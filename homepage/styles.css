@@ -27,7 +27,7 @@ body {
     left: 64%;
     bottom: 145px;
     z-index: -2;
-    animation: slide_transition 1s ease-out infinite;
+    animation: 1s ease-out infinite;
 
 }
 
