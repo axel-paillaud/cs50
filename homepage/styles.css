@@ -32,7 +32,8 @@ h1 {
 .slide_container {
     position: absolute;
     left: 62%;
-    bottom: 25%;
+    bottom: 10%;
+    top: 20%;
     z-index: -2;
 }
 
