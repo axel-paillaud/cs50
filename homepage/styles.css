@@ -18,7 +18,7 @@ body {
 }
 
 @keyframes slide_transition {
-    from {bottom: 100px;}
+    from {bottom: 90px;}
     to {bottom: 145px;}
 }
 
@@ -27,6 +27,8 @@ body {
     left: 64%;
     bottom: 145px;
     z-index: -2;
+    animation: slide_transition 1s ease-out infinite;
+
 }
 
 #map_of_europe {
