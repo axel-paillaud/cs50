@@ -20,6 +20,7 @@ body {
 .slide_container {
     position: absolute;
     left: 62%;
+    bottom: 40px;
     z-index: -2;
 }
 
