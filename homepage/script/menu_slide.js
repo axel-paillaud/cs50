@@ -11,7 +11,7 @@ function showOnOver() {
 
 function hideOnOut() {
     slideContainerMap.style.animation = "reverse";
-
+}
 
 /* function hideOnOut() {
     slideContainerMap.classList.remove("slide_transition_in");
