@@ -38,6 +38,10 @@ body {
     animation: slide_animation_in 1s ease-out;
 }
 
+.slide_transition_out {
+    animation: slide_animation_out 0.5s ease-out;
+}
+
 #map_of_europe {
     /* height + width 25% pas mal*/
     height: 25%;
