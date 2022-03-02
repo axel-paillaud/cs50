@@ -22,7 +22,7 @@ body {
     to {bottom: 145px; opacity: 1.0;}
 }
 
-.slide_container {
+#slide_container {
     position: absolute;
     left: 64%;
     bottom: 145px;
