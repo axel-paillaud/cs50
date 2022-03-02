@@ -35,7 +35,7 @@ body {
 }
 
 .slide_transition_in {
-    animation: slide_animation_in 1s ease-out;
+    animation: slide_animation_in 0.7s ease-out;
 }
 
 .slide_transition_out {
