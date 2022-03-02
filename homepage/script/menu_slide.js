@@ -10,7 +10,7 @@ function showOnOver() {
 }
 
 function hideOnOut() {
-    slideContainerMap.style.animation = "slide_animation_in 0.7s ease-out forwards";
+    slideContainerMap.style.animation = "slide_animation_in 0.7s ease-out reverse forwards";
 }
 
 /* function hideOnOut() {
