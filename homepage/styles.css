@@ -17,6 +17,18 @@ body {
     transition: transform 3s linear;
 }
 
+h1 {
+    border: 1px solid #4d3300;
+    border-radius: 7px;
+    padding: 10px;
+    background-color: #ffe6b3;
+    text-align: center;
+    width: 25%;
+    margin: auto;
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+
 .slide_container {
     position: absolute;
     right: 0%;
@@ -29,18 +41,6 @@ body {
     /* height + width 35% pas mal*/
     height: 20%;
     width: 20%;
-}
-
-h1 {
-    border: 1px solid #4d3300;
-    border-radius: 7px;
-    padding: 10px;
-    background-color: #ffe6b3;
-    text-align: center;
-    width: 25%;
-    margin: auto;
-    margin-top: 7%;
-    margin-bottom: 7%;
 }
 
 #title207 {
