@@ -41,6 +41,11 @@ body {
     z-index: -2;
 }
 
+#light_bulb {
+    height: 30%;
+    width: 30%;
+}
+
 .slide_transition_in {
     animation: slide_animation_in 0.7s ease-out forwards;
 }
