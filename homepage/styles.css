@@ -17,8 +17,9 @@ body {
     transition: transform 3s linear;
 }
 
-@keyframe slide_transition {
-    
+@keyframes slide_transition {
+    from {bottom: 100px;}
+    to {bottom: 145px;}
 }
 
 .slide_container {
