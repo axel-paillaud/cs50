@@ -10,4 +10,5 @@ function showOnOver() {
 
 function hideOnOut() {
     mapEuropeSvg.style.visibility = "hidden";
+    slideContainer.classList.remove("slide_transition");
 }

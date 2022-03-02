@@ -30,7 +30,7 @@ body {
 }
 
 .slide_transition {
-    animation: slide_animation 1s ease-out infinite;
+    animation: slide_animation 1s ease-out;
 }
 
 #map_of_europe {
