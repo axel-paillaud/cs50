@@ -4,7 +4,7 @@ var slideContainer = document.getElementsByClassName("slide_container");
 mapEuropeSvg.style.visibility = "hidden";
 
 function showOnOver() {
-    slideContainer.style.animation = "slide_transition";
+    slideContainer.classList.add("slide_transition");
     mapEuropeSvg.style.visibility = "visible";
 }
 
