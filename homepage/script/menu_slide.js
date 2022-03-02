@@ -1,5 +1,5 @@
 const mapEuropeSvg = document.getElementById("map_of_europe");
-var slideContainer = document.getElementByClassName("slide_container");
+var slideContainer = document.getElementsByClassName("slide_container");
 
 mapEuropeSvg.style.visibility = "hidden";
 
