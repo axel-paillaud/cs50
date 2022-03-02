@@ -34,6 +34,13 @@ body {
     z-index: -2;
 }
 
+#slide_container_tips {
+    position: absolute;
+    left: 64%;
+    bottom: 145px;
+    z-index: -2;
+}
+
 .slide_transition_in {
     animation: slide_animation_in 0.7s ease-out forwards;
 }
