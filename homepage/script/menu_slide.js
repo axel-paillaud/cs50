@@ -14,7 +14,6 @@ function hide() {
 }
 
 function hideOnOut() {
-    slideContainer.classList.add("slide_transition_out");
     slideContainer.classList.remove("slide_transition_in");
-    setTimeout(hide, 500);
+    slideContainer.classList.add("slide_transition_out");
 }
