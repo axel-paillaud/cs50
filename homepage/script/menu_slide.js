@@ -6,6 +6,7 @@ mapEuropeSvg.style.visibility = "hidden";
 function showOnOver() {
     slideContainer.classList.add("slide_transition_in");
     mapEuropeSvg.style.visibility = "visible";
+    slideContainer.classList.remove("slide_transition_out");
 }
 
 function hideOnOut() {
