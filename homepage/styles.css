@@ -18,13 +18,13 @@ body {
 }
 
 @keyframes slide_animation_in {
-    from {bottom: 50px; opacity: 0.0;}
-    to {bottom: 100px; opacity: 1.0;}
+    from {bottom: 0px; opacity: 0.0;}
+    to {bottom: 50px; opacity: 1.0;}
 }
 
 @keyframes slide_animation_out {
-    from {bottom: 100px; opacity: 1.0;}
-    to {bottom: 50px; opacity: 0.0;}
+    from {bottom: 50px; opacity: 1.0;}
+    to {bottom: 0px; opacity: 0.0;}
 }
 
 #slide_container_map {
