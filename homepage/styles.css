@@ -71,6 +71,10 @@ body {
     animation: slide_animation_out 0.5s ease-out forwards;
 }
 
+.disabled {
+    pointer-events: none;
+}
+
 h1 {
     border: 1px solid #4d3300;
     border-radius: 7px;
