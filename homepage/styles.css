@@ -18,40 +18,40 @@ body {
 }
 
 @keyframes slide_animation_in {
-    from {bottom: 110px; opacity: 0.0;}
-    to {bottom: 140px; opacity: 1.0;}
+    from {bottom: 50px; opacity: 0.0;}
+    to {bottom: 100px; opacity: 1.0;}
 }
 
 @keyframes slide_animation_out {
-    from {bottom: 140px; opacity: 1.0;}
-    to {bottom: 110px; opacity: 0.0;}
+    from {bottom: 100px; opacity: 1.0;}
+    to {bottom: 50px; opacity: 0.0;}
 }
 
 #slide_container_map {
     position: absolute;
     left: 64%;
-    bottom: 145px;
+    bottom: 100px;
     z-index: -2;
 }
 
 #slide_container_tips {
     position: absolute;
     left: 64%;
-    bottom: 145px;
+    bottom: 100px;
     z-index: -2;
 }
 
 #slide_container_camion {
     position: absolute;
     left: 64%;
-    bottom: 125px;
+    bottom: 100px;
     z-index: -2;
 }
 
 #slide_container_info {
     position: absolute;
     left: 64%;
-    bottom: 125px;
+    bottom: 100px;
     z-index: -2;
 }
 
