@@ -41,9 +41,21 @@ body {
     z-index: -2;
 }
 
+#slide_container_camion {
+    position: absolute;
+    left: 64%;
+    bottom: 145px;
+    z-index: -2;
+}
+
 #light_bulb {
     height: 30%;
     width: 30%;
+}
+
+#camion_slide {
+    height: 100%;
+    width: 100%;
 }
 
 .slide_transition_in {
