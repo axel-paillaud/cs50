@@ -59,9 +59,8 @@ body {
 }
 
 #map_of_europe {
-    /* height + width 25% pas mal*/
-    height: 29%;
-    width: 29%;
+    height: 35%;
+    width: 35%;
 }
 
 .slide_transition_in {
