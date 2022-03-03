@@ -45,7 +45,15 @@ function hideOnOutCamion() {
     slideContainerCamion.classList.add("slide_transition_out");
 }
 
-function showOnOverInfo() {
-    
+function showOnOver(svg, containerSvg) {
+    svg = 
+    slideContainerSvg.classList.add("slide_transition_in");
+    infoSvg.style.visibility = "visible";
+    slideContainerSvg.classList.remove("slide_transition_out");
+}
+
+function hideOnOut(svg, containerSvg) {
+    slideContainerMap.classList.remove("slide_transition_in");
+    slideContainerMap.classList.add("slide_transition_out");
 }
 
