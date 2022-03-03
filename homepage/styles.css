@@ -44,7 +44,7 @@ body {
 #slide_container_camion {
     position: absolute;
     left: 64%;
-    bottom: 135px;
+    bottom: 125px;
     z-index: -2;
 }
 
