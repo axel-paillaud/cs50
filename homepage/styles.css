@@ -48,6 +48,18 @@ body {
     z-index: -2;
 }
 
+#slide_container_info {
+    position: absolute;
+    left: 64%;
+    bottom: 125px;
+    z-index: -2;
+}
+
+#info_svg {
+    height: 150%;
+    width: 150%;
+}
+
 #light_bulb {
     height: 30%;
     width: 30%;
