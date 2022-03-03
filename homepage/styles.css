@@ -115,6 +115,10 @@ hr {
     z-index: 1;
 }
 
+.marginTop {
+    margin-top: 50px;
+}
+
 .btn-classic {
     background-color: #b37700;
     color: white;
