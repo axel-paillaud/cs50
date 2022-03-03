@@ -44,7 +44,7 @@ body {
 #slide_container_camion {
     position: absolute;
     left: 64%;
-    bottom: 145px;
+    bottom: 135px;
     z-index: -2;
 }
 
@@ -54,8 +54,8 @@ body {
 }
 
 #camion_slide {
-    height: 100%;
-    width: 100%;
+    height: 110%;
+    width: 110%;
 }
 
 .slide_transition_in {
