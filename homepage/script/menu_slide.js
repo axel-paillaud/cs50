@@ -47,12 +47,13 @@ function hideOnOutCamion() {
 
 function showOnOver(svg, containerSvg) {
     containerSvg.classList.add("slide_transition_in");
-    infoSvg.style.visibility = "visible";
-    slideContainerSvg.classList.remove("slide_transition_out");
+    svg.style.visibility = "visible";
+    containerSvg.classList.remove("slide_transition_out");
 }
 
-function hideOnOut(svg, containerSvg) {
-    slideContainerMap.classList.remove("slide_transition_in");
-    slideContainerMap.classList.add("slide_transition_out");
+function hideOnOut(containerSvg) {
+    containerSvg.classList.remove("slide_transition_in");
+    containerSvg.classList.add("slide_transition_out");
 }
+
 
