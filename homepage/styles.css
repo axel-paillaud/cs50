@@ -19,11 +19,11 @@ body {
 
 @keyframes slide_animation_in {
     from {bottom: 95px; opacity: 0.0;}
-    to {bottom: 120px; opacity: 1.0;}
+    to {bottom: 130px; opacity: 1.0;}
 }
 
 @keyframes slide_animation_out {
-    from {bottom: 120px; opacity: 1.0;}
+    from {bottom: 130px; opacity: 1.0;}
     to {bottom: 95px; opacity: 0.0;}
 }
 
