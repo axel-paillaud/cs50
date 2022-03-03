@@ -45,3 +45,7 @@ function hideOnOutCamion() {
     slideContainerCamion.classList.add("slide_transition_out");
 }
 
+function showOnOverInfo() {
+    
+}
+
