@@ -12,39 +12,6 @@ lightBulb.style.visibility = "hidden";
 camionSvg.style.visibility = "hidden";
 infoSvg.style.visibility = "hidden";
 
-function showOnOverMap() {
-    slideContainerMap.classList.add("slide_transition_in");
-    mapEuropeSvg.style.visibility = "visible";
-    slideContainerMap.classList.remove("slide_transition_out");
-}
-
-function hideOnOutMap() {
-    slideContainerMap.classList.remove("slide_transition_in");
-    slideContainerMap.classList.add("slide_transition_out");
-}
-
-function showOnOverBulb() {
-    slideContainerTips.classList.add("slide_transition_in");
-    lightBulb.style.visibility = "visible";
-    slideContainerTips.classList.remove("slide_transition_out");
-}
-
-function hideOnOutBulb() {
-    slideContainerTips.classList.remove("slide_transition_in");
-    slideContainerTips.classList.add("slide_transition_out");
-}
-
-function showOnOverCamion() {
-    slideContainerCamion.classList.add("slide_transition_in");
-    camionSvg.style.visibility = "visible";
-    slideContainerCamion.classList.remove("slide_transition_out");
-}
-
-function hideOnOutCamion() {
-    slideContainerCamion.classList.remove("slide_transition_in");
-    slideContainerCamion.classList.add("slide_transition_out");
-}
-
 function showOnOver(svg, containerSvg) {
     containerSvg.classList.add("slide_transition_in");
     svg.style.visibility = "visible";
