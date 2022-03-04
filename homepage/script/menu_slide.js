@@ -19,7 +19,10 @@ function showOnOver(svg, containerSvg) {
     containerSvg.classList.remove("slide_transition_out");
 }
 
-function hideOnOut(containerSvg) {
+function hideOnOut(containerSvg, click) {
+    if (click == True) {
+        
+    }
     containerSvg.classList.remove("slide_transition_in");
     containerSvg.classList.add("slide_transition_out");
 }
