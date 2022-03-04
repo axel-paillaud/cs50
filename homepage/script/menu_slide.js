@@ -23,4 +23,6 @@ function hideOnOut(containerSvg) {
     containerSvg.classList.add("slide_transition_out");
 }
 
-
+function stayOnClick(svg, containerSvg) {
+    
+}
