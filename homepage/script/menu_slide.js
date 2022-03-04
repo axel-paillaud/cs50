@@ -6,6 +6,7 @@ var slideContainerTips = document.getElementById("slide_container_tips");
 var slideContainerMap = document.getElementById("slide_container_map");
 var slideContainerCamion = document.getElementById("slide_container_camion");
 var slideContainerInfo = document.getElementById("slide_container_info");
+var onClick = False;
 
 mapEuropeSvg.style.visibility = "hidden";
 lightBulb.style.visibility = "hidden";
@@ -23,6 +24,6 @@ function hideOnOut(containerSvg) {
     containerSvg.classList.add("slide_transition_out");
 }
 
-function stayOnClick(svg, containerSvg) {
-    
+function stayOnClick(containerSvg, click) {
+    click = True;
 }
