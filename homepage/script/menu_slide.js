@@ -32,3 +32,7 @@ function hideOnOut(containerSvg, click) {
 function stayOnClick(click) {
     click = True;
 }
+
+function onLoad() {
+    click = False;
+}
