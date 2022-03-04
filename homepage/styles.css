@@ -293,7 +293,6 @@ iframe {
 }
 
 #creator {
-    position: fixed;
     right: 10%;
     bottom: 5px;
     font-size: 75%;
