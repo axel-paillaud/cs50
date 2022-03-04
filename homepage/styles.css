@@ -264,7 +264,7 @@ iframe {
 
 @media screen and (max-width: 800px) {
     #svgCamionAnim {
-        width: 60%;
+        width: 100%;
     }
 }
 
