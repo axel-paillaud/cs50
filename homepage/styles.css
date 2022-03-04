@@ -293,7 +293,7 @@ iframe {
 }
 
 #creator {
-    right: 10%;
-    bottom: 5px;
+    text-align: center;
+    padding-top: 10%;
     font-size: 75%;
 }
