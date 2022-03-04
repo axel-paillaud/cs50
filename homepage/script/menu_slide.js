@@ -21,12 +21,14 @@ function showOnOver(svg, containerSvg) {
 
 function hideOnOut(containerSvg, click) {
     if (click == True) {
-        
+        console.log(click);
     }
-    containerSvg.classList.remove("slide_transition_in");
-    containerSvg.classList.add("slide_transition_out");
+    else {
+        containerSvg.classList.remove("slide_transition_in");
+        containerSvg.classList.add("slide_transition_out");
+    }
 }
 
-function stayOnClick(containerSvg, click) {
+function stayOnClick(click) {
     click = True;
 }
