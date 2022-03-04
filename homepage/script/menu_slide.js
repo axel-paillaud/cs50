@@ -20,12 +20,10 @@ function showOnOver(svg, containerSvg) {
 }
 
 function hideOnOut(containerSvg, click) {
-    if (click == true) {
-        console.log(click);
-    }
-    else {
-        containerSvg.classList.remove("slide_transition_in");
-        containerSvg.classList.add("slide_transition_out");
-    }
+    containerSvg.classList.remove("slide_transition_in");
+    containerSvg.classList.add("slide_transition_out");
 }
 
+function stayOnLoad(containerSvg) {
+    containerSvg.classList.add("slide_transition_in");
+}
