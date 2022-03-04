@@ -262,11 +262,6 @@ iframe {
     max-width: 40%;
 }
 
-@media screen and (max-width: 800px) {
-    #svgCamionAnim {
-        width: 100%;
-    }
-}
 
 #camionInkAnim1, #camionInkAnim2 {
     transform: translate(-150px, 0);
