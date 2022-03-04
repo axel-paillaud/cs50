@@ -6,7 +6,7 @@ var slideContainerTips = document.getElementById("slide_container_tips");
 var slideContainerMap = document.getElementById("slide_container_map");
 var slideContainerCamion = document.getElementById("slide_container_camion");
 var slideContainerInfo = document.getElementById("slide_container_info");
-var onClick = False;
+var onClick = false;
 
 mapEuropeSvg.style.visibility = "hidden";
 lightBulb.style.visibility = "hidden";
@@ -20,7 +20,7 @@ function showOnOver(svg, containerSvg) {
 }
 
 function hideOnOut(containerSvg, click) {
-    if (click == True) {
+    if (click == true) {
         console.log(click);
     }
     else {
@@ -30,9 +30,9 @@ function hideOnOut(containerSvg, click) {
 }
 
 function stayOnClick(click) {
-    click = True;
+    click = true;
 }
 
 function onLoad() {
-    click = False;
+    click = false;
 }
