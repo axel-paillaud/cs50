@@ -8,7 +8,7 @@ var slideContainerCamion = document.getElementById("slide_container_camion");
 var slideContainerInfo = document.getElementById("slide_container_info");
 
 
-mapEuropeSvg.style.visibility = "hidden";
+mapEuropeSvg.style.visibility = "visible";
 lightBulb.style.visibility = "hidden";
 camionSvg.style.visibility = "hidden";
 infoSvg.style.visibility = "hidden";
