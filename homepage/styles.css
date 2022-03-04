@@ -258,6 +258,8 @@ iframe {
 #svgCamionAnim {
     display: block;
     margin: auto;
+    width: 50%;
+    height: 50%;
 }
 
 #camionInkAnim1, #camionInkAnim2 {
