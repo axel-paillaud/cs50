@@ -12,7 +12,7 @@
         <title>207smiletrip - Voyage</title>
 
     </head>
-    <body onmouseout="showOnOver(mapEuropeSvg, slideContainerMap)">
+    <body onload="showOnOver(mapEuropeSvg, slideContainerMap)" onmouseover="showOnOver(mapEuropeSvg, slideContainerMap)">
         <div>
             <a href="index.html"><button id="home" class="btn-classic"><i class="bi bi-house-fill"></i> home</button></a>
         </div>
@@ -46,8 +46,8 @@
         <div class="banner">
             <a href="voyage.html" ><button class="buttonBanner"><b class="disabled">Voyage</b></button></a>
             <a href ="vehicule.html"><button class="buttonBanner" onmouseover="showOnOver(camionSvg, slideContainerCamion), hideOnOut(slideContainerMap)" onmouseout="hideOnOut(slideContainerCamion)"><b class="disabled">Véhicule</b></button></a>
-            <a href="tips.html"><button class="buttonBanner" onmouseover="showOnOver(lightBulb, slideContainerTips)" onmouseout="hideOnOut(slideContainerTips)"><b class="disabled">Trucs et astuces</b></button></a>
-            <a href="about.html"><button class="buttonBanner" onmouseover="showOnOver(infoSvg, slideContainerInfo)" onmouseout="hideOnOut(slideContainerInfo)"><b class="disabled">À propos</b></button></a>
+            <a href="tips.html"><button class="buttonBanner" onmouseover="showOnOver(lightBulb, slideContainerTips), hideOnOut(slideContainerMap)" onmouseout="hideOnOut(slideContainerTips)"><b class="disabled">Trucs et astuces</b></button></a>
+            <a href="about.html"><button class="buttonBanner" onmouseover="showOnOver(infoSvg, slideContainerInfo), hideOnOut(slideContainerMap)" onmouseout="hideOnOut(slideContainerInfo)"><b class="disabled">À propos</b></button></a>
         </div>
         <hr>
         <div>
