@@ -113,6 +113,10 @@ h1 {
         margin-top: 25%;
         width: 50%;
     }
+
+    #slide_container_map {
+        pointer-events: none;
+    }
 }
 
 
