@@ -115,7 +115,7 @@ h1 {
     }
 
     #slide_container_map {
-        pointer-events: none;
+        display: none;
     }
 }
 
