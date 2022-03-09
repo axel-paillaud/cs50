@@ -134,6 +134,9 @@ h1 {
         width: 120%;
     }
 
+    #svgCamionAnim {
+        width: 300%;
+    }
 
     @keyframes slide_animation_in {
         from {bottom: 20px; left: 30%; opacity: 0.0;}
