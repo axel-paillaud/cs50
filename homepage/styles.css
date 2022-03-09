@@ -355,12 +355,13 @@ iframe {
     }
 
     .uldescr {
-        margin-top: 250px;
+        margin-top: 50px;
     }
 
     .imgdescr {
+        float: none;
         display: block;
         margin: auto;
-        width: 60%;
+        width: 100%;
     }
 }
