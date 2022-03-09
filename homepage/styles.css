@@ -122,14 +122,18 @@ h1 {
         width: 90%;
     }
 
+    #map_of_europe {
+        width: 60%;
+    }
+
     @keyframes slide_animation_in {
-        from {bottom: -40px; opacity: 0.0;}
-        to {bottom: 0px; opacity: 1.0;}
+        from {bottom: 20px; left: 30%; opacity: 0.0;}
+        to {bottom: 60px; left: 30%; opacity: 1.0;}
     }
 
     @keyframes slide_animation_out {
-        from {bottom: 0px; opacity: 1.0;}
-        to {bottom: -40px; opacity: 0.0;}
+        from {bottom: 60px; opacity: 1.0;}
+        to {bottom: 20px; opacity: 0.0;}
     }
 }
 
