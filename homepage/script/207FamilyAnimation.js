@@ -96,7 +96,7 @@ function moveRight() {
     }
     var maxWidth = window.innerWidth;
     pos += randomMultiplePosRight(multiplePosRight);
-    if (pos >= (maxWidth / 2)) {
+    if (pos >= (maxWidth / 2.5)) {
         stopMove();
         return;
     }
