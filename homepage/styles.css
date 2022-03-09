@@ -126,6 +126,16 @@ h1 {
         width: 60%;
     }
 
+    #camion_slide {
+        width: 80%;
+    }
+
+    #slide_container_tips {
+        left: 55%;
+        bottom: 150px;
+    }
+
+
     @keyframes slide_animation_in {
         from {bottom: 20px; left: 30%; opacity: 0.0;}
         to {bottom: 60px; left: 30%; opacity: 1.0;}
