@@ -383,7 +383,7 @@ iframe {
     }
 
     @keyframes slide_animation_out {
-        from {bottom: -10px; opacity: 1.0;}
+        from {bottom: -70px; opacity: 1.0;}
         to {bottom: -40px; opacity: 0.0;}
     }
 }
