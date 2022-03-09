@@ -364,4 +364,8 @@ iframe {
         margin: auto;
         width: 100%;
     }
+
+    #textunderdescr {
+        margin-top: 50px;
+    }
 }
