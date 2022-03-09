@@ -103,60 +103,6 @@ h1 {
     margin-bottom: 0%;
 }
 
-@media screen and (max-width: 600px) {
-    h1 {
-        width: 40%;
-        margin-top: 38%;
-    }
-
-    #smiletripTitle {
-        margin-top: 25%;
-        width: 50%;
-    }
-
-    #animContainer {
-        right: 14%;
-    }
-
-    .buttonBanner {
-        width: 90%;
-    }
-
-    #map_of_europe {
-        width: 60%;
-    }
-
-    #camion_slide {
-        width: 80%;
-    }
-
-    #info_svg {
-        width: 120%;
-    }
-
-    #svgCamionAnim {
-        width: 100%;
-    }
-
-    @keyframes slide_animation_in {
-        from {bottom: 20px; left: 30%; opacity: 0.0;}
-        to {bottom: 60px; left: 30%; opacity: 1.0;}
-    }
-
-    @keyframes slide_animation_out {
-        from {bottom: 60px; opacity: 1.0;}
-        to {bottom: 20px; opacity: 0.0;}
-    }
-
-    .youtubeVideo {
-        width: 100%;
-    }
-
-    .uldescr {
-        top: 500%;
-    }
-}
-
 
 h2 {
     text-align: center;
@@ -357,4 +303,58 @@ iframe {
     text-align: center;
     padding-top: 10%;
     font-size: 75%;
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        width: 40%;
+        margin-top: 38%;
+    }
+
+    #smiletripTitle {
+        margin-top: 25%;
+        width: 50%;
+    }
+
+    #animContainer {
+        right: 14%;
+    }
+
+    .buttonBanner {
+        width: 90%;
+    }
+
+    #map_of_europe {
+        width: 60%;
+    }
+
+    #camion_slide {
+        width: 80%;
+    }
+
+    #info_svg {
+        width: 120%;
+    }
+
+    #svgCamionAnim {
+        width: 100%;
+    }
+
+    @keyframes slide_animation_in {
+        from {bottom: 20px; left: 30%; opacity: 0.0;}
+        to {bottom: 60px; left: 30%; opacity: 1.0;}
+    }
+
+    @keyframes slide_animation_out {
+        from {bottom: 60px; opacity: 1.0;}
+        to {bottom: 20px; opacity: 0.0;}
+    }
+
+    .youtubeVideo {
+        width: 100%;
+    }
+
+    .uldescr {
+        top: 500%;
+    }
 }
