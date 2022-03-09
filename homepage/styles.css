@@ -372,6 +372,10 @@ iframe {
     .imgblog {
         width: 80%;
     }
+
+    video {
+        width: 80%;
+    }
 }
 
 
