@@ -135,7 +135,7 @@ h1 {
     }
 
     #svgCamionAnim {
-        width: 1000%;
+        width: 100%;
     }
 
     @keyframes slide_animation_in {
@@ -309,7 +309,7 @@ iframe {
     display: block;
     margin: auto;
     /* taille d'origine qui était bien: width="500" height="150"*/
-    max-width: 40%;
+    width: 40%;
 }
 
 
