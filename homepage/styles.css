@@ -105,8 +105,8 @@ h1 {
 
 @media screen and (max-width: 600px) {
     h1 {
-        margin-top: 25%;
         width: 40%;
+        margin-top: 38%;
     }
 
     #smiletripTitle {
@@ -120,6 +120,16 @@ h1 {
 
     .buttonBanner {
         width: 90%;
+    }
+
+    @keyframes slide_animation_in {
+        from {bottom: -40px; opacity: 0.0;}
+        to {bottom: 0px; opacity: 1.0;}
+    }
+
+    @keyframes slide_animation_out {
+        from {bottom: 0px; opacity: 1.0;}
+        to {bottom: -40px; opacity: 0.0;}
     }
 }
 
