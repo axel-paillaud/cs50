@@ -135,9 +135,7 @@ h1 {
     }
 
     #svgCamionAnim {
-        display: block;
-        width: 200%;
-        margin: auto;
+        width: 1000%;
     }
 
     @keyframes slide_animation_in {
