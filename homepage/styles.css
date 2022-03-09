@@ -147,6 +147,10 @@ h1 {
         from {bottom: 60px; opacity: 1.0;}
         to {bottom: 20px; opacity: 0.0;}
     }
+
+    .youtubeVideo {
+        width: 100%;
+    }
 }
 
 
