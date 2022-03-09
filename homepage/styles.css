@@ -355,6 +355,10 @@ iframe {
     }
 
     .uldescr {
-        top: 500%;
+        margin-top: 250px;
+    }
+
+    .imgdescr {
+        
     }
 }
