@@ -117,6 +117,10 @@ h1 {
     #animContainer {
         right: 14%;
     }
+
+    .buttonBanner {
+        width: 90%;
+    }
 }
 
 
