@@ -309,7 +309,7 @@ iframe {
     display: block;
     margin: auto;
     /* taille d'origine qui était bien: width="500" height="150"*/
-    width: 40%;
+    max-width: 150%;
 }
 
 
