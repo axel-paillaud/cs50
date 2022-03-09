@@ -134,8 +134,10 @@ h1 {
         width: 120%;
     }
 
-    #camionAnimContainer {
+    #svgCamionAnim {
+        display: block;
         width: 200%;
+        margin: auto;
     }
 
     @keyframes slide_animation_in {
