@@ -130,6 +130,10 @@ h1 {
         width: 80%;
     }
 
+    #info_svg {
+        width: 120%;
+    }
+
 
     @keyframes slide_animation_in {
         from {bottom: 20px; left: 30%; opacity: 0.0;}
