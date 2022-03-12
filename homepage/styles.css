@@ -379,19 +379,3 @@ iframe {
 }
 
 
-@media screen and (min-width: 768px) {
-
-    #smiletripTitle {
-        width: 60%;
-    }
-
-    @keyframes slide_animation_in {
-        from {bottom: -70px; opacity: 0.0;}
-        to {bottom: -40px; opacity: 1.0;}
-    }
-
-    @keyframes slide_animation_out {
-        from {bottom: -70px; opacity: 1.0;}
-        to {bottom: -40px; opacity: 0.0;}
-    }
-}
