@@ -8,8 +8,8 @@ def index():
     return render_template("index.html")
 
 
-@app.route("/greet")
-def greet():
+@app.route("/register", methods=["POST"])
+def register():
 
     # Valider l'inscription
     if not request.form.get("name") or request.form.get("sport") not in ["Basketball", "Soccer", "Ultimate Frisbee"]
