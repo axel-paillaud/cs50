@@ -4,6 +4,7 @@ app = Flask(__name__)
 
 SPORTS = [
     "Basketball",
+    "Football",
     "Soccer",
     "Ultimate Frisbee"
 ]
@@ -17,7 +18,7 @@ def index():
 def register():
 
     # Valider l'inscription
-    if not request.form.get("name") or request.form.get("sport") not in ["Basketball", "Soccer", "Ultimate Frisbee"]:
+    if not request.form.get("name") or request.form.get("sport") not in SPORTS:
         return render_template("failure.html")
 
     #Confirmer l'inscription
