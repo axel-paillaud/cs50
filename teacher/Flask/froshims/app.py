@@ -14,3 +14,6 @@ def greet():
     # Valider l'inscription
     if not request.form.get("name") or request.form.get("sport") not in ["Basketball", "Soccer", "Ultimate Frisbee"]
         return render_template("failure.html")
+
+    #Confirmer l'inscription
+    return render_template("succes.html")
