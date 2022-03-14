@@ -2,6 +2,15 @@
 
 {% block body %}
 
-    TODO
+    <h1>Register</h1>
+    <form action="/register" method="post">
+        <input autocomplete="off" autofocus name="name" placeholder="Name" type="text">
+        <select>
+            <option>Basketball</option>
+            <option>Soccer</option>
+            <option>Ultimate Frisbee</option>
+        </select>
+    </form>
+
 
 {% endblock %}
