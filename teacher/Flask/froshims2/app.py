@@ -31,11 +31,12 @@ def register():
         return render_template("failure.html", message="Pas de sport sélectionné")
 
     #Retenir l'inscrit
-    INSCRITS[name]=sport
+    INSCRITS[name] = sport
 
     #Confirmer l'inscription
-    return redirect'("/registrants")
+    return redirect("/registrants")
 
 @app.route("/registrants)
 def registrants():
     return render_template("registrants.html", registrants=INSCRITS)
+
