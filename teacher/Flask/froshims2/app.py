@@ -36,7 +36,7 @@ def register():
     #Confirmer l'inscription
     return redirect("/registrants")
 
-@app.route("/registrants)
+@app.route("/registrants")
 def registrants():
     return render_template("registrants.html", registrants=INSCRITS)
 
