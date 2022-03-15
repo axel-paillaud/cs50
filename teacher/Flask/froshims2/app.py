@@ -20,7 +20,8 @@ def index():
 def register():
 
     # Valider l'inscription
-    if not request.form.get("name"):
+    name = request.form.get("name")
+    if not name:
         return render_template("failure.html", message="Nom manquant")
 
     #Valider le sport
