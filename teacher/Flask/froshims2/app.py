@@ -30,5 +30,12 @@ def register():
     if sport not in SPORTS:
         return render_template("failure.html", message="Pas de sport sélectionné")
 
+    #Retenir l'inscrit
+    INSCRITS[name]=  sport
+
     #Confirmer l'inscription
-    return render_template("succes.html")
+    return redirect'("/registrants")
+
+@app.route("/registrants)
+def registrants():
+    return render_template("registrants.html", registrants=INSCRITS)
