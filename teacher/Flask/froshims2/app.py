@@ -21,7 +21,7 @@ def register():
 
     # Valider l'inscription
     if not request.form.get("name") or request.form.get("sport") not in SPORTS:
-        return render_template("failure.html")
+        return render_template("failure.html", message=")
 
     #Confirmer l'inscription
     return render_template("succes.html")
