@@ -40,7 +40,11 @@
                                 <td>{{ birth["name"] }}</td>
                                 <td>{{ birth["day"] }}</td>
                                 <td>{{ birth["month"] }}</td>
-                                <td><input id="suppr" type="submit" value="Supprimer"></td>
+                                <td>
+                                    <form action="/" method="post">
+                                        <input id="suppr" type="submit" value="Supprimer">
+                                    </form>
+                                </td>
                             </tr>
                         {% endfor %}
                     </tbody>
