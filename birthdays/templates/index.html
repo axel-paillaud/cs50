@@ -31,7 +31,9 @@
                         <!-- TODO: Loop through the database entries to display them in this table -->
                         {% for birth in births %}
                             <tr>
-                                <td></td>
+                                <td>{{ birth["name"] }}</td>
+                                <td>{{ birth["day"] }}</td>
+                                <td>{{ birth["month"] }}</td>
                             </tr>
                         {% endfor %}
                     </tbody>
