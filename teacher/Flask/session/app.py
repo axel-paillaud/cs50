@@ -12,3 +12,4 @@ def index():
     if not session.get("name"):
         return redirect("/login")
     return render_template("index.html")
+
