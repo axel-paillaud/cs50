@@ -11,7 +11,7 @@
     "samuelcolvin.jinjahtml", 
     "vsls-contrib.gitdoc"
   ], 
-  "image": "ghcr.io/cs50/codespace:63d1386bb87e8efcbcc433cd4d8abf2f0983641a", 
+  "image": "ghcr.io/cs50/codespace:49b322e1d53886994a88bc7fb020fd4d88f62587", 
   "postCreateCommand": "/opt/cs50/bin/postCreateCommand", 
   "settings": {
     "C_Cpp.autocomplete": "Disabled", 
