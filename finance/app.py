@@ -129,6 +129,8 @@ def register():
             return apology("The confirmation is incorrect", 403)
 
         password = generate_password_hash(request.form.get("regPassword"))
+        print(request.form.get("regPassword"))
+        print(password)
 
     else:
         return render_template("register.html")
