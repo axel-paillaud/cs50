@@ -131,7 +131,7 @@ def register():
         password = generate_password_hash(request.form.get("regPassword"))
         id = request.form.get("regUser")
 
-        db.execute()
+        db.execute("INSERT INTO users(username, hash) VALUES(?, ?)", id, password)
 
         return redirect("/")
 
