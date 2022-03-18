@@ -42,7 +42,8 @@
                                 <td>{{ birth["month"] }}</td>
                                 <td>
                                     <form action="/" method="post">
-                                        <input name="delete" id="suppr" type="submit" value="Supprimer">
+                                        <input name="id" type="hidden" value="{{ birth.id }}">
+                                        <input id="suppr" type="submit" value="Supprimer">
                                     </form>
                                 </td>
                             </tr>
