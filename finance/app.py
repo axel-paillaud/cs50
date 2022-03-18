@@ -125,6 +125,8 @@ def register():
         elif not request.form.get("regPassword"):
             return apology("Must provide password", 403)
 
+        elif 
+
         elif request.form.get("regPassword") != request.form.get("regConfirm"):
             return apology("The confirmation is incorrect", 403)
 
