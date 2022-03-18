@@ -125,9 +125,7 @@ def register():
         print(request.form.get("regUser"))
 
         for i in dict_name:
-            list_of_name = dict_name[i]
-
-        print(list_of_name)
+            print(dict_name[i])
 
         if not request.form.get("regUser"):
             return apology("Must provide username", 403)
