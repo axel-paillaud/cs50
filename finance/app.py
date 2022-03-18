@@ -119,13 +119,15 @@ def register():
     """Register user"""
     if request.method == "POST":
 
+        list_of_name = db.execute("SELECT username FROM users")
+
         if not request.form.get("regUser"):
             return apology("Must provide username", 403)
 
         elif not request.form.get("regPassword"):
             return apology("Must provide password", 403)
 
-        elif 
+        elif
 
         elif request.form.get("regPassword") != request.form.get("regConfirm"):
             return apology("The confirmation is incorrect", 403)
