@@ -119,8 +119,9 @@ def register():
     """Register user"""
     if request.method == "POST":
 
-        list_of_name = db.execute("SELECT username FROM users")
-        print(list_of_name)
+        list_of_name = []
+        dict_name = db.execute("SELECT username FROM users")
+        print(dict_name["username"])
 
         if not request.form.get("regUser"):
             return apology("Must provide username", 403)
@@ -128,7 +129,7 @@ def register():
         elif not request.form.get("regPassword"):
             return apology("Must provide password", 403)
 
-        elif request.form.get("regUser") in list_of_name["username"]:
+        elif request.form.get("regUser") in list_of_name:
             return apology("Username already taken", 403)
 
         elif request.form.get("regPassword") != request.form.get("regConfirm"):
