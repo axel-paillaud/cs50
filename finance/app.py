@@ -121,8 +121,6 @@ def register():
 
         list_of_name = db.execute("SELECT username FROM users")
         print(list_of_name)
-        for i in list_of_name:
-            print(list_of_name[i])
 
         if not request.form.get("regUser"):
             return apology("Must provide username", 403)
@@ -130,7 +128,7 @@ def register():
         elif not request.form.get("regPassword"):
             return apology("Must provide password", 403)
 
-        elif request.form.get("regUser") in list_of_name:
+        elif request.form.get("regUser") in list_of_name["username"]:
             return apology("Username already taken", 403)
 
         elif request.form.get("regPassword") != request.form.get("regConfirm"):
