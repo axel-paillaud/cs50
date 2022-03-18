@@ -121,8 +121,13 @@ def register():
 
         list_of_name = []
         dict_name = db.execute("SELECT username FROM users")
+        z = 0
         for i in dict_name:
-            print(dict_name)
+            print(dict_name[z]["username"])
+            list_of_name = dict_name[z]["username"]
+            z += 1
+
+        print(list_of_name)
 
         if not request.form.get("regUser"):
             return apology("Must provide username", 403)
