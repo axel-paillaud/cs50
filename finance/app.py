@@ -129,7 +129,7 @@ def register():
         elif not request.form.get("regPassword"):
             return apology("Must provide password", 403)
 
-        elif request.form.get("regUser") in list_of_name.values:
+        elif request.form.get("regUser") in list_of_name[value]:
             return apology("Username already taken", 403)
 
         elif request.form.get("regPassword") != request.form.get("regConfirm"):
