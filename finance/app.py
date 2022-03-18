@@ -128,7 +128,7 @@ def register():
         elif request.form.get("regPassowrd") != request.form.get("regConfirm"):
             return apology("The confirmation is incorrect", 403)
 
-        
+        password = generate_password_hash(request.form.get("regPassword"))
 
     else:
         return render_template("register.html")
