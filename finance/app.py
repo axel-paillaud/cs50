@@ -113,7 +113,8 @@ def quote():
     """Get stock quote."""
     if request.method == "POST":
 
-        return redirect("/")
+        symbol = request.form.get("quote")
+        return render_template("quote.html")
 
     else:
         return render_template("quote.html")
