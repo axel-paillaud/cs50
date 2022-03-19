@@ -123,7 +123,7 @@ def quote():
             name = var_lookup["name"]
             price = var_lookup["price"]
             symbol = var_lookup["symbol"]
-            return render_template("quoted.html", name, price, symbol)
+            return render_template("quoted.html", name=name, price=price, symbol=symbol)
 
     else:
         return render_template("quote.html")
