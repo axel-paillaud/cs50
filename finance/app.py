@@ -125,7 +125,8 @@ def register():
         for i in dict_name:
             print(dict_name[z]["username"])
             list_of_name.append(dict_name[z]["username"])
-            if 
+            if request.form.get("regUser") in dict_name[z]["username"]:
+                return apology("Username already taken", 403)
             z += 1
 
         print(list_of_name)

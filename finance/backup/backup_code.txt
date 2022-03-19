@@ -1,0 +1,10 @@
+        list_of_name = []
+        dict_name = db.execute("SELECT username FROM users")
+        z = 0
+        for i in dict_name:
+            print(dict_name[z]["username"])
+            list_of_name.append(dict_name[z]["username"])
+            z += 1
+
+        elif request.form.get("regUser") in list_of_name:
+            return apology("Username already taken", 403)
