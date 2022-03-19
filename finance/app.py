@@ -125,6 +125,7 @@ def register():
         for i in dict_name:
             print(dict_name[z]["username"])
             list_of_name.append(dict_name[z]["username"])
+            if 
             z += 1
 
         print(list_of_name)
