@@ -4,16 +4,8 @@
 
 {% block main %}
     <form action="/buy" method="post">
-        <div class="row g-3">
-            <div class="col">
-                <input autocomplete="off" autofocus class="form-control" name="symbol" placeholder="Symbol" type="text">
-            </div>
-            <div class="col">
-                <input autocomplete="off" class="form-control" name="shares" placeholder="Numbers of shares" type="number">
-            </div>
-            <div class="col">
-                <button class="btn btn-primary" type="submit">Buy</button>
-            </div>
-        </div>
+        <input autocomplete="off" autofocus name="symbol" placeholder="Symbol" type="text">
+        <input autocomplete="off" name="shares" placeholder="Numbers of shares" type="number">
+        <button class="btn btn-primary" type="submit">Buy</button>
     </form>
 {% endblock %}

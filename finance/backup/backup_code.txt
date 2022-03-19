@@ -1,10 +1,13 @@
-        list_of_name = []
-        dict_name = db.execute("SELECT username FROM users")
-        z = 0
-        for i in dict_name:
-            print(dict_name[z]["username"])
-            list_of_name.append(dict_name[z]["username"])
-            z += 1
-
-        elif request.form.get("regUser") in list_of_name:
-            return apology("Username already taken", 403)
+    <form action="/buy" method="post">
+        <div class="row g-3">
+            <div class="col">
+                <input autocomplete="off" autofocus class="form-control" name="symbol" placeholder="Symbol" type="text">
+            </div>
+            <div class="col">
+                <input autocomplete="off" class="form-control" name="shares" placeholder="Numbers of shares" type="number">
+            </div>
+            <div class="col">
+                <button class="btn btn-primary" type="submit">Buy</button>
+            </div>
+        </div>
+    </form>
