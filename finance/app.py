@@ -114,6 +114,11 @@ def quote():
     if request.method == "POST":
 
         symbol = request.form.get("quote")
+        var_lookup = lookup(symbol)
+
+        if var_lookup == None:
+            return apology("This symbol doesn't exist", 403)
+
         return redirect("/")
 
     else:
