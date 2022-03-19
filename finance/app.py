@@ -119,17 +119,13 @@ def register():
     """Register user"""
     if request.method == "POST":
 
-        list_of_name = []
-        dict_name = db.execute("SELECT username FROM users")
+        list_of_name = db.execute("SELECT username FROM users")
         z = 0
-        for i in dict_name:
-            print(dict_name[z]["username"])
-            list_of_name.append(dict_name[z]["username"])
-            if request.form.get("regUser") in dict_name[z]["username"]:
+        for i in list_of_name:
+            if request.form.get("regUser") in list_of_name[z]["username"]:
                 return apology("Username already taken", 403)
             z += 1
 
-        print(list_of_name)
 
         if not request.form.get("regUser"):
             return apology("Must provide username", 403)
