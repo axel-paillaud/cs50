@@ -120,9 +120,9 @@ def quote():
             return apology("Symbol not found", 403)
 
         else:
-            print(var_lookup)
-            
-        return redirect("/")
+            name = var_lookup["name"]
+            print(name)
+            return render_template("quoted.html")
 
     else:
         return render_template("quote.html")
