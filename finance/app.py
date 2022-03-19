@@ -120,7 +120,8 @@ def quote():
             return apology("Symbol not found", 403)
 
         else:
-
+            print(var_lookup)
+            
         return redirect("/")
 
     else:
