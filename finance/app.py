@@ -117,7 +117,9 @@ def quote():
         var_lookup = lookup(symbol)
 
         if var_lookup == None:
-            return apology("This symbol doesn't exist", 403)
+            return apology("Symbol not found", 403)
+
+        else:
 
         return redirect("/")
 
