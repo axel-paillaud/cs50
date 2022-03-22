@@ -48,7 +48,7 @@ CREATE TABLE wallets (
 
 CREATE TABLE wallets (
     ownID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
-    name TEXT NOT NULL, FOREIGN KEY (name) REFERENCES users(username),
-    symbolbite TEXT NOT NULL
+    symbolbite TEXT NOT NULL,
+    name TEXT NOT NULL, FOREIGN KEY (name) REFERENCES users(username)
 );
 
