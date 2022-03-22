@@ -18,15 +18,8 @@ CREATE TABLE transactions (
     orderID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
     symbol TEXT NOT NULL,
     shares INTEGER NOT NULL,
-    batard INTEGER NOT NULL,
+    value INTEGER NOT NULL,
     total INTEGER NOT NULL,
      idName INTEGER NOT NULL, FOREIGN KEY (idName) REFERENCES users(id)
         );
 
-CREATE TABLE transactions (
-    orderID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
-    symbol TEXT NOT NULL,
-    shares INTEGER NOT NULL,
-    total INTEGER NOT NULL,
-     idName INTEGER NOT NULL, FOREIGN KEY (idName) REFERENCES users(id)
-        );
