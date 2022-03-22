@@ -52,6 +52,7 @@ def buy():
     """Buy shares of stock"""
     if request.method == "POST":
         symbol = request.form.get("symbol")
+        shares = request.form.get("shares")
 
     else:
         return render_template("buy.html")
