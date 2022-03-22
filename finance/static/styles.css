@@ -31,6 +31,11 @@ nav .navbar-brand .green
     padding: 8px 11px;
     border-radius: 4px;
     margin: 10px;
+    color: white;
     background-color: #3366ff;
     border: none;
+}
+
+.button-custom:hover {
+    background-color: #0040ff;
 }
