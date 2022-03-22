@@ -14,6 +14,8 @@
 
 https://www.w3schools.com/css/css_form.asp
 
+transaction:
+
 CREATE TABLE transactions (
     orderID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
     symbol TEXT NOT NULL,
@@ -23,3 +25,13 @@ CREATE TABLE transactions (
      idName INTEGER NOT NULL, FOREIGN KEY (idName) REFERENCES users(id)
         );
 
+wallets:
+
+CREATE TABLE wallets (
+    name TEXT NOT NULL, FOREIGN KEY (name) REFERENCES users(username),
+    idName INTEGER NOT NULL, FOREIGN KEY (idName) REFERENCES users(id),
+    symbol TEXT NOT NULL,
+    shares INTEGER NOT NULL,
+    value INTEGER NOT NULL,
+    total INTEGER NOT NULL
+);
