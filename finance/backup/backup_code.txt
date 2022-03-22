@@ -13,3 +13,5 @@
     </form>
 
 https://www.w3schools.com/css/css_form.asp
+
+CREATE TABLE transactions ( orderID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, symbol TEXT NOT NULL, name )
