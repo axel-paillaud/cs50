@@ -35,3 +35,20 @@ CREATE TABLE wallets (
     value INTEGER NOT NULL,
     total INTEGER NOT NULL
 );
+
+
+CREATE TABLE wallets (
+    ownID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+    name TEXT NOT NULL, FOREIGN KEY (name) REFERENCES users(username),
+    symbol TEXT NOT NULL,
+    shares INTEGER NOT NULL,
+    value INTEGER NOT NULL,
+    total INTEGER NOT NULL
+);
+
+CREATE TABLE wallets (
+    ownID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+    name TEXT NOT NULL, FOREIGN KEY (name) REFERENCES users(username),
+    symbolbite TEXT NOT NULL
+);
+
