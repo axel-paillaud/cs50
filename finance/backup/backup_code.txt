@@ -23,13 +23,12 @@ CREATE TABLE transactions (
     value INTEGER NOT NULL,
     total INTEGER NOT NULL,
      idName INTEGER NOT NULL, FOREIGN KEY (idName) REFERENCES users(id)
-        );
+);
 
 wallets:
 
 CREATE TABLE wallets (
     name TEXT NOT NULL, FOREIGN KEY (name) REFERENCES users(username),
-    idName INTEGER NOT NULL, FOREIGN KEY (idName) REFERENCES users(id),
     symbol TEXT NOT NULL,
     shares INTEGER NOT NULL,
     value INTEGER NOT NULL,
