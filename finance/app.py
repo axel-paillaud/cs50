@@ -65,7 +65,7 @@ def buy():
             return apology("You do not have enough cash", 403)
 
         else:
-            
+            db.execute("UPDATE ")
 
 
         return redirect("/")
