@@ -58,19 +58,19 @@ def buy():
         current_user = session["user_id"]
         row = db.execute("SELECT cash FROM users WHERE id = ?", current_user)
         current_cash = row[0]["cash"]
-        print(current_cash)
-        print(price)
+        total_price = (price * shares)
 
         if var_lookup == None:
             return apology("Symbol not found", 403)
 
-        elif (price * shares) > current_cash:
+        elif total_price > current_cash:
             return apology("You do not have enough cash", 403)
 
         else:
-            update_cash = current_cash - (price * shares)
+            update_cash = current_cash - total_price
             print(update_cash)
             db.execute("UPDATE users SET cash = ? WHERE id = ?", update_cash, current_user)
+            db.execute("INSERT INTO transactions(symbol, shares, value, total, date, time) VALUES (?, ?, ?, ?, )")
 
 
         return redirect("/")
