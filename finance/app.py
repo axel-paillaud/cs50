@@ -57,6 +57,7 @@ def buy():
         price = var_lookup["price"]
         row = db.execute("SELECT cash FROM users WHERE id = ?", session["user_id"])
         current_cash = row[0]["cash"]
+        current_user = row[0]["id"]
 
         if var_lookup == None:
             return apology("Symbol not found", 403)
@@ -65,7 +66,7 @@ def buy():
             return apology("You do not have enough cash", 403)
 
         else:
-            db.execute("UPDATE ")
+            db.execute("UPDATE users SET cash = ? WHERE ")
 
 
         return redirect("/")
