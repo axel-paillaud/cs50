@@ -5,6 +5,7 @@ from flask import Flask, flash, redirect, render_template, request, session
 from flask_session import Session
 from tempfile import mkdtemp
 from werkzeug.security import check_password_hash, generate_password_hash
+from datetime import datetime
 
 from helpers import apology, login_required, lookup, usd
 
@@ -56,6 +57,11 @@ def buy():
         var_lookup = lookup(symbol)
         price = var_lookup["price"]
         current_user = session["user_id"]
+        date = datetime.date(datetime.now)
+        time = datetime.time(datetime.now)
+        print(date)
+        print(time)
+
         row = db.execute("SELECT cash FROM users WHERE id = ?", current_user)
         current_cash = row[0]["cash"]
         total_price = (price * shares)
@@ -70,7 +76,7 @@ def buy():
             update_cash = current_cash - total_price
             print(update_cash)
             db.execute("UPDATE users SET cash = ? WHERE id = ?", update_cash, current_user)
-            db.execute("INSERT INTO transactions(symbol, shares, value, total, date, time) VALUES (?, ?, ?, ?, )")
+            db.execute("INSERT INTO transactions(symbol, shares, value, total, date, time) VALUES (?, ?, ?, ?, ?, ?)", symbol, )
 
 
         return redirect("/")
