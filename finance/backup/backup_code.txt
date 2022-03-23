@@ -52,4 +52,7 @@ CREATE TABLE wallets (
     FOREIGN KEY (idName) REFERENCES users(id)
 );
 
+        else:
+            db.execute("UPDATE users SET cash = ? WHERE ")
+
 
