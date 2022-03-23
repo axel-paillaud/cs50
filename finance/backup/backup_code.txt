@@ -25,6 +25,15 @@ CREATE TABLE transactions (
      idName INTEGER NOT NULL, FOREIGN KEY (idName) REFERENCES users(id)
 );
 
+CREATE TABLE transactions (
+    orderID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+    symbol TEXT NOT NULL,
+    shares INTEGER NOT NULL,
+    value NUMERIC NOT NULL,
+    total NUMERIC NOT NULL,
+     idName INTEGER NOT NULL, FOREIGN KEY (idName) REFERENCES users(id)
+);
+
 wallets:
 
 
