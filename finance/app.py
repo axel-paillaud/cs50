@@ -68,8 +68,9 @@ def buy():
             return apology("You do not have enough cash", 403)
 
         else:
-            update_cash = current_cash 
+            update_cash = current_cash - (price * shares)
             print(update_cash)
+            db.execute("UPDATE users SET cash = ? WHERE id = ?", )
 
 
 
