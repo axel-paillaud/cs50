@@ -71,9 +71,6 @@ def buy():
             update_cash = current_cash - (price * shares)
             print(update_cash)
             db.execute("UPDATE users SET cash = ? WHERE id = ?", update_cash, current_user)
-            show = db.execute("SELECT * FROM users")
-            print(show)
-
 
 
         return redirect("/")
