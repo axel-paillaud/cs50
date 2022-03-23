@@ -31,6 +31,8 @@ CREATE TABLE transactions (
     shares INTEGER NOT NULL,
     value NUMERIC NOT NULL,
     total NUMERIC NOT NULL,
+    date TEXT NOT NULL,
+    time TEXT NOT NULL,
      idName INTEGER NOT NULL, FOREIGN KEY (idName) REFERENCES users(id)
 );
 
