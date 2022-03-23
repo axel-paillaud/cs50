@@ -57,8 +57,7 @@ def buy():
         var_lookup = lookup(symbol)
         price = var_lookup["price"]
         current_user = session["user_id"]
-        date = datetime.date(datetime.now)
-        time = datetime.time(datetime.now)
+        time = datetime.now()
 
 
         row = db.execute("SELECT cash FROM users WHERE id = ?", current_user)
