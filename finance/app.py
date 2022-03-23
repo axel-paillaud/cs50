@@ -55,16 +55,22 @@ def buy():
         shares = int(request.form.get("shares"))
         var_lookup = lookup(symbol)
         price = var_lookup["price"]
-        current
-        row = db.execute("SELECT cash FROM users WHERE id = ?", session["user_id"])
+        current_user = session["user_id"]
+        row = db.execute("SELECT cash FROM users WHERE id = ?", current_user)
         current_cash = row[0]["cash"]
-        print(row)
+        print(current_cash)
+        print(price)
 
         if var_lookup == None:
             return apology("Symbol not found", 403)
 
         elif (price * shares) > current_cash:
             return apology("You do not have enough cash", 403)
+
+        else:
+            update_cash = current_cash 
+            print(update_cash)
+
 
 
         return redirect("/")
