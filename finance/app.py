@@ -54,6 +54,10 @@ def buy():
         symbol = request.form.get("symbol")
         shares = request.form.get("shares")
 
+        if lookup(symbol) == None:
+            return apology("Symbol not found", 403)
+        
+
         return redirect("/")
 
     else:
