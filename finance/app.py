@@ -59,8 +59,7 @@ def buy():
         current_user = session["user_id"]
         date = datetime.date(datetime.now)
         time = datetime.time(datetime.now)
-        print(date)
-        print(time)
+
 
         row = db.execute("SELECT cash FROM users WHERE id = ?", current_user)
         current_cash = row[0]["cash"]
