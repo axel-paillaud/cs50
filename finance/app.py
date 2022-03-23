@@ -56,7 +56,8 @@ def buy():
 
         if lookup(symbol) == None:
             return apology("Symbol not found", 403)
-        
+
+        elif 
 
         return redirect("/")
 
