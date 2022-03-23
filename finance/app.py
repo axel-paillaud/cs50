@@ -60,6 +60,8 @@ def buy():
         print(current_cash)
         print(price)
         print(shares)
+        print(type(price))
+        print(type(shares))
 
         if var_lookup == None:
             return apology("Symbol not found", 403)
