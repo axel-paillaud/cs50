@@ -83,8 +83,10 @@ def buy():
             if check_empty:
                 print("It is not empty")
                 current_shares = db.execute("SELECT shares FROM wallets WHERE symbol = ?", symbol)
+                current_total = db.execute("SELECT total FROM wallets WHERE symbol = ?", symbol)
                 new_shares = current_shares + shares
-                db.execute("UPDATE wallets SET shares = ?, value = ?, total = ?", new_shares, price, )
+                new_total = total_price + current_total
+                db.execute("UPDATE wallets SET shares = ?, value = ?, total = ?", new_shares, price, new_total)
 
             else:
                 print("List is empty")
