@@ -45,7 +45,7 @@ def after_request(response):
 def index():
     """Show portfolio of stocks"""
 
-    
+
     return render_template("index.html")
 
 
@@ -86,6 +86,7 @@ def buy():
 
             # check if the symbol already exist. If not, create it.
             check_empty = db.execute("SELECT ? FROM wallets WHERE idName = ?", symbol, current_user)
+            print(check_empty)
             if check_empty:
                 row2 = db.execute("SELECT shares FROM wallets WHERE symbol = ?", symbol)
                 current_shares = row2[0]["shares"]
