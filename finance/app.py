@@ -78,10 +78,13 @@ def buy():
             db.execute("UPDATE users SET cash = ? WHERE id = ?", update_cash, current_user)
             db.execute("INSERT INTO transactions(symbol, shares, value, total, date, time, idName) VALUES (?, ?, ?, ?, ?, ?, ?)", symbol, shares, price, total_price, date, time, current_user)
 
-            test = db.execute("SELECT ? FROM wallets", symbol)
-            print(test)
-            if test == None:
-                print("caca")
+            # check if the symbol already exist. If not, create it.
+            check_empty = db.execute("SELECT ? FROM wallets", symbol)
+            if check_empty:
+                print("It is not empty")
+
+            else:
+                print("List is empty")
 
 
         return redirect("/")
