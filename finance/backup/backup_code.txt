@@ -56,9 +56,7 @@ CREATE TABLE wallets (
 db.execute("INSERT INTO transactions(symbol, shares, value, total, date, time) VALUES (?, ?, ?, ?, ?, ?)", symbol, shares, price, total_price, date, time)
 db.execute("INSERT INTO transactions(symbol, shares, value, total, date, time, idName) VALUES (?, ?, ?, ?, ?, ?, ?)", symbol, shares, price, total_price, date, time, current_user)
 
-(SELECT symbol FROM wallets WHERE symbol = ?), symbol
-(SELECT symbol FROM wallets WHERE EXISTS (SELECT symbol FROM wallets WHERE symbol = ?)), symbol
-SELECT symbol FROM wallets CASE WHEN 
+db.execute("UPDATE wallets SET ")
 
 
 
