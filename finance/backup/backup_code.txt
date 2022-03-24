@@ -58,7 +58,7 @@ db.execute("INSERT INTO transactions(symbol, shares, value, total, date, time, i
 
 (SELECT symbol FROM wallets WHERE symbol = ?), symbol
 (SELECT symbol FROM wallets WHERE EXISTS (SELECT symbol FROM wallets WHERE symbol = ?)), symbol
-SELECT symbol FROM wallets CASE 
+SELECT symbol FROM wallets CASE WHEN 
 
 
 
