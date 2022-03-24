@@ -55,3 +55,5 @@ CREATE TABLE wallets (
 db.execute("INSERT INTO transactions(symbol, shares, value, total, date, time) VALUES (?, ?, ?, ?, ?, ?)", symbol, shares, price, total_price, date, time)
 db.execute("INSERT INTO transactions(symbol, shares, value, total, date, time, idName) VALUES (?, ?, ?, ?, ?, ?, ?)", symbol, shares, price, total_price, date, time, current_user)
 
+
+
