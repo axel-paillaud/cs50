@@ -56,6 +56,7 @@ def buy():
         shares = int(request.form.get("shares"))
         var_lookup = lookup(symbol)
         price = var_lookup["price"]
+        corp_name = var_lookup["name"]
         current_user = session["user_id"]
         now = datetime.now()
         time = now.strftime("%H:%M:%S")
@@ -86,10 +87,15 @@ def buy():
                 current_total = db.execute("SELECT total FROM wallets WHERE symbol = ?", symbol)
                 new_shares = current_shares + shares
                 new_total = total_price + current_total
-                db.execute("UPDATE wallets SET shares = ?, value = ?, total = ?", new_shares, price, new_total)
+                db.execute("UPDATE wallets SET shares = ?, value = ?, total = ? WHERE idName = ?", new_shares, price, new_total, current_user)
+                test = db.execute("SELECT * FROM wallets WHERE idName = ?", current_user)
+                print(test)
 
             else:
                 print("List is empty")
+                db.execute("INSERT INTO wallets (symbol, shares, value, total, name, idName) VALUES (?, ?, ?, ?, ?, ?)", symbol, shares, price, total_price, corp_name, current_user)
+                test2 = db.execute("SELECT * FROM wallets WHERE idName = ?", current_user)
+                print(test2)
 
 
         return redirect("/")
