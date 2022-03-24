@@ -40,3 +40,7 @@ nav .navbar-brand .green
 .button-custom:hover {
     background-color: #0040ff;
 }
+
+.text-align-left {
+    text-align: left;
+}
