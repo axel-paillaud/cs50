@@ -71,6 +71,9 @@ def buy():
         if var_lookup == None:
             return apology("Symbol not found", 403)
 
+        elif shares <= 0:
+            return apology("You must provide a positive number of shares")
+
         elif total_price > current_cash:
             return apology("You do not have enough cash", 403)
 
