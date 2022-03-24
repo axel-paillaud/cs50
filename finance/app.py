@@ -80,11 +80,9 @@ def buy():
             db.execute("INSERT INTO transactions(symbol, shares, value, total, date, time, idName) VALUES (?, ?, ?, ?, ?, ?, ?)", symbol, shares, price, total_price, date, time, current_user)
 
             # check if the symbol already exist. If not, create it.
-            check_empty = db.execute("SELECT ? FROM wallets", symbol)
-            print(check_empty)
+            check_empty = db.execute("SELECT ? FROM wallets WHERE idName = ?", symbol, current_user)
             if check_empty:
                 row2 = db.execute("SELECT shares FROM wallets WHERE symbol = ?", symbol)
-                print(row2)
                 current_shares = row2[0]["shares"]
                 row3 = db.execute("SELECT total FROM wallets WHERE symbol = ?", symbol)
                 current_total = row3[0]["total"]
