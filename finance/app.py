@@ -58,11 +58,9 @@ def buy():
         price = var_lookup["price"]
         current_user = session["user_id"]
         now = datetime.now()
-        print(now)
         time = now.strftime("%H:%M:%S")
-        print(time)
         date = now.strftime("%d/%m/%Y")
-        print(date)
+
 
 
         row = db.execute("SELECT cash FROM users WHERE id = ?", current_user)
@@ -79,7 +77,10 @@ def buy():
             update_cash = current_cash - total_price
             db.execute("UPDATE users SET cash = ? WHERE id = ?", update_cash, current_user)
             db.execute("INSERT INTO transactions(symbol, shares, value, total, date, time, idName) VALUES (?, ?, ?, ?, ?, ?, ?)", symbol, shares, price, total_price, date, time, current_user)
-            db.execute("INSERT INTO wallets)
+
+            test = db.execute("SELECT symbol FROM wallets WHERE symbol = ?", symbol)
+            if test == None:
+                print("caca")
 
         return redirect("/")
 
