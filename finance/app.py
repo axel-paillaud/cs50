@@ -81,6 +81,7 @@ def buy():
 
             # check if the symbol already exist. If not, create it.
             check_empty = db.execute("SELECT ? FROM wallets", symbol)
+            print(check_empty)
             if check_empty:
                 row2 = db.execute("SELECT shares FROM wallets WHERE symbol = ?", symbol)
                 print(row2)
