@@ -23,7 +23,9 @@
             </tr>
         </thead>
         <tbody>
-            <td></td>
+            {% for row in name %}
+            <td>{{ row.name }}</td>
+            {% endfor %}
         </tbody>
     </table>
 
