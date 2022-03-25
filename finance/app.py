@@ -45,6 +45,7 @@ def after_request(response):
 def index():
     """Show portfolio of stocks"""
 
+    
 
     return render_template("index.html")
 
