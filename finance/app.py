@@ -54,17 +54,13 @@ def index():
     current_cash = row2[0]["cash"]
 
     total_row = db.execute("SELECT total FROM wallets WHERE idName = ?", current_user)
-    print(total_row)
-    print(total_row[0]["total"])
     for row in total_row:
         tmp = total_row[i]["total"]
         total += tmp
         i += 1
 
-    print(total)
 
-
-    return render_template("index.html", wallet=wallet_list, cash=current_cash)
+    return render_template("index.html", wallet=wallet_list, cash=current_cash, total=total)
 
 
 @app.route("/buy", methods=["GET", "POST"])
