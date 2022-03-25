@@ -51,7 +51,8 @@ def index():
 
     wallet_list = db.execute("SELECT * FROM wallets WHERE idName = ?", current_user)
     row2 = db.execute("SELECT cash FROM users WHERE id = ?", current_user)
-    current_cash = row2[0]["cash"]
+    current_cash_float = row2[0]["cash"]
+    current_cash = round(current_cash_float, 2)
     print(wallet_list)
 
     total_row = db.execute("SELECT total FROM wallets WHERE idName = ?", current_user)
