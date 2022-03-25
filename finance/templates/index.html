@@ -24,7 +24,9 @@
         </thead>
         <tbody>
             {% for row in wallet %}
-            {{ row.name }}
+                {% for td in row %}
+                <td>{{ wallet.name }}</td>
+                {% endfor %}
             {% endfor %}
         </tbody>
     </table>
