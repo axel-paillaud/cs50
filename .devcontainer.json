@@ -8,10 +8,9 @@
     "ms-vscode.hexeditor", 
     "ms-vsliveshare.vsliveshare-audio", 
     "MS-vsliveshare.vsliveshare-pack", 
-    "samuelcolvin.jinjahtml", 
     "vsls-contrib.gitdoc"
   ], 
-  "image": "ghcr.io/cs50/codespace:49b322e1d53886994a88bc7fb020fd4d88f62587", 
+  "image": "ghcr.io/cs50/codespace:e2886a69b9a0d9a12b0012319c978981c817bb4f", 
   "postCreateCommand": "/opt/cs50/bin/postCreateCommand", 
   "settings": {
     "C_Cpp.autocomplete": "Disabled", 
@@ -54,9 +53,6 @@
     "experiments.override.gettingStarted.overrideCategory.ms-python.python.pythonWelcome.when": "false", 
     "experiments.override.gettingStarted.overrideCategory.ms-vscode.cpptools.cppWelcome.when": "false", 
     "extensions.ignoreRecommendations": true, 
-    "files.associations": {
-      "*.html": "jinja-html"
-    }, 
     "files.autoSave": "afterDelay", 
     "files.exclude": {
       "**/.*": true
