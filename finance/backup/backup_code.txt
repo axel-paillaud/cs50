@@ -57,6 +57,27 @@ db.execute("INSERT INTO transactions(symbol, shares, value, total, date, time, i
 
 db.execute("UPDATE wallets SET shares = ?, value = ?, total = ?")
 
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Names</th>
+                <th>Symbol</th>
+                <th>Shares</th>
+                <th>Current price</th>
+                <th>Total prices</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in wallet %}
+                <tr>
+                    {% for td in row %}
+                        <td>{{ row.name }}</td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
 
 
 
