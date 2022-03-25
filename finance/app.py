@@ -48,7 +48,7 @@ def index():
     current_user = session["user_id"]
 
     wallet_list = db.execute("SELECT * FROM wallets WHERE idName = ?", current_user)
-    print(wallet_list)
+    current_cash = db.execute("SELECT cash FROM users WHERE idName = ?", current_user)
 
     return render_template("index.html", wallet=wallet_list)
 

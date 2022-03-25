@@ -20,8 +20,8 @@
                     <td>{{ row.name }}</td>
                     <td>{{ row.symbol }}</td>
                     <td>{{ row.shares }}</td>
-                    <td>{{ row.value }}</td>
-                    <td>{{ row.total }}</td>
+                    <td>${{ row.value }}</td>
+                    <td>${{ row.total }}</td>
                 </tr>
             {% endfor %}
                 <tr>
@@ -29,14 +29,14 @@
                     <td class="no-border"></td>
                     <td class="no-border"></td>
                     <td class="no-border"><b>Cash</b></td>
-                    <td class="no-border">ici l'argent</td>
+                    <td class="no-border">$ici l'argent</td>
                 </tr>
                 <tr>
                     <td class="no-border"></td>
                     <td class="no-border"></td>
                     <td class="no-border"></td>
                     <td class="no-border"><b>TOTAL</b></td>
-                    <td class="no-border">le TOTAL</td>
+                    <td class="no-border">$le TOTAL</td>
                 </tr>
         </tbody>
     </table>
