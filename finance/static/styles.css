@@ -49,4 +49,8 @@ nav .navbar-brand .green
     border-style: none;
 }
 
+.thick-border {
+    border-width: 2px;
+}
+
 
