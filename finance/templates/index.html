@@ -4,14 +4,6 @@
 
 {% block main %}
 
-    <div class="left">
-    <b>Cash owned: </b>
-    <br>
-    <b>Total value: </b>
-    </div>
-
-    <br>
-
     <table class="table">
         <thead>
             <tr>
@@ -34,5 +26,11 @@
             {% endfor %}
         </tbody>
     </table>
+
+    <div id="cash-own">
+        <b>Cash owned: </b>
+        <br>
+        <b>Total value: </b>
+    </div>
 
 {% endblock %}
