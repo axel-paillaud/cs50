@@ -48,7 +48,6 @@ CREATE TABLE wallets (
     total INTEGER NOT NULL,
     name TEXT NOT NULL,
     idName INTEGER NOT NULL,
-    UNIQUE (symbol),
     FOREIGN KEY (idName) REFERENCES users(id)
 );
 
