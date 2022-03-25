@@ -48,9 +48,10 @@ def index():
     current_user = session["user_id"]
 
     wallet_list = db.execute("SELECT * FROM wallets WHERE idName = ?", current_user)
-    current_cash = db.execute("SELECT cash FROM users WHERE idName = ?", current_user)
+    row = db.execute("SELECT cash FROM users WHERE id = ?", current_user)
+    current_cash = row[0]["cash"]
 
-    return render_template("index.html", wallet=wallet_list)
+    return render_template("index.html", wallet=wallet_list, cash=current_cash)
 
 
 @app.route("/buy", methods=["GET", "POST"])
