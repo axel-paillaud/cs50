@@ -83,7 +83,8 @@ def buy():
 
         row = db.execute("SELECT cash FROM users WHERE id = ?", current_user)
         current_cash = row[0]["cash"]
-        total_price = (price * shares)
+        total_price_float = (price * shares)
+        total_price = round(total_price_float, 2)
 
         if var_lookup == None:
             return apology("Symbol not found", 403)
