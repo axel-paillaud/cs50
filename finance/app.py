@@ -45,9 +45,12 @@ def after_request(response):
 def index():
     """Show portfolio of stocks"""
 
-    
+    current_user = session["user_id"]
 
-    return render_template("index.html")
+    wallet_list = db.execute("SELECT * FROM wallets WHERE idName = ?", current_user)
+    print(wallet_list)
+
+    return render_template("index.html", wallet_list)
 
 
 @app.route("/buy", methods=["GET", "POST"])
