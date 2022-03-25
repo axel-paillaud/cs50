@@ -45,7 +45,8 @@ nav .navbar-brand .green
     text-align: left;
 }
 
-#cash-own {
-    text-align: right;
-    margin-right: 23%;
+.no-border {
+    border-style: none;
 }
+
+
