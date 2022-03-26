@@ -268,7 +268,9 @@ def sell():
         if shares > current_shares:
             return apology("You do not have enough action", 403)
         else:
-            
+            current_price = var_lookup["price"]
+            total_price_float = current_price * shares
+            total_price = round(total_price_float, 2)
             return apology("TODO", 403)
 
 
