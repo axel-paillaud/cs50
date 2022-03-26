@@ -248,6 +248,7 @@ def sell():
         elif shares == 0:
             return apology("You cannot sell 0 shares",403)
 
+        # Symbole que possède l'utilisateur
         current_user = session["user_id"]
         i = 0
         list_symbol = []
@@ -255,6 +256,9 @@ def sell():
         for cell in row:
             list_symbol.append(row[i]["symbol"])
             i += 1
+
+        # Action que possède l'utilisateur
+        db.execute("SELECT shares FROM wallets WHERE idName = ? AND symbol = ?", current_user, symbol)
 
         if symbol not in list_symbol:
             return apology("You do not own this shares", 403)
