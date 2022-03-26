@@ -238,8 +238,6 @@ def sell():
         symbol = request.form.get("symbol")
         shares_str = request.form.get("shares")
         shares = int(shares_str)
-        print(symbol)
-        print(shares)
 
         if symbol == "empty":
             return apology("Invalid symbol", 403)
@@ -257,12 +255,15 @@ def sell():
             list_symbol.append(row[i]["symbol"])
             i += 1
 
+        if symbol not in list_symbol:
+            return apology("You do not own this shares", 403)
+
         # Action que possède l'utilisateur
         row = db.execute("SELECT shares FROM wallets WHERE idName = ? AND symbol = ?", current_user, symbol)
         current_shares = row[0]["shares"]
 
-        if symbol not in list_symbol:
-            return apology("You do not own this shares", 403)
+        if shares > current_shares:
+            return apology("You do not have enough action", 403)
         else:
             return apology("TODO", 403)
 
