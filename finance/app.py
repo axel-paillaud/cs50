@@ -258,7 +258,8 @@ def sell():
             i += 1
 
         # Action que possède l'utilisateur
-        db.execute("SELECT shares FROM wallets WHERE idName = ? AND symbol = ?", current_user, symbol)
+        row = db.execute("SELECT shares FROM wallets WHERE idName = ? AND symbol = ?", current_user, symbol)
+        print(row)
 
         if symbol not in list_symbol:
             return apology("You do not own this shares", 403)
