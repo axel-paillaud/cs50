@@ -237,10 +237,10 @@ def sell():
     if request.method == "POST":
         symbol = request.form.get("symbol")
         shares_str = request.form.get("shares")
-        print(shares_str)
         shares = int(shares_str)
         check_symbol = lookup(symbol)
-        print(check_symbol)
+        if check_symbol == None:
+            return apology("Invalid symbol", 403)
 
         if symbol == "empty":
             return apology("Invalid symbol", 403)
