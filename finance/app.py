@@ -251,6 +251,8 @@ def sell():
 
         if symbol not in list_symbol:
             return apology("You do not own this shares", 403)
+        else:
+            return apology("TODO", 403)
 
 
     else:
