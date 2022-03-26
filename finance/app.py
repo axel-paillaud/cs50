@@ -53,7 +53,6 @@ def index():
     row2 = db.execute("SELECT cash FROM users WHERE id = ?", current_user)
     current_cash_float = row2[0]["cash"]
     current_cash = round(current_cash_float, 2)
-    print(wallet_list)
 
     total_row = db.execute("SELECT total FROM wallets WHERE idName = ?", current_user)
     for row in total_row:
@@ -103,7 +102,6 @@ def buy():
 
             # check if the symbol already exist. If not, create it.
             check_empty = db.execute("SELECT ownID FROM wallets WHERE idName = ? AND symbol = ?", current_user, symbol)
-            print(check_empty)
             if check_empty:
                 row2 = db.execute("SELECT shares FROM wallets WHERE idName = ? AND symbol = ?", current_user, symbol)
                 current_shares = row2[0]["shares"]
@@ -237,7 +235,8 @@ def register():
 def sell():
     """Sell shares of stock"""
     if request.method == "POST":
-        print(caca)
+        current_user = 
+        db.execute("SELECT symbol FROM wallets WHERE idName = ?", )
 
     else:
         return render_template("sell.html")

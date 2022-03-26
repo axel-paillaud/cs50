@@ -5,7 +5,10 @@
 {% block main %}
 
     <form action="/sell" method="post">
-        <select clall="form-custom"autocomplete="off" autofocus name="symbol"placeholder="Symbol">
+        <select class="form-custom" autocomplete="off" autofocus name="symbol">
+            <option>Please choose a symbol</option>
+            
+        </select>
     </form>
 
 {% endblock %}
