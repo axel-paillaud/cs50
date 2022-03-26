@@ -254,5 +254,5 @@ def sell():
 
 
     else:
-        return render_template("sell.html")
+        return render_template("sell.html", symbol=list_symbol)
 
