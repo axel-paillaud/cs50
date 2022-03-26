@@ -236,8 +236,10 @@ def sell():
     """Sell shares of stock"""
     if request.method == "POST":
         current_user = session["user_id"]
+        i = 0
+        list_symbol = []
         row = db.execute("SELECT symbol FROM wallets WHERE idName = ?", current_user)
-        print(row)
+        for cell in row
 
     else:
         return render_template("sell.html")
