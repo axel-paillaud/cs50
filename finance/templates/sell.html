@@ -5,14 +5,14 @@
 {% block main %}
 
     <form action="/sell" method="post">
-        <select class="form-custom" autocomplete="off" autofocus name="symbol">
+        <select class="select-custom" autocomplete="off" autofocus name="symbol">
             <option value="empty">Please choose a symbol</option>
             {% for i in symbol %}
                 <option value={{ i.symbol }}>{{ i.symbol }}</option>
             {% endfor %}
         </select>
         <input class="form-shares" autocomplete="off" name="shares" placeholder="Number of shares" type="number">
-        <button class="button-custom"type="submit">Sell</button>
+        <button class="button-custom" type="submit">Sell</button>
     </form>
 
 {% endblock %}

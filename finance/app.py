@@ -236,10 +236,17 @@ def sell():
     """Sell shares of stock"""
     if request.method == "POST":
         symbol = request.form.get("symbol")
+        shares_str = request.form.get("shares")
+        shares = int(shares_str)
         print(symbol)
+        print(shares)
 
         if symbol == "empty":
             return apology("Invalid symbol", 403)
+        elif shares < 0:
+            return apology("You cannot sell negative numbers of shares", 403)
+        elif shares == 0:
+            return apology("You cannot sell 0 shares",403)
 
         current_user = session["user_id"]
         i = 0
