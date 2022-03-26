@@ -238,8 +238,8 @@ def sell():
         symbol = request.form.get("symbol")
         shares_str = request.form.get("shares")
         shares = int(shares_str)
-        check_symbol = lookup(symbol)
-        if check_symbol == None:
+        var_lookup = lookup(symbol)
+        if var_lookup == None:
             return apology("Invalid symbol", 403)
 
         if symbol == "empty":
@@ -268,6 +268,7 @@ def sell():
         if shares > current_shares:
             return apology("You do not have enough action", 403)
         else:
+            
             return apology("TODO", 403)
 
 
