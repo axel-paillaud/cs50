@@ -7,9 +7,10 @@
     <form action="/sell" method="post">
         <select class="form-custom" autocomplete="off" autofocus name="symbol">
             <option value="empty">Please choose a symbol</option>
+            {% for i in symbol %}
+                <option value={{ i.symbol }}>{{ i.symbol }}</option>
+            {% endfor %}
         </select>
-        {% for i in symbol %}
-            <option>{{ i }}</option>
         <button class="button-custom"type="submit">Sell</button>
     </form>
 
