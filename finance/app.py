@@ -46,7 +46,7 @@ def index():
     """Show portfolio of stocks"""
 
     current_user = session["user_id"]
-    total_f = 0
+    total = 0
     i = 0
 
     wallet_list = db.execute("SELECT * FROM wallets WHERE idName = ?", current_user)
@@ -57,12 +57,13 @@ def index():
     total_row = db.execute("SELECT total FROM wallets WHERE idName = ?", current_user)
     for row in total_row:
         tmp = total_row[i]["total"]
-        total_f += tmp
+        total += tmp
         i += 1
 
-    total = round(total_f, 2)
+    totaltotal_f = total + current_cash
+    totaltotal = round(totaltotal_f, 2)
 
-    return render_template("index.html", wallet=wallet_list, cash=current_cash, total=total)
+    return render_template("index.html", wallet=wallet_list, cash=current_cash, total=total, totaltotal=totaltotal)
 
 
 @app.route("/buy", methods=["GET", "POST"])
