@@ -235,11 +235,17 @@ def register():
 def sell():
     """Sell shares of stock"""
     if request.method == "POST":
+        symbol = request.form.get("symbol")
+        print(symbol)
         current_user = session["user_id"]
         i = 0
         list_symbol = []
         row = db.execute("SELECT symbol FROM wallets WHERE idName = ?", current_user)
-        for cell in row
+        for cell in row:
+            list_symbol.append(row[i]["symbol"])
+            i += 1
+
+        print(list_symbol)
 
     else:
         return render_template("sell.html")
