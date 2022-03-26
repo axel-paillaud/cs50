@@ -237,8 +237,10 @@ def sell():
     if request.method == "POST":
         symbol = request.form.get("symbol")
         print(symbol)
-        if symbol == "papa":
+
+        if symbol == "empty":
             return apology("Invalid symbol", 403)
+
         current_user = session["user_id"]
         i = 0
         list_symbol = []
@@ -247,7 +249,9 @@ def sell():
             list_symbol.append(row[i]["symbol"])
             i += 1
 
-        print(list_symbol)
+        if symbol not in list_symbol:
+            return apology("You do not own this shares", 403)
+
 
     else:
         return render_template("sell.html")
