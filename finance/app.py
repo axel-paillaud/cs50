@@ -271,8 +271,9 @@ def sell():
             current_price = var_lookup["price"]
             total_price_float = current_price * shares
             total_price = round(total_price_float, 2)
+            row2 = db.execute("SELECT cash FROM users WHERE id = ?", current_user )
 
-            db.execute("UPDATE )
+            db.execute("UPDATE users SET cash = ? WHERE id = ?", new_cash, current_user)
             return apology("TODO", 403)
 
 
