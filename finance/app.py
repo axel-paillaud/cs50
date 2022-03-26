@@ -237,7 +237,7 @@ def sell():
     if request.method == "POST":
         symbol = request.form.get("symbol")
         print(symbol)
-        if symbol == None:
+        if symbol == papa:
             return apology("Invalid symbol", 403)
         current_user = session["user_id"]
         i = 0
