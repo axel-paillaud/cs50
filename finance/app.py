@@ -115,6 +115,7 @@ def buy():
 
             else:
                 db.execute("INSERT INTO wallets (symbol, shares, value, total, name, idName) VALUES (?, ?, ?, ?, ?, ?)", symbol, shares, price, total_price, corp_name, current_user)
+                # Update ici correctement le cahs total
 
             # update the TOTAL cash (total shares + cash)
             total_total = 0
