@@ -280,7 +280,7 @@ def sell():
             total_price = round(total_price_float, 2)
             row2 = db.execute("SELECT cash FROM users WHERE id = ?", current_user)
             current_cash = row2[0]["cash"]
-            new_cash_float = current_cash + total_price
+            new_cash_float = current_cash - total_price
             new_cash = round(new_cash_float, 2)
 
             new_shares = current_shares - shares
