@@ -109,6 +109,7 @@ def buy():
                 current_shares = row2[0]["shares"]
                 row3 = db.execute("SELECT total FROM wallets WHERE idName = ? AND symbol = ?", current_user, symbol)
                 current_total = row3[0]["total"]
+                print(current_total)
                 new_shares = current_shares + shares
                 new_total = total_price + current_total
                 print(new_total)
