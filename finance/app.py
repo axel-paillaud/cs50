@@ -124,8 +124,8 @@ def buy():
             print(row4)
             for cell in row4:
                 total_total_f += row4[i]["total"]
+                i += 1
                 print(total_total_f)
-            print(total_total_f)
 
         return redirect("/")
 
