@@ -129,7 +129,6 @@ def buy():
                 i += 1
 
             total_total += current_cash
-            db.execute("UPDATE users SET cash = ? WHERE id = ?", total_total, current_user)
 
         return redirect("/")
 
