@@ -109,10 +109,8 @@ def buy():
             if check_empty:
                 row2 = db.execute("SELECT shares FROM wallets WHERE idName = ? AND symbol = ?", current_user, symbol)
                 current_shares = row2[0]["shares"]
-                row3 = db.execute("SELECT total FROM wallets WHERE idName = ? AND symbol = ?", current_user, symbol)
-                current_total = row3[0]["total"]
                 new_shares = current_shares + shares
-                new_total = total_price + current_total
+                total = new_shares * 
                 db.execute("UPDATE wallets SET shares = ?, value = ?, total = ? WHERE idName = ? AND symbol = ?", new_shares, price, new_total, current_user, symbol)
 
             else:
