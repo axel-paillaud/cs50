@@ -89,6 +89,17 @@ Erreur dans mon code pour acheter de nouvelles actions quand celle-ci n'existe p
                 new_total = total_price + current_total
                 db.execute("UPDATE wallets SET shares = ?, value = ?, total = ? WHERE idName = ? AND symbol = ?", new_shares, price, new_total, current_user, symbol)
 
+Update le total cash, pour rien car je l'avais déjà fait dans index ...
+            # update the TOTAL cash (total shares + cash)
+            total_total = 0
+            i = 0
+            row4 = db.execute("SELECT total FROM wallets WHERE idName = ?", current_user)
+            for cell in row4:
+                total_total += row4[i]["total"]
+                i += 1
+
+            total_total += current_cash
+
 
 
 
