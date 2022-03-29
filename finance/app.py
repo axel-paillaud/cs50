@@ -112,10 +112,11 @@ def buy():
                 total_f = new_shares * price
                 total = round(total_f, 2)
                 db.execute("UPDATE wallets SET shares = ?, value = ?, total = ? WHERE idName = ? AND symbol = ?", new_shares, price, total, current_user, symbol)
+                # update ici correctement le cash total
 
             else:
                 db.execute("INSERT INTO wallets (symbol, shares, value, total, name, idName) VALUES (?, ?, ?, ?, ?, ?)", symbol, shares, price, total_price, corp_name, current_user)
-                # Update ici correctement le cahs total
+                # Update ici correctement le cash total
 
             # update the TOTAL cash (total shares + cash)
             total_total = 0
