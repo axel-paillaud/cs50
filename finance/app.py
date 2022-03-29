@@ -272,13 +272,19 @@ def sell():
             return apology("You do not have enough action", 403)
         else:
             # Valider la vente et mettre à jour le wallets
+
+            # Prix total des shares vendues
             current_price = var_lookup["price"]
             total_price_float = current_price * shares
             total_price = round(total_price_float, 2)
+
+            # Update cash
             row2 = db.execute("SELECT cash FROM users WHERE id = ?", current_user)
             current_cash = row2[0]["cash"]
             new_cash_float = current_cash + total_price
             new_cash = round(new_cash_float, 2)
+
+            # Update shares
             new_shares = current_shares - shares
             new_total_f = new_shares * current_price
             new_total = round(new_total_f, 2)
