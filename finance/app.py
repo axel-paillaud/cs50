@@ -285,6 +285,7 @@ def sell():
 
             db.execute("UPDATE users SET cash = ? WHERE id = ?", new_cash, current_user)
             db.execute("UPDATE wallets SET shares = ?, total = ? WHERE idName = ? AND symbol = ?", new_shares, new_total, current_user, symbol)
+            # Supprimer la ligne du wallets si share = 0
             return redirect("/")
 
 
