@@ -87,8 +87,6 @@ def buy():
         current_cash = row[0]["cash"]
         total_price_float = (price * shares)
         total_price = round(total_price_float, 2)
-        print(current_cash)
-        print(total_price)
 
         if var_lookup == None:
             return apology("Symbol not found", 403)
@@ -101,7 +99,6 @@ def buy():
 
         else:
             update_cash = current_cash - total_price
-            print(update_cash)
             db.execute("UPDATE users SET cash = ? WHERE id = ?", update_cash, current_user)
             db.execute("INSERT INTO transactions(symbol, shares, value, total, date, time, idName) VALUES (?, ?, ?, ?, ?, ?, ?)", symbol, shares, price, total_price, date, time, current_user)
 
