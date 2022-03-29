@@ -104,6 +104,7 @@ def buy():
 
             # check if the symbol already exist. If not, create it.
             check_empty = db.execute("SELECT ownID FROM wallets WHERE idName = ? AND symbol = ?", current_user, symbol)
+            print(check_empty)
             if check_empty:
                 db.execute("UPDATE wallets SET shares = ?, value = ?, total = ?, symbol = ? WHERE idName = ?", shares, price, total_price, symbol, current_user)
 
@@ -111,7 +112,6 @@ def buy():
                 row = db.execute("SELECT total FROM wallets WHERE idName = ? AND symbol = ?", current_user, symbol)
                 current_total = row[0]["total"]
                 update_total = current_total + total_price
-                print(update_total)
 
                 db.execute("INSERT INTO wallets (symbol, shares, value, total, name, idName) VALUES (?, ?, ?, ?, ?, ?)", symbol, shares, price, update_total, corp_name, current_user)
 
