@@ -109,11 +109,7 @@ def buy():
 
             else:
                 row = db.execute("SELECT total FROM wallets WHERE idName = ? AND symbol = ?", current_user, symbol)
-                print(row)
-                print("coucou")
                 current_total = row[0]["total"]
-                print(current_total)
-                print("etla?")
                 update_total = current_total + total_price
                 print(update_total)
 
@@ -122,7 +118,6 @@ def buy():
             # update the TOTAL cash (total shares + cash)
             total_total_f = 0
             row4 = db.execute("SELECT total FROM wallets WHERE idName = ?", current_user)
-            print(row4)
 
         return redirect("/")
 
