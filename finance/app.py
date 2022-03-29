@@ -119,7 +119,13 @@ def buy():
 
             # update the TOTAL cash (total shares + cash)
             total_total_f = 0
+            i = 0
             row4 = db.execute("SELECT total FROM wallets WHERE idName = ?", current_user)
+            print(row4)
+            for cell in row4:
+                total_total_f += row4[i]["total"]
+                print(total_total_f)
+            print(total_total_f)
 
         return redirect("/")
 
