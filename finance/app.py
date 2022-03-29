@@ -98,7 +98,11 @@ def buy():
             return apology("You do not have enough cash", 403)
 
         else:
+            # update le cash de l'utilisateur
             update_cash = current_cash - total_price
+            print(current_cash)
+            print(total_price)
+            print(update_cash)
             db.execute("UPDATE users SET cash = ? WHERE id = ?", update_cash, current_user)
             db.execute("INSERT INTO transactions(symbol, shares, value, total, date, time, idName) VALUES (?, ?, ?, ?, ?, ?, ?)", symbol, shares, price, total_price, date, time, current_user)
 
@@ -112,11 +116,9 @@ def buy():
                 total_f = new_shares * price
                 total = round(total_f, 2)
                 db.execute("UPDATE wallets SET shares = ?, value = ?, total = ? WHERE idName = ? AND symbol = ?", new_shares, price, total, current_user, symbol)
-                # update ici correctement le cash total
 
             else:
                 db.execute("INSERT INTO wallets (symbol, shares, value, total, name, idName) VALUES (?, ?, ?, ?, ?, ?)", symbol, shares, price, total_price, corp_name, current_user)
-                # Update ici correctement le cash total
 
             # update the TOTAL cash (total shares + cash)
             total_total = 0
