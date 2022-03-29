@@ -100,9 +100,6 @@ def buy():
         else:
             # update le cash de l'utilisateur: code ok
             update_cash = current_cash - total_price
-            print(current_cash)
-            print(total_price)
-            print(update_cash)
             db.execute("UPDATE users SET cash = ? WHERE id = ?", update_cash, current_user)
             db.execute("INSERT INTO transactions(symbol, shares, value, total, date, time, idName) VALUES (?, ?, ?, ?, ?, ?, ?)", symbol, shares, price, total_price, date, time, current_user)
 
@@ -286,6 +283,7 @@ def sell():
 
             db.execute("UPDATE users SET cash = ? WHERE id = ?", new_cash, current_user)
             db.execute("UPDATE wallets SET shares = ? WHERE idName = ? AND symbol = ?", new_shares, current_user, symbol)
+            db.execute("UPDATE wallets SET total = ? WHERE idName = ? )
             return redirect("/")
 
 
