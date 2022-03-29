@@ -286,7 +286,7 @@ def sell():
             new_shares = current_shares - shares
 
             db.execute("UPDATE users SET cash = ? WHERE id = ?", new_cash, current_user)
-            db.execute("UPDATE wallets SET shares = ? WHERE idName = ?", new_shares, current_user)
+            db.execute("UPDATE wallets SET shares = ? WHERE idName = ? AND symbol = ?", new_shares, current_user, symbol)
             return redirect("/")
 
 
