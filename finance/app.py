@@ -98,7 +98,7 @@ def buy():
             return apology("You do not have enough cash", 403)
 
         else:
-            # update le cash de l'utilisateur
+            # update le cash de l'utilisateur: code ok
             update_cash = current_cash - total_price
             print(current_cash)
             print(total_price)
