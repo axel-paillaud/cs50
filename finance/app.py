@@ -282,7 +282,6 @@ def sell():
             current_cash = row2[0]["cash"]
             new_cash_float = current_cash + total_price
             new_cash = round(new_cash_float, 2)
-
             new_shares = current_shares - shares
 
             db.execute("UPDATE users SET cash = ? WHERE id = ?", new_cash, current_user)
