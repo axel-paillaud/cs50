@@ -120,7 +120,8 @@ def buy():
                 db.execute("INSERT INTO wallets (symbol, shares, value, total, name, idName) VALUES (?, ?, ?, ?, ?, ?)", symbol, shares, price, total_price, corp_name, current_user)
 
             # update the TOTAL cash (total shares + cash)
-            
+            total_total_f = 0
+            row4 = db.execute("SELECT )
 
         return redirect("/")
 
