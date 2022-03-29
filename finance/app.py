@@ -280,10 +280,10 @@ def sell():
             new_cash_float = current_cash + total_price
             new_cash = round(new_cash_float, 2)
             new_shares = current_shares - shares
+            new_total_f = current_shares * current_price
 
             db.execute("UPDATE users SET cash = ? WHERE id = ?", new_cash, current_user)
-            db.execute("UPDATE wallets SET shares = ? WHERE idName = ? AND symbol = ?", new_shares, current_user, symbol)
-            db.execute("UPDATE wallets SET total = ? WHERE idName = ? )
+            db.execute("UPDATE wallets SET shares = ?, total = ? WHERE idName = ? AND symbol = ?", new_shares, new_total, current_user, symbol)
             return redirect("/")
 
 
