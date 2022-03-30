@@ -336,6 +336,8 @@ def password():
         if old_password or confirm_old_password or new_password or confirm_new_password == None:
             return apology("You have to fill all the form", 403)
 
+        return redirect("/")
+
     else:
         return render_template("password.html")
 
