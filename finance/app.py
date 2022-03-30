@@ -82,8 +82,6 @@ def buy():
 
         row = db.execute("SELECT cash FROM users WHERE id = ?", current_user)
         current_cash = row[0]["cash"]
-        total_price_float = (price * shares)
-        total_price = round(total_price_float, 2)
 
         if var_lookup == None:
             return apology("Symbol not found", 403)
@@ -98,7 +96,9 @@ def buy():
             #Variable du symbole
             price = var_lookup["price"]
             corp_name = var_lookup["name"]
-            
+            total_price_float = (price * shares)
+            total_price = round(total_price_float, 2)
+
             # update le cash de l'utilisateur
             update_cash = current_cash - total_price
             db.execute("UPDATE users SET cash = ? WHERE id = ?", update_cash, current_user)
