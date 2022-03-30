@@ -74,13 +74,10 @@ def buy():
         symbol = request.form.get("symbol")
         shares = int(request.form.get("shares"))
         var_lookup = lookup(symbol)
-        price = var_lookup["price"]
-        corp_name = var_lookup["name"]
         current_user = session["user_id"]
         now = datetime.now()
         time = now.strftime("%H:%M:%S")
         date = now.strftime("%d/%m/%Y")
-
 
 
         row = db.execute("SELECT cash FROM users WHERE id = ?", current_user)
@@ -98,6 +95,10 @@ def buy():
             return apology("You do not have enough cash", 403)
 
         else:
+            #Variable du symbole
+            price = var_lookup["price"]
+            corp_name = var_lookup["name"]
+            
             # update le cash de l'utilisateur
             update_cash = current_cash - total_price
             db.execute("UPDATE users SET cash = ? WHERE id = ?", update_cash, current_user)
