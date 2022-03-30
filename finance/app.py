@@ -318,3 +318,14 @@ def sell():
 def account():
     return render_template("account.html")
 
+
+@app.route("/password")
+@login_required
+def password():
+    return render_template("password.html")
+
+
+@app.route("/cash")
+@login_required
+def cash():
+    return render_template("cash.html")
