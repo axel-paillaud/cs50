@@ -312,3 +312,5 @@ def sell():
         list_symbol = db.execute("SELECT symbol FROM wallets WHERE idName = ?", current_user)
         return render_template("sell.html", symbol=list_symbol)
 
+
+
