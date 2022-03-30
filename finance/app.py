@@ -292,8 +292,13 @@ def sell():
             new_total_f = new_shares * current_price
             new_total = round(new_total_f, 2)
 
-            db.execute("UPDATE wallets SET shares = ?, total = ? WHERE idName = ? AND symbol = ?", new_shares, new_total, current_user, symbol)
-            # Supprimer la ligne du wallets si share = 0
+            # Supprimer la ligne du wallets si share = 0, sinon update le wallets
+            if new_shares == 0:
+                db.execute("DELETE FROM wallets WHERE IdName = ? AND Symbol = ?", current_user, symbol)
+
+            else:
+                db.execute("UPDATE wallets SET shares = ?, total = ? WHERE idName = ? AND symbol = ?", new_shares, new_total, current_user, symbol)
+
             return redirect("/")
 
 
