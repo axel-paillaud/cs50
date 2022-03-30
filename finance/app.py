@@ -313,4 +313,8 @@ def sell():
         return render_template("sell.html", symbol=list_symbol)
 
 
+@app.route("/account")
+@login_required
+def account():
+    return render_template("account.html")
 
