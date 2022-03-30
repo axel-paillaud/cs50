@@ -98,7 +98,7 @@ def buy():
             return apology("You do not have enough cash", 403)
 
         else:
-            # update le cash de l'utilisateur: code ok
+            # update le cash de l'utilisateur
             update_cash = current_cash - total_price
             db.execute("UPDATE users SET cash = ? WHERE id = ?", update_cash, current_user)
             db.execute("INSERT INTO transactions(symbol, shares, value, total, date, time, idName) VALUES (?, ?, ?, ?, ?, ?, ?)", symbol, shares, price, total_price, date, time, current_user)
