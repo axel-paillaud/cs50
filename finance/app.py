@@ -89,15 +89,16 @@ def buy():
         elif shares <= 0:
             return apology("You must provide a positive number of shares")
 
-        elif total_price > current_cash:
-            return apology("You do not have enough cash", 403)
-
         else:
             #Variable du symbole
             price = var_lookup["price"]
             corp_name = var_lookup["name"]
             total_price_float = (price * shares)
             total_price = round(total_price_float, 2)
+
+            # Si pas assez d'argent, return apology
+            if total_price > current_cash:
+                return apology("You do not have enough cash", 403)
 
             # update le cash de l'utilisateur
             update_cash = current_cash - total_price
