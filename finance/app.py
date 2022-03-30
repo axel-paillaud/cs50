@@ -285,13 +285,13 @@ def sell():
             current_cash = row2[0]["cash"]
             new_cash_float = current_cash + total_price
             new_cash = round(new_cash_float, 2)
+            db.execute("UPDATE users SET cash = ? WHERE id = ?", new_cash, current_user)
 
             # Update shares
             new_shares = current_shares - shares
             new_total_f = new_shares * current_price
             new_total = round(new_total_f, 2)
 
-            db.execute("UPDATE users SET cash = ? WHERE id = ?", new_cash, current_user)
             db.execute("UPDATE wallets SET shares = ?, total = ? WHERE idName = ? AND symbol = ?", new_shares, new_total, current_user, symbol)
             # Supprimer la ligne du wallets si share = 0
             return redirect("/")
