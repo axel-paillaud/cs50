@@ -4,5 +4,31 @@
 
 {% block main %}
 
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Order ID</th>
+                <th>Symbol</th>
+                <th>Shares</th>
+                <th>Value</th>
+                <th>Total</th>
+                <th>Date</th>
+                <th>Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in ls_history %}
+            <tr>
+                <td>{{ row.orderID }}</td>
+                <td>{{ row.symbol }}</td>
+                <td>{{ row.shares }}</td>
+                <td>{{ row.value }}</td>
+                <td>{{ row.total }}</td>
+                <td>{{ row.date }}</td>
+                <td>{{ row.time }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 
 {% endblock %}
