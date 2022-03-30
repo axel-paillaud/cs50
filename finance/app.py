@@ -319,10 +319,15 @@ def account():
     return render_template("account.html")
 
 
-@app.route("/password")
+@app.route("/password", methods=["GET", "POST"])
 @login_required
 def password():
-    return render_template("password.html")
+
+    if request.method == "POST":
+        print("Tu envoi ton mdp")
+
+    else:
+        return render_template("password.html")
 
 
 @app.route("/cash")
