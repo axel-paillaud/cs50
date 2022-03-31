@@ -86,15 +86,8 @@ def buy():
         if var_lookup == None:
             return apology("Symbol not found", 400)
 
-        elif int(shares) <= 0:
-            return apology("You must provide a positive number of shares")
-
-        elif isinstance(shares, int) == False:
-            return apology("Number of shares cannot be float number", 400)
-
         elif not shares.isdigit():
-            return apology("blablabla", 400)
-
+            return apology("Invalid shares", 400)
 
         else:
             #Variable du symbole
@@ -103,6 +96,10 @@ def buy():
             corp_name = var_lookup["name"]
             total_price_float = (price * shares)
             total_price = round(total_price_float, 2)
+
+            #Si nombre négatif ou 0shares, return apology
+            if shares <= 0:
+                return apology("You must buy at least one shares")
 
             # Si pas assez d'argent, return apology
             if total_price > current_cash:
