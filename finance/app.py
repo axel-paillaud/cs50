@@ -348,7 +348,8 @@ def password():
 
         # Changer effectivement le mot de passe
         else:
-            
+            new_pass_hash = generate_password_hash(request.form.get("new_password"))
+            db.execute("UPDATE users SET VALUE hash = ? WHERE id = ?", new_pass_hash, current_user)
 
         return redirect("/")
 
