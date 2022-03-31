@@ -226,7 +226,7 @@ def register():
         elif not request.form.get("password"):
             return apology("Must provide password", 403)
 
-        elif request.form.get("password") != request.form.get("regConfirm"):
+        elif request.form.get("password") != request.form.get("confirmation"):
             return apology("The confirmation is incorrect", 403)
 
         password = generate_password_hash(request.form.get("password"))
