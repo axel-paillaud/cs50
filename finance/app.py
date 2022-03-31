@@ -60,8 +60,8 @@ def index():
         total += tmp
         i += 1
 
-    totaltotal_f = total + current_cash
-    totaltotal = round(totaltotal_f, 2)
+    totaltotal_py = total + current_cash
+    totaltotal = usd(totaltotal_py)
 
     return render_template("index.html", wallet=wallet_list, cash=current_cash, total=total, totaltotal=totaltotal)
 
