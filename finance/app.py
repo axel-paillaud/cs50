@@ -324,13 +324,6 @@ def account():
 def password():
 
     if request.method == "POST":
-        # Les variables des champs du form
-        old_password = request.form.get("old_password")
-        confirm_old_password = request.form.get("confirm_old_password")
-        new_password = request.form.get("new_password")
-        confirm_new_password = request.form.get("confirm_new_password")
-
-        print(old_password, confirm_old_password, new_password, confirm_new_password)
 
         # Check si l'utilisateur a laissé un champ vide
         if old_password or confirm_old_password or new_password or confirm_new_password == None:
