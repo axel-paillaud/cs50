@@ -72,6 +72,7 @@ def buy():
     """Buy shares of stock"""
     if request.method == "POST":
         symbol = request.form.get("symbol")
+        str_shares = request.form.get("shares")
         shares = int(request.form.get("shares"))
         var_lookup = lookup(symbol)
         current_user = session["user_id"]
@@ -92,8 +93,9 @@ def buy():
         elif isinstance(shares, int) == False:
             return apology("Number of shares cannot be float number", 400)
 
-        elif not shares.isdigit():
-            
+        elif not str_shares.isdigit():
+            return apology("blablabla", 400)
+
 
         else:
             #Variable du symbole
