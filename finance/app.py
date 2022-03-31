@@ -84,7 +84,7 @@ def buy():
         current_cash = row[0]["cash"]
 
         if var_lookup == None:
-            return apology("Symbol not found", 403)
+            return apology("Symbol not found", 400)
 
         elif shares <= 0:
             return apology("You must provide a positive number of shares")
@@ -98,7 +98,7 @@ def buy():
 
             # Si pas assez d'argent, return apology
             if total_price > current_cash:
-                return apology("You do not have enough cash", 403)
+                return apology("You do not have enough cash", 400)
 
             # update le cash de l'utilisateur
             update_cash = current_cash - total_price
@@ -190,7 +190,7 @@ def quote():
     """Get stock quote."""
     if request.method == "POST":
 
-        symbol = request.form.get("quote")
+        symbol = request.form.get("symbol")
         var_lookup = lookup(symbol)
 
         if var_lookup == None:
