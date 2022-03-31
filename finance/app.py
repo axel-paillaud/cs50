@@ -331,7 +331,7 @@ def password():
         if not request.form.get("old_password") or not request.form.get("confirm_old_password") or not request.form.get("new_password") or not request.form.get("confirm_new_password"):
             return apology("You have to fill all the form", 403)
 
-        # Check si les deux anciens mots de passe sont identiques
+        # Check si l'ancien mot de passe est identique à celui de la bdd
         old_pass_hash = db.execute("SELECT hash FROM users WHERE id = ?", current_user)
         if check_password_hash(old_pass_hash, request.form.get("old_password") == False:
             return apology("Your old password does not match", 403)
