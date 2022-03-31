@@ -51,8 +51,8 @@ def index():
 
     wallet_list = db.execute("SELECT * FROM wallets WHERE idName = ?", current_user)
     row2 = db.execute("SELECT cash FROM users WHERE id = ?", current_user)
-    current_cash_float = row2[0]["cash"]
-    current_cash = round(current_cash_float, 2)
+    current_cash_py = row2[0]["cash"]
+    current_cash = usd(current_cash_py)
 
     total_row = db.execute("SELECT total FROM wallets WHERE idName = ?", current_user)
     for row in total_row:
@@ -61,7 +61,7 @@ def index():
         i += 1
 
     total = usd(total_py)
-    totaltotal_py = total_py + current_cash
+    totaltotal_py = total_py + current_cash_py
     totaltotal = usd(totaltotal_py)
 
     return render_template("index.html", wallet=wallet_list, cash=current_cash, total=total, totaltotal=totaltotal)
