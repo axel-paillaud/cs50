@@ -216,18 +216,18 @@ def register():
         z = 0
         for i in list_of_name:
             if request.form.get("username") in list_of_name[z]["username"]:
-                return apology("Username already taken", 403)
+                return apology("Username already taken", 400)
             z += 1
 
 
         if not request.form.get("username"):
-            return apology("Must provide username", 403)
+            return apology("Must provide username", 400)
 
         elif not request.form.get("password"):
-            return apology("Must provide password", 403)
+            return apology("Must provide password", 400)
 
         elif request.form.get("password") != request.form.get("confirmation"):
-            return apology("The confirmation is incorrect", 403)
+            return apology("The confirmation is incorrect", 400)
 
         password = generate_password_hash(request.form.get("password"))
         id = request.form.get("username")
