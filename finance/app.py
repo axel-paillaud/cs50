@@ -350,6 +350,7 @@ def password():
         else:
             new_pass_hash = generate_password_hash(request.form.get("new_password"))
             db.execute("UPDATE users SET hash = ? WHERE id = ?", new_pass_hash, current_user)
+            session.clear()
 
         return redirect("/")
 
