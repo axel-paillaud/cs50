@@ -198,8 +198,7 @@ def quote():
 
         else:
             name = var_lookup["name"]
-            price_py = var_lookup["price"]
-            price = usd(price_py)
+            price = usd(var_lookup["price"])
             symbol = var_lookup["symbol"]
             return render_template("quoted.html", name=name, price=price, symbol=symbol)
 
