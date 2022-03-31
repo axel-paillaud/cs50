@@ -333,7 +333,7 @@ def password():
 
         # Check si les deux anciens mots de passe sont identiques
         old_pass_hash = db.execute("SELECT hash FROM users WHERE id = ?", current_user)
-        if check_password_hash()
+        if check_password_hash(old_pass_hash, request.form.get("old_pas))
 
         return redirect("/")
 
