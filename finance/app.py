@@ -329,12 +329,25 @@ def password():
         if not request.form.get("old_password") or not request.form.get("confirm_old_password") or not request.form.get("new_password") or not request.form.get("confirm_new_password"):
             return apology("You have to fill all the form", 403)
 
-        # check si les deux anciens mots de passe sont identiques
+        # Les variables
+        current_user = session["user_id"]
+        old_pass_hash_bdd = db.execute("SELECT hash FROM users WHERE id = ?", current_user)
+        old_pass_hash = request.form.get("old_password")
+        conf_old_pass_hash = request.form.get("confirm_old_password")
+        new_pass_hash = request.form.get("new_password")
+        conf_new_pass_hash = request.form.get("confir_new_password")
 
+        # check si les deux anciens mots de passe sont identiques
+        if check_password_hash(old_pass_hash, conf_old_pass_hash) == False:
+            return apology("Old passwords are not the same", 403)
 
         # Check si l'ancien mot de passe est identique à celui de la bdd
         elif check_password_hash(old_pass_hash_bdd, old_pass_hash) == False:
             return apology("Your old password does not match", 403)
+
+        # check si les deux nouveaux mots de passe sont identiques
+        elif check_password_hash(new_pass_hash, conf_new_pass_hash) == False:
+            return apology("Your new password does not match", 403)
 
         return redirect("/")
 
