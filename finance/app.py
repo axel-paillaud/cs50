@@ -89,7 +89,8 @@ def buy():
         elif shares <= 0:
             return apology("You must provide a positive number of shares")
 
-        elif isfloat(shares)
+        elif isinstance(shares, int) == False:
+            return apology("Number of shares cannot be float number", 400)
 
         else:
             #Variable du symbole
