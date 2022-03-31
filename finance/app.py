@@ -215,12 +215,12 @@ def register():
         list_of_name = db.execute("SELECT username FROM users")
         z = 0
         for i in list_of_name:
-            if request.form.get("regUser") in list_of_name[z]["username"]:
+            if request.form.get("username") in list_of_name[z]["username"]:
                 return apology("Username already taken", 403)
             z += 1
 
 
-        if not request.form.get("regUser"):
+        if not request.form.get("username"):
             return apology("Must provide username", 403)
 
         elif not request.form.get("regPassword"):
@@ -230,7 +230,7 @@ def register():
             return apology("The confirmation is incorrect", 403)
 
         password = generate_password_hash(request.form.get("regPassword"))
-        id = request.form.get("regUser")
+        id = request.form.get("username")
 
         db.execute("INSERT INTO users(username, hash) VALUES(?, ?)", id, password)
 
