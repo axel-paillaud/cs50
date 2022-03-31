@@ -194,7 +194,7 @@ def quote():
         var_lookup = lookup(symbol)
 
         if var_lookup == None:
-            return apology("Symbol not found", 403)
+            return apology("Symbol not found", 400)
 
         else:
             name = var_lookup["name"]
