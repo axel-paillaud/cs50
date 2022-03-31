@@ -223,13 +223,13 @@ def register():
         if not request.form.get("username"):
             return apology("Must provide username", 403)
 
-        elif not request.form.get("regPassword"):
+        elif not request.form.get("password"):
             return apology("Must provide password", 403)
 
-        elif request.form.get("regPassword") != request.form.get("regConfirm"):
+        elif request.form.get("password") != request.form.get("regConfirm"):
             return apology("The confirmation is incorrect", 403)
 
-        password = generate_password_hash(request.form.get("regPassword"))
+        password = generate_password_hash(request.form.get("password"))
         id = request.form.get("username")
 
         db.execute("INSERT INTO users(username, hash) VALUES(?, ?)", id, password)
