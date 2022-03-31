@@ -333,11 +333,6 @@ def password():
         current_user = session["user_id"]
         row = db.execute("SELECT hash FROM users WHERE id = ?", current_user)
         old_pass_hash_bdd = row[0]["hash"]
-        #variable à supprimer si besoin
-        old_pass_hash = request.form.get("old_password")
-        conf_old_pass_hash = request.form.get("confirm_old_password")
-        new_pass_hash = request.form.get("new_password")
-        conf_new_pass_hash = request.form.get("confir_new_password")
 
         # check si les deux anciens mots de passe sont identiques
         if  request.form.get("old_password") != request.form.get("confirm_old_password"):
@@ -350,6 +345,10 @@ def password():
         # check si les deux nouveaux mots de passe sont identiques
         elif request.form.get("new_password") != request.form.get("confirm_new_password"):
             return apology("Your new password does not match", 403)
+
+        # Changer effectivement le mot de passe
+        else:
+            
 
         return redirect("/")
 
