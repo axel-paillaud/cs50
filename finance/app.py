@@ -86,7 +86,7 @@ def buy():
         if var_lookup == None:
             return apology("Symbol not found", 400)
 
-        elif shares <= 0:
+        elif int(shares) <= 0:
             return apology("You must provide a positive number of shares")
 
         elif isinstance(shares, int) == False:
