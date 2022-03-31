@@ -89,6 +89,8 @@ def buy():
         elif shares <= 0:
             return apology("You must provide a positive number of shares")
 
+        elif isfloat(shares)
+
         else:
             #Variable du symbole
             price = var_lookup["price"]
