@@ -326,7 +326,7 @@ def password():
     if request.method == "POST":
 
         # Check si l'utilisateur a laissé un champ vide
-        if old_password or confirm_old_password or new_password or confirm_new_password == None:
+        if not request.form.get("old_password") or not request.form.get("confirm_old_password") or not request.form.get("new_password") or not request.form.get("confirm_new_password"):
             return apology("You have to fill all the form", 403)
 
         return redirect("/")
