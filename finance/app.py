@@ -92,6 +92,9 @@ def buy():
         elif isinstance(shares, int) == False:
             return apology("Number of shares cannot be float number", 400)
 
+        elif not shares.isdigit():
+            
+
         else:
             #Variable du symbole
             price = var_lookup["price"]
