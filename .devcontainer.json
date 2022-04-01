@@ -10,7 +10,7 @@
     "MS-vsliveshare.vsliveshare-pack", 
     "vsls-contrib.gitdoc"
   ], 
-  "image": "ghcr.io/cs50/codespace:e2886a69b9a0d9a12b0012319c978981c817bb4f", 
+  "image": "ghcr.io/cs50/codespace:45351eda536b6c7cee2b686eb57116e6a8b21e36", 
   "postCreateCommand": "/opt/cs50/bin/postCreateCommand", 
   "settings": {
     "C_Cpp.autocomplete": "Disabled", 
@@ -93,6 +93,7 @@
     }, 
     "terminal.integrated.sendKeybindingsToShell": true, 
     "terminal.integrated.tabs.description": "${task}${separator}${local}", 
+    "terminal.integrated.tabs.showActiveTerminal": "never", 
     "window.autoDetectColorScheme": true, 
     "workbench.colorCustomizations": {
       "editor.lineHighlightBorder": "#0000", 
