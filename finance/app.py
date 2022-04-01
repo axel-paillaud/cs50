@@ -51,14 +51,16 @@ def index():
 
     #Liste du contenu du wallets, converti en USD (value + total)
     z = 0
+    x = 0
     value_list = []
     total_list = []
     wallet_list = db.execute("SELECT * FROM wallets WHERE idName = ?", current_user)
     for row2 in wallet_list:
-        value_list = usd(wallet_list[z]["value"])
+        value_list.append(usd(wallet_list[z]["value"]))
         z += 1
-        print(value_list)
-    print(value_list)
+    for row3 in wallet_list:
+        total_list.append(usd(wallet_list[x]["total"]))
+        x += 1
 
 
     row2 = db.execute("SELECT cash FROM users WHERE id = ?", current_user)
