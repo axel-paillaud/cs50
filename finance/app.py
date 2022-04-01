@@ -51,16 +51,14 @@ def index():
 
     #Liste du contenu du wallets, converti en USD (value + total)
     z = 0
-    x = 0
-    value_list = []
-    total_list = []
+    wallet_usd = []
     wallet_list = db.execute("SELECT * FROM wallets WHERE idName = ?", current_user)
     for row2 in wallet_list:
-        value_list.append(usd(wallet_list[z]["value"]))
+        row2["value"] = usd(wallet_list[z]["value"])
+        row2["total"] = usd(wallet_list[z]["total"])
+        wallet_usd.append(row2)
         z += 1
-    for row3 in wallet_list:
-        total_list.append(usd(wallet_list[x]["total"]))
-        x += 1
+
 
 
     row2 = db.execute("SELECT cash FROM users WHERE id = ?", current_user)
@@ -77,7 +75,7 @@ def index():
     totaltotal_py = total_py + current_cash_py
     totaltotal = usd(totaltotal_py)
 
-    return render_template("index.html", wallet=wallet_list, cash=current_cash, total=total, totaltotal=totaltotal)
+    return render_template("index.html", wallet=wallet_usd, cash=current_cash, total=total, totaltotal=totaltotal)
 
 
 @app.route("/buy", methods=["GET", "POST"])

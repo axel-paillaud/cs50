@@ -101,5 +101,14 @@ Update le total cash, pour rien car je l'avais déjà fait dans index ...
             total_total += current_cash
 
 
+            {% for row in wallet %}
+                <tr>
+                    <td>{{ row.name }}</td>
+                    <td>{{ row.symbol }}</td>
+                    <td>{{ row.shares }}</td>
+                    <td>{{ row.value }}</td>
+                    <td>{{ row.total }}</td>
+                </tr>
+            {% endfor %}
 
 
