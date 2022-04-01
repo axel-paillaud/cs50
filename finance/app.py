@@ -59,8 +59,6 @@ def index():
         wallet_usd.append(row2)
         z += 1
 
-
-
     row2 = db.execute("SELECT cash FROM users WHERE id = ?", current_user)
     current_cash_py = row2[0]["cash"]
     current_cash = usd(current_cash_py)
@@ -90,7 +88,6 @@ def buy():
         now = datetime.now()
         time = now.strftime("%H:%M:%S")
         date = now.strftime("%d/%m/%Y")
-
 
         row = db.execute("SELECT cash FROM users WHERE id = ?", current_user)
         current_cash = row[0]["cash"]
@@ -149,7 +146,6 @@ def history():
 
     current_user = session["user_id"]
     ls_history = db.execute("SELECT * FROM transactions WHERE Idname = ?", current_user)
-
 
     return render_template("history.html", ls_history=ls_history)
 
@@ -223,7 +219,6 @@ def quote():
         return render_template("quote.html")
 
 
-
 @app.route("/register", methods=["GET", "POST"])
 def register():
     """Register user"""
@@ -235,7 +230,6 @@ def register():
             if request.form.get("username") in list_of_name[z]["username"]:
                 return apology("Username already taken", 400)
             z += 1
-
 
         if not request.form.get("username"):
             return apology("Must provide username", 400)
@@ -267,14 +261,14 @@ def sell():
         shares = int(shares_str)
         var_lookup = lookup(symbol)
         if var_lookup == None:
-            return apology("Invalid symbol", 403)
+            return apology("Invalid symbol", 400)
 
         if symbol == "empty":
-            return apology("Invalid symbol", 403)
+            return apology("Invalid symbol", 400)
         elif shares < 0:
-            return apology("You cannot sell negative numbers of shares", 403)
+            return apology("You cannot sell negative numbers of shares", 400)
         elif shares == 0:
-            return apology("You cannot sell 0 shares",403)
+            return apology("You cannot sell 0 shares",400)
 
         # Liste des symbole que possède l'utilisateur
         current_user = session["user_id"]
@@ -286,14 +280,14 @@ def sell():
             i += 1
 
         if symbol not in list_symbol:
-            return apology("You do not own this shares", 403)
+            return apology("You do not own this shares", 400)
 
         # Action que possède l'utilisateur
         row = db.execute("SELECT shares FROM wallets WHERE idName = ? AND symbol = ?", current_user, symbol)
         current_shares = row[0]["shares"]
 
         if shares > current_shares:
-            return apology("You do not have enough action", 403)
+            return apology("You do not have enough action", 400)
         else:
             # Valider la vente et mettre à jour le wallets
 
@@ -323,7 +317,6 @@ def sell():
 
             return redirect("/")
 
-
     else:
         current_user = session["user_id"]
         list_symbol = db.execute("SELECT symbol FROM wallets WHERE idName = ?", current_user)
@@ -352,7 +345,7 @@ def password():
         old_pass_hash_bdd = row[0]["hash"]
 
         # check si les deux anciens mots de passe sont identiques
-        if  request.form.get("old_password") != request.form.get("confirm_old_password"):
+        if request.form.get("old_password") != request.form.get("confirm_old_password"):
             return apology("Old passwords are not the same", 403)
 
         # Check si l'ancien mot de passe est identique à celui de la bdd
