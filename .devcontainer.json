@@ -10,7 +10,7 @@
     "MS-vsliveshare.vsliveshare-pack", 
     "vsls-contrib.gitdoc"
   ], 
-  "image": "ghcr.io/cs50/codespace:45351eda536b6c7cee2b686eb57116e6a8b21e36", 
+  "image": "ghcr.io/cs50/codespace:8abf2bbcfe2874adc4da96930edcad78ca45a8e9", 
   "postCreateCommand": "/opt/cs50/bin/postCreateCommand", 
   "settings": {
     "C_Cpp.autocomplete": "Disabled", 
@@ -49,9 +49,6 @@
       }
     }, 
     "editor.suggestOnTriggerCharacters": false, 
-    "experiments.override.gettingStarted.overrideCategory.ms-python.python.pythonDataScienceWelcome.when": "false", 
-    "experiments.override.gettingStarted.overrideCategory.ms-python.python.pythonWelcome.when": "false", 
-    "experiments.override.gettingStarted.overrideCategory.ms-vscode.cpptools.cppWelcome.when": "false", 
     "extensions.ignoreRecommendations": true, 
     "files.autoSave": "afterDelay", 
     "files.exclude": {
